@@ -1,0 +1,25 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}  Muir | Header 3 {% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %} class="sticky-header dddddd" {% endblock %}
+
+{% block content %}
+
+ <!--=        Header Area Start         =-->
+<!--=====================================-->
+{% include 'header/header-layout3.html' %}
+<!--=====================================-->
+
+<!--=       welcome Area Start         =-->
+<!--=====================================-->
+
+{% endblock %}
