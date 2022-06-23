@@ -18,6 +18,35 @@ body{
 .middle-text{
     margin: 40px 0 55px 0;
 }
+@mixin inputMail {
+    div{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: fit-content;
+        border-bottom: 1px solid #E9E9E9;
+        padding: 5px;
+
+        input{
+            border: none;
+            padding: 5px;
+            background: #F8F8F8;
+        }
+    }
+}
+@mixin numbering {
+    .numbering{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        #line{
+            width: 50px;
+            height: 1.5px;
+            background-color: #191919;
+        }
+    }
+}
 
 /*=============header-1============*/
 .header-style-1{
@@ -33,17 +62,7 @@ body{
             p{
                 width: 460px;
             }
-            div{
-                width: fit-content;
-                border-bottom: 1px solid #E9E9E9;
-                padding: 5px;
-
-                input{
-                    border: none;
-                    padding: 5px;
-                    background: #F8F8F8;
-                }
-            }
+            @include inputMail;
         }
         .right{
             margin-left: auto;
@@ -51,17 +70,7 @@ body{
             #paging{
                 justify-content: space-between;
 
-                .numbering{
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-
-                    #line{
-                        width: 50px;
-                        height: 1.5px;
-                        background-color: #191919;
-                    }
-                }
+                @include numbering;
             }
         }
     }
@@ -133,8 +142,6 @@ body{
     #paging{
         display: flex;
         align-items: center;
-        font-size: 14px;
-        line-height: 22px;
         margin-top: 10px;
         #prev{
             color: #A1A1A1;
@@ -158,4 +165,82 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 50px 0 80px 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*=============header-4============*/
+.header-style-4{
+    .header-content{
+        .left{
+            h1{
+                font-size: 140px;
+                line-height: 142px;
+                letter-spacing: -4.5px;
+                opacity: 0.9;
+            }
+            p{
+                font-size: 24px;
+                line-height: 35px;
+            }
+            @include inputMail;
+            margin: 145px 0;
+        }
+        .right{
+            display: flex;
+            gap: 25px;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+            }
+        }
+    }
+}
+/*=============header-5============*/
+.header-style-5{
+    .header-content{
+        display: block;
+
+        h1{
+            width: 588px;
+            font-size: 60px;
+            line-height: 76px;
+            letter-spacing: -0.5px;
+        }
+        #img5{
+            width: 100%;
+            margin-top: 80px;
+        }
+        .round-btn{
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            left: 64%;
+            top: 75%;
+            border-radius: 50%;
+            background: white;
+            color: #191919;
+            font-size: 20px;
+            border: none;
+        }
+        .third-section{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            .left{
+                @include numbering;
+            }
+            .right{
+                p{
+                    font-size: 17px;
+                    line-height: 27px;
+                    margin-bottom: 30px;
+                }
+                @include inputMail;
+            }
+        }
+    }
 }
