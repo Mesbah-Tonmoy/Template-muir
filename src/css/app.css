@@ -132,6 +132,16 @@ a {
   width: 100%;
 }
 
+/*====================*/
+/* Menu-6*/
+/*====================*/
+#menu-6 .mainmenu {
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 11;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -169,7 +179,7 @@ body {
 .header-style-1 .header-content .left p {
   width: 460px;
 }
-.header-style-1 .header-content .left div {
+.header-style-1 .header-content .left .inputMail {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -179,7 +189,7 @@ body {
   border-bottom: 1px solid #E9E9E9;
   padding: 5px;
 }
-.header-style-1 .header-content .left div input {
+.header-style-1 .header-content .left .inputMail input {
   border: none;
   padding: 5px;
   background: #F8F8F8;
@@ -227,6 +237,13 @@ body {
 }
 
 /*=============header-3============*/
+.header-style-3 .header-content .left {
+  margin: 100px 0;
+}
+.header-style-3 .header-content .right {
+  position: absolute;
+  right: 0;
+}
 .header-style-3 #big {
   width: 449px;
 }
@@ -296,7 +313,7 @@ body {
   font-size: 24px;
   line-height: 35px;
 }
-.header-style-4 .header-content .left div {
+.header-style-4 .header-content .left .inputMail {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -306,7 +323,7 @@ body {
   border-bottom: 1px solid #E9E9E9;
   padding: 5px;
 }
-.header-style-4 .header-content .left div input {
+.header-style-4 .header-content .left .inputMail input {
   border: none;
   padding: 5px;
   background: #F8F8F8;
@@ -340,13 +357,13 @@ body {
   position: absolute;
   width: 125px;
   height: 125px;
-  left: 64%;
-  top: 75%;
   border-radius: 50%;
   background: white;
   color: #191919;
   font-size: 20px;
   border: none;
+  left: 64%;
+  top: 75%;
 }
 .header-style-5 .header-content .third-section {
   display: flex;
@@ -368,7 +385,7 @@ body {
   line-height: 27px;
   margin-bottom: 30px;
 }
-.header-style-5 .header-content .third-section .right div {
+.header-style-5 .header-content .third-section .right .inputMail {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -378,8 +395,286 @@ body {
   border-bottom: 1px solid #E9E9E9;
   padding: 5px;
 }
-.header-style-5 .header-content .third-section .right div input {
+.header-style-5 .header-content .third-section .right .inputMail input {
   border: none;
   padding: 5px;
   background: #F8F8F8;
+}
+
+/*=============header-6============*/
+.header-style-6 .header-content .left {
+  z-index: 11;
+}
+.header-style-6 .header-content .left .numbering {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-style-6 .header-content .left .numbering #line {
+  width: 50px;
+  height: 1.5px;
+  background-color: #191919;
+}
+.header-style-6 .header-content .left h1 {
+  margin: 100px 0;
+}
+.header-style-6 .header-content .left .numbering {
+  padding: 70px 0 140px;
+}
+.header-style-6 .header-content .right {
+  position: absolute;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-end;
+}
+.header-style-6 .header-content .right .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  border: none;
+  left: 75%;
+  top: 30%;
+}
+.header-style-6 .header-content .right .m-l-a {
+  margin-left: auto;
+}
+.header-style-6 .header-content .right .m-l-a .inputMail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #E9E9E9;
+  padding: 5px;
+}
+.header-style-6 .header-content .right .m-l-a .inputMail input {
+  border: none;
+  padding: 5px;
+  background: #F8F8F8;
+}
+.header-style-6 .header-content .right .m-l-a p {
+  margin-bottom: 30px;
+}
+
+/*=============header-7============*/
+.header-style-7 .header-content .left {
+  margin: 150px 0 250px;
+}
+.header-style-7 .header-content .left .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  border: none;
+  position: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-style-7 .header-content .right .numbering {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-style-7 .header-content .right .numbering #line {
+  width: 50px;
+  height: 1.5px;
+  background-color: #191919;
+}
+.header-style-7 .header-content .right .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  border: none;
+  top: 50%;
+  right: 13%;
+}
+.header-style-7 .header-content .right #img7-2 {
+  position: absolute;
+  right: calc(10% + 558px);
+  margin-top: 630px;
+}
+.header-style-7 .header-content .right .numbering {
+  position: absolute;
+  right: 10%;
+}
+
+/*=============header-8============*/
+.header-style-8 .header-content .left {
+  text-align: end;
+  margin: 100px 0;
+}
+.header-style-8 .header-content .left .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  border: none;
+  position: unset;
+}
+.header-style-8 .header-content .left h1 {
+  width: 500px;
+  margin-left: 100px;
+}
+.header-style-8 .header-content .left p {
+  margin-left: auto;
+  color: #A1A1A1;
+  font-size: 17px;
+  line-height: 27px;
+}
+.header-style-8 .header-content .right {
+  position: absolute;
+  right: 7%;
+  top: 0;
+}
+.header-style-8 .header-content .right div {
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 15px;
+}
+
+/*=============header-9============*/
+.header-style-9 .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 50px 0 80px 0;
+}
+.header-style-9 .header-content h1 {
+  width: auto;
+  font-size: 140px;
+  line-height: 142px;
+  text-align: center;
+  letter-spacing: -4.5px;
+  color: #191919;
+  opacity: 0.9;
+  margin-bottom: 100px;
+}
+.header-style-9 .header-content .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  border: none;
+  margin-top: 80%;
+}
+
+/*=============header-10============*/
+.header-style-10 .header-content {
+  display: block;
+}
+.header-style-10 .header-content h1 {
+  width: 950px;
+  font-size: 140px;
+  line-height: 142px;
+  text-align: center;
+  letter-spacing: -4.5px;
+  opacity: 0.9;
+  margin: auto auto 120px;
+}
+.header-style-10 .header-content p {
+  margin-left: auto;
+  font-size: 24px;
+  line-height: 35px;
+}
+.header-style-10 .header-content .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30%;
+}
+
+/*=============header-11============*/
+.header-style-11 {
+  background-color: #191919;
+}
+.header-style-11 .container-fluid {
+  width: 100%;
+}
+.header-style-11 .header-main-nav {
+  width: 80%;
+  margin: auto;
+}
+.header-style-11 .header-content {
+  color: white;
+  padding-bottom: 150px;
+}
+.header-style-11 .header-content .left #paging {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+.header-style-11 .header-content .left #paging #small {
+  background-color: #A1A1A1;
+}
+.header-style-11 .header-content .left #paging #big {
+  background-color: #5E5858;
+  width: 300px;
+}
+.header-style-11 .header-content .left #paging #next {
+  color: #A1A1A1;
+}
+.header-style-11 .header-content .right {
+  position: absolute;
+  left: 28%;
+  margin-top: 200px;
+}
+.header-style-11 .header-content .right h1 {
+  width: 780px;
+  font-size: 140px;
+  line-height: 142px;
+  text-align: left;
+  letter-spacing: -4.5px;
+  opacity: 0.9;
+}
+.header-style-11 .header-content .right div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+.header-style-11 .header-content .right div .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  border: none;
+  background: #fa3b00;
+  color: white;
 }

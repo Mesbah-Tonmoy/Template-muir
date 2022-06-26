@@ -128,3 +128,15 @@ a{
         @include a-hover;
     }
 }
+
+/*====================*/
+/* Menu-6*/
+/*====================*/
+#menu-6{
+    .mainmenu{
+        background: white;
+        border-radius: 50%;
+        padding: 10px;
+        z-index: 11;
+    }
+}
