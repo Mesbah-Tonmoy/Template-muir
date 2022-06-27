@@ -32,7 +32,6 @@ a{
     display: flex;
     gap: 70px;
     list-style: none;
-    border-bottom: 1px solid #E9E9E9;
 }
 #download{
     display: flex;
@@ -125,6 +124,9 @@ a{
 /* Menu-5*/
 /*====================*/
 #menu-5{
+    #onepagenav{
+        border-bottom: 1px solid #E9E9E9;
+    }
     .nav-item{
         @include a-hover;
     }
