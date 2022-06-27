@@ -242,10 +242,11 @@ body {
 /*=============header-3============*/
 .header-style-3 .header-content .left {
   margin: 100px 0;
+  z-index: 11;
 }
 .header-style-3 .header-content .right {
   position: absolute;
-  right: 0;
+  right: -12%;
 }
 .header-style-3 #big {
   width: 449px;
