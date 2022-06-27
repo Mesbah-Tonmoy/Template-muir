@@ -1,25 +1,16 @@
 .logo {
-  position: absolute;
-  width: 73px;
-  height: 29px;
-  left: -4px;
   top: 11px;
 }
 
 .mainmenu-nav {
-  position: relative;
-  width: 1440px;
   height: 104px;
 }
-
-.container {
+.mainmenu-nav .container {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  height: 50px;
-  left: 151px;
-  right: 151px;
-  top: 27px;
+  padding-top: 27px;
   font-size: 14px;
   line-height: 22px;
 }

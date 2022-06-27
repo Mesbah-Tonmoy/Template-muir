@@ -1,0 +1,343 @@
+@mixin p($size, $l-h, $color){
+    font-size: $size;
+    line-height: $l-h;
+    color: $color;
+}
+@mixin flex-box ($a-i:unset, $j-c:unset, $f-d:unset, $gap:unset) {
+    display: flex;
+    align-items: $a-i;
+    justify-content: $j-c;
+    flex-direction: $f-d;
+    gap: $gap;
+}
+.dark{
+    background: #191919 !important;
+}
+.feature-area{
+    background: #F8F8F8;
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 120px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .right{
+            .big-dark{
+                width: 558px;
+                margin-bottom: 100px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+            }
+            .mt-30{
+                gap: 40px;
+                margin-top: 30px;
+            }
+        }
+        .left{
+            width: 45%;
+            ul{
+                margin-top: 150px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #E9E9E9;
+                    img{
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+    p[class='big']{
+        @include p(24px, 35px, #A1A1A1);
+    }
+    p[class='big-dark']{
+        @include p(24px, 35px, #191919);
+    }
+    p[class='big-white']{
+        @include p(24px, 35px, #ffffff);
+    }
+    p[class='medium']{
+        @include p(20px, 28px, #A1A1A1);
+    }
+    p[class='medium-dark']{
+        @include p(20px, 28px, #191919);
+    }
+    p[class='medium-white']{
+        @include p(20px, 28px, #ffffff);
+    }
+    p[class='small']{
+        @include p(17px, 27px, #A1A1A1);
+    }
+    p[class='small-dark']{
+        @include p(17px, 27px, #191919);
+    }
+    p[class='smaller']{
+        @include p(14px, 22px, #ffffff);
+    }
+    p[class='smaller-grey']{
+        @include p(14px, 22px, #A1A1A1);
+    }
+}
+
+/*============  Feature-2  ===========*/
+#feature-2{
+    .container{
+        display: block;
+        .top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottom{
+            display: flex;
+            gap: 80px;
+            .big-dark{
+                margin: 30px 0;
+            }
+        }
+    }
+}
+
+/*============  Feature-3  ===========*/
+#feature-3{
+    .container{
+        display: block;
+        h1{
+            @include p(60px, 76px, #191919);
+            margin: 20px 0 80px;
+            font-weight: 400;
+            letter-spacing: -0.5px;      
+            width: 650px;      
+        }
+        .list{
+            display: flex;
+            align-items: flex-start;
+            border-top: 1px solid #E9E9E9;
+            h1{
+                margin: 0;
+                width: 80px;
+                padding: 17px 0;
+            }
+            div{
+                padding: 30px 30px;
+                border-left: 1px solid #E9E9E9;
+                h2{
+                    font-size: 34px;
+                    line-height: 50px;
+                    font-weight: 400;
+                }
+                .small{
+                    width: 650px;
+                    margin-top: 40px;
+                }
+            }
+            img{
+                margin: auto;
+                margin-right: 0;
+            }
+        }
+        .list:first-of-type{
+            border-top: none;
+            img{
+                margin: 38px 0 auto auto;
+            }
+        }
+    }
+}
+
+/*============  Feature-4  ===========*/
+#feature-4{
+    .container{
+        .right{
+            div{
+                p{
+                    margin: 0;
+                }
+            }
+            .medium{
+                width: 490px;
+                margin: 50px 0;
+            }
+            ul{
+                margin-top: 40px;
+                list-style: none;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-top: 1px solid #E9E9E9;
+                    padding: 25px 0;
+                }
+            }
+        }
+    }
+}
+
+/*============  Feature-5  ===========*/
+#feature-5{
+    .container{
+        .right{
+            .bottom{
+                gap: 100px;
+                div{
+                    display: block;
+                    width: 200px;
+                    h1{
+                        font-weight: 400;
+                        @include p(70px, 100px, #191919);
+                        letter-spacing: -1px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*============  Feature-6  ===========*/
+#feature-6{
+    background: #191919;
+    .container{
+        display: block;
+        width: 100%;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto 100px;
+        }
+        .bottom{
+            display: flex;
+            gap: 180px;
+            background: #2F2F2F;
+            padding: 80px 200px 80px 100px;
+            margin-left: 10%;
+            .flex-column{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .g-30{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                }
+            }
+        }
+    }
+}
+
+/*============  Feature-7  ===========*/
+#feature-7{
+    .top{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: auto;
+        .big-dark{
+            width: 754px;
+        }
+        .right{
+            margin-left: auto;
+        }
+    }
+}
+
+/*============  Feature-8  ===========*/
+#feature-8{
+    .left{
+        .big{
+            margin-bottom: 200px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 70px;
+            color: #A1A1A1;
+            margin-top: 121px;
+        }
+    }
+    .right{
+        p{
+            width: 558px;
+        }
+        .big-white{
+            margin-bottom: 150px;
+        }
+        .bottom{
+            display: block;
+            .medium-white{
+                margin-top: 80px;
+            }
+            .smaller-grey{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/*============  Feature-9  ===========*/
+#feature-9{
+    .bottom{
+        gap: 200px;
+        div{
+            height: 300px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+/*============  Feature-10  ===========*/
+#feature-10{
+    .container{
+        display: block;
+    }
+    .big-dark{
+        margin: 20px 0 100px;
+    }
+    .bottom{
+        @include flex-box(center, space-between, unset, unset);
+        div{
+            background-color: #ffffff;
+            padding: 30px;
+            width: 270px;
+            @include flex-box(center, unset, column, 15px);
+            img{
+                padding: 30px 0;
+            }
+        }
+    }
+}
+
+/*============  Feature-11  ===========*/
+#feature-11{
+    .container{
+        display: block;
+        .top{
+            @include flex-box(unset, space-between, unset, unset);
+            margin-bottom: 100px;
+            .big-dark{
+                font-size: 34px;
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
+            .smaller-grey{
+                width: 558px;
+            }
+        }
+        .bottom{
+            @include flex-box(center, space-between, unset, unset);
+            padding-right: 80px;
+            div{
+                height: 300px;
+                @include flex-box(unset, space-between, column, unset);
+            }
+        }
+    }
+}
