@@ -19,8 +19,7 @@
         width: 80%;
         margin: 0 auto;
         padding: 120px 0;
-        display: flex;
-        justify-content: space-between;
+        @include flex-box(unset, space-between, unset, 100px);
 
         .right{
             .big-dark{
@@ -28,8 +27,7 @@
                 margin-bottom: 100px;
             }
             div{
-                display: flex;
-                align-items: center;
+                @include flex-box(center);
             }
             .mt-30{
                 gap: 40px;
@@ -41,9 +39,7 @@
             ul{
                 margin-top: 150px;
                 li{
-                    display: flex;
-                    align-items: center;
-                    gap: 40px;
+                    @include flex-box(center, unset, unset, 40px);
                     padding: 20px 0;
                     border-bottom: 1px solid #E9E9E9;
                     img{
@@ -52,6 +48,12 @@
                 }
             }
         }
+    }
+    p[class='bigger-dark']{
+        @include p(34px, 50px, #191919);
+    }
+    p[class='bigger-white']{
+        @include p(34px, 50px, #ffffff);
     }
     p[class='big']{
         @include p(24px, 35px, #A1A1A1);
@@ -77,6 +79,9 @@
     p[class='small-dark']{
         @include p(17px, 27px, #191919);
     }
+    p[class='small-white']{
+        @include p(17px, 27px, #ffffff);
+    }
     p[class='smaller']{
         @include p(14px, 22px, #ffffff);
     }
@@ -90,12 +95,10 @@
     .container{
         display: block;
         .top{
-            display: flex;
-            justify-content: space-between;
+            @include flex-box(unset, space-between);
         }
         .bottom{
-            display: flex;
-            gap: 80px;
+            @include flex-box(unset, unset, unset, 80px);
             .big-dark{
                 margin: 30px 0;
             }
@@ -115,8 +118,7 @@
             width: 650px;      
         }
         .list{
-            display: flex;
-            align-items: flex-start;
+            @include flex-box(unset, unset, flex-start);
             border-top: 1px solid #E9E9E9;
             h1{
                 margin: 0;
@@ -126,11 +128,6 @@
             div{
                 padding: 30px 30px;
                 border-left: 1px solid #E9E9E9;
-                h2{
-                    font-size: 34px;
-                    line-height: 50px;
-                    font-weight: 400;
-                }
                 .small{
                     width: 650px;
                     margin-top: 40px;
@@ -167,9 +164,7 @@
                 margin-top: 40px;
                 list-style: none;
                 li{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
+                    @include flex-box(center, space-between);
                     border-top: 1px solid #E9E9E9;
                     padding: 25px 0;
                 }
@@ -188,8 +183,8 @@
                     display: block;
                     width: 200px;
                     h1{
-                        font-weight: 400;
                         @include p(70px, 100px, #191919);
+                        font-weight: 400;
                         letter-spacing: -1px;
                         margin-bottom: 15px;
                     }
@@ -218,13 +213,9 @@
             padding: 80px 200px 80px 100px;
             margin-left: 10%;
             .flex-column{
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
+                @include flex-box(unset, unset, column, 20px);
                 .g-30{
-                    display: flex;
-                    align-items: center;
-                    gap: 30px;
+                    @include flex-box(center, unset, unset, 30px);
                 }
             }
         }
@@ -234,10 +225,7 @@
 /*============  Feature-7  ===========*/
 #feature-7{
     .top{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 30px;
+        @include flex-box(flex-start, unset, column, 30px);
         margin-left: auto;
         .big-dark{
             width: 754px;
@@ -255,10 +243,8 @@
             margin-bottom: 200px;
         }
         h1{
-            font-size: 40px;
+            @include p(40px, 70px, #A1A1A1);
             font-weight: 400;
-            line-height: 70px;
-            color: #A1A1A1;
             margin-top: 121px;
         }
     }
@@ -302,7 +288,7 @@
         margin: 20px 0 100px;
     }
     .bottom{
-        @include flex-box(center, space-between, unset, unset);
+        @include flex-box(unset, space-between, unset, 30px);
         div{
             background-color: #ffffff;
             padding: 30px;
@@ -322,22 +308,97 @@
         .top{
             @include flex-box(unset, space-between, unset, unset);
             margin-bottom: 100px;
-            .big-dark{
-                font-size: 34px;
-                line-height: 50px;
+            .bigger-dark{
                 margin-bottom: 20px;
             }
-            .smaller-grey{
-                width: 558px;
+            .right{
+                p{
+                    width: 558px;
+                }
             }
         }
         .bottom{
-            @include flex-box(center, space-between, unset, unset);
+            @include flex-box(center, space-between);
             padding-right: 80px;
             div{
                 height: 300px;
-                @include flex-box(unset, space-between, column, unset);
+                @include flex-box(unset, space-between, column);
             }
+        }
+    }
+}
+
+/*============  Feature-12  ===========*/
+#feature-12{
+    .container{
+        .left{
+            margin-top: 60px;
+            .smaller-grey{
+                margin: 20px 0 70px;
+            }
+            div{
+                @include flex-box(center, unset, unset, 30px);
+                margin-bottom: 30px;
+                img{
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .right{
+            @include flex-box(flex-start, unset, unset, 30px);
+            #img-12-2{
+                margin-top: 200px;
+            }
+        }
+    }
+}
+
+/*============  Feature-13  ===========*/
+#feature-13{
+    .container{
+        display: block;
+        .top{
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .bottom{
+            @include flex-box(unset, space-around);
+            div{
+                width: 250px;
+                padding: 20px;
+                text-align: center;
+                img{
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+                .small-dark{
+                    margin: 30px 0 15px;
+                }
+            }
+        }
+    }
+}
+#feature-14{
+    .left{
+        margin: auto 0;
+        .bigger-white{
+            width: 392px;
+            margin-top: 20px;
+        }
+    }
+    .bg-grey{
+        display: block;
+        width: 265px;
+        background: #2F2F2F;
+        text-align: center;
+        padding: 50px 30px 40px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        .small-white{
+            margin: 50px 0 15px;
         }
     }
 }
