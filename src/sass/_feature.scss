@@ -10,9 +10,6 @@
     flex-direction: $f-d;
     gap: $gap;
 }
-.dark{
-    background: #191919 !important;
-}
 .feature-area{
     background: #F8F8F8;
     .container{
@@ -196,7 +193,6 @@
 
 /*============  Feature-6  ===========*/
 #feature-6{
-    background: #191919;
     .container{
         display: block;
         width: 100%;
