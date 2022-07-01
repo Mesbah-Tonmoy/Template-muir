@@ -1,31 +1,22 @@
 .logo{
-    position: absolute;
-    width: 73px;
-    height: 29px;
-    left: -4px;
-    top: 11px;
+    margin-top: 11px;
 }
 .mainmenu-nav{
-    position: relative;
-    width: 1440px;
     height: 104px;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    height: 50px;
-    left: 151px;
-    right: 151px;
-    top: 27px;
-    font-size: 14px;
-    line-height: 22px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 27px;
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 a{
     text-decoration: none;
     color: black;
-
-    &:after {    
+}
+@mixin a-hover {
+    a:after {    
         content: "";
         display: block;
         height: 2px;
@@ -33,7 +24,7 @@ a{
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
-    &:hover:after { 
+    a:hover:after { 
         width: 100%; 
     }
 }
@@ -58,5 +49,97 @@ a{
 .mainmenu{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    align-items: center;
+}
+
+/*====================*/
+/* Menu-1*/
+/*====================*/
+#menu-1{
+    #download-1{
+        width: 97px;
+        height: 82px;
+        background-color: #191919;
+        color: white;
+        margin-top: -27px;
+    }
+    .mainmenu{
+        width: 50%;
+    }
+}
+
+/*====================*/
+/* Menu-2*/
+/*====================*/
+#menu-2{
+    .mainmenu{
+        width: 50%;
+    }
+    .nav-item{
+        @include a-hover;
+    }
+}
+
+/*====================*/
+/* Menu-3*/
+/*====================*/
+@mixin hum {
+    height: 1.5px;
+    background-color: #191919;
+}
+#menu-3{
+    .mainmenu{
+        gap: 110px;
+    }
+}
+.humburger{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+.hum-1{
+    @include hum;
+    width: 15px;
+}
+.hum-2{
+    @include hum;
+    width: 25px;
+}
+.hum-3{
+    @include hum;
+    width: 20px;
+}
+
+/*====================*/
+/* Menu-4*/
+/*====================*/
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/*====================*/
+/* Menu-5*/
+/*====================*/
+#menu-5{
+    #onepagenav{
+        border-bottom: 1px solid #E9E9E9;
+    }
+    .nav-item{
+        @include a-hover;
+    }
+}
+
+/*====================*/
+/* Menu-6*/
+/*====================*/
+#menu-6{
+    .mainmenu{
+        background: white;
+        border-radius: 50%;
+        padding: 10px;
+        z-index: 11;
+    }
 }

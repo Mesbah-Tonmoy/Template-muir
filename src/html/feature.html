@@ -1,0 +1,22 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Vitax | Feature All in One Page{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class=""{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Feature Area Start       	=-->
+<!--=====================================-->
+{% include 'feature/feature.html' %}
+	
+
+{% endblock %}
