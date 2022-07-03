@@ -1,3 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{    
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 @mixin font($size, $l-h){
     font-size: $size;
     line-height: $l-h;
@@ -9,6 +20,7 @@
     flex-direction: $f-d;
     gap: $gap;
 }
+
 .bg-dark{
     background: #191919;
 }
@@ -46,7 +58,7 @@ h1, h2, h3, h4, h5, h6{
 .container{
     padding: 120px;
 }
-.right{
+.right-558{
     width: 558px;
 }
 .w-100{

@@ -3,10 +3,10 @@
 }
 .mainmenu-nav{
     height: 104px;
+    padding-top: 27px;
     .container{
         display: flex;
         justify-content: space-between;
-        padding-top: 27px;
         font-size: 14px;
         line-height: 22px;
     }
@@ -62,6 +62,7 @@ a{
         background-color: #191919;
         color: white;
         margin-top: -27px;
+        padding-top: 25px;
     }
     .mainmenu{
         width: 50%;
