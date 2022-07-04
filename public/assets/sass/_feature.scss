@@ -12,21 +12,12 @@
 }
 .feature-area{
     .container{
-        width: 80%;
-        margin: 0 auto;
-        padding: 120px 0;
         @include flex-box(unset, space-between, unset, 100px);
 
         .right{
-            .big-dark{
-                width: 558px;
-                margin-bottom: 100px;
-            }
-            div{
-                @include flex-box(center);
-            }
+            width: 558px;
             .mt-30{
-                gap: 40px;
+                @include flex-box(center, unset, unset, 40px);
                 margin-top: 30px;
             }
         }
@@ -38,51 +29,21 @@
                     @include flex-box(center, unset, unset, 40px);
                     padding: 20px 0;
                     border-bottom: 1px solid #E9E9E9;
-                    img{
+                    .ml-auto{
                         margin-left: auto;
                     }
                 }
             }
         }
     }
-    p[class='bigger-dark']{
-        @include p(34px, 50px, #191919);
-    }
-    p[class='bigger-white']{
-        @include p(34px, 50px, #ffffff);
-    }
-    p[class='big']{
-        @include p(24px, 35px, #A1A1A1);
-    }
-    p[class='big-dark']{
-        @include p(24px, 35px, #191919);
-    }
-    p[class='big-white']{
-        @include p(24px, 35px, #ffffff);
-    }
-    p[class='medium']{
-        @include p(20px, 28px, #A1A1A1);
-    }
-    p[class='medium-dark']{
-        @include p(20px, 28px, #191919);
-    }
-    p[class='medium-white']{
-        @include p(20px, 28px, #ffffff);
-    }
-    p[class='small']{
-        @include p(17px, 27px, #A1A1A1);
-    }
-    p[class='small-dark']{
-        @include p(17px, 27px, #191919);
-    }
-    p[class='small-white']{
-        @include p(17px, 27px, #ffffff);
-    }
-    p[class='smaller']{
-        @include p(14px, 22px, #ffffff);
-    }
-    p[class='smaller-grey']{
-        @include p(14px, 22px, #A1A1A1);
+}
+
+/*============  Feature-1  ===========*/
+#feature-1{
+    .right{
+        .big{
+            margin-bottom: 100px;
+        }
     }
 }
 
@@ -92,11 +53,14 @@
         display: block;
         .top{
             @include flex-box(unset, space-between);
+            .right{
+                margin-bottom: 150px;
+            }
         }
         .bottom{
             @include flex-box(unset, unset, unset, 80px);
-            .big-dark{
-                margin: 30px 0;
+            .big{
+                margin: 35px 0 25px;
             }
         }
     }
@@ -147,14 +111,14 @@
 #feature-4{
     .container{
         .right{
-            div{
-                p{
-                    margin: 0;
-                }
+            .mb-100{
+                margin-bottom: 100px;
             }
             .medium{
                 width: 490px;
-                margin: 50px 0;
+            }
+            .m-40-0-60{
+                margin: 40px 0 60px;
             }
             ul{
                 margin-top: 40px;
@@ -162,7 +126,7 @@
                 li{
                     @include flex-box(center, space-between);
                     border-top: 1px solid #E9E9E9;
-                    padding: 25px 0;
+                    padding: 33px 0;
                 }
             }
         }
@@ -174,13 +138,13 @@
     .container{
         .right{
             .bottom{
+                margin-top: 115px;
+                display: flex;
                 gap: 100px;
                 div{
-                    display: block;
                     width: 200px;
                     h1{
-                        @include p(70px, 100px, #191919);
-                        font-weight: 400;
+                        @include font(70px, 100px);
                         letter-spacing: -1px;
                         margin-bottom: 15px;
                     }
@@ -194,7 +158,7 @@
 #feature-6{
     .container{
         display: block;
-        width: 100%;
+        padding: 120px 0;
         .top{
             display: flex;
             justify-content: space-between;
@@ -220,42 +184,41 @@
 /*============  Feature-7  ===========*/
 #feature-7{
     .top{
-        @include flex-box(flex-start, unset, column, 30px);
+        @include flex-box(flex-start, unset, column, 35px);
+        width: 754px;
         margin-left: auto;
-        .big-dark{
-            width: 754px;
-        }
-        .right{
+        .ml-auto{
             margin-left: auto;
+        }
+        .orange{
+            color: #FF5C00;
         }
     }
 }
 
 /*============  Feature-8  ===========*/
 #feature-8{
+    color: #A1A1A1;
     .left{
         .big{
             margin-bottom: 200px;
         }
         h1{
-            @include p(40px, 70px, #A1A1A1);
-            font-weight: 400;
+            @include font(40px, 70px);
             margin-top: 121px;
         }
     }
     .right{
-        p{
-            width: 558px;
-        }
-        .big-white{
+        width: 558px;
+        .big{
             margin-bottom: 150px;
         }
         .bottom{
             display: block;
-            .medium-white{
+            .medium{
                 margin-top: 80px;
             }
-            .smaller-grey{
+            .smaller{
                 margin-top: 20px;
             }
         }
@@ -264,12 +227,16 @@
 
 /*============  Feature-9  ===========*/
 #feature-9{
+    .left{
+        width: unset;
+    }
     .bottom{
-        gap: 200px;
+        display: flex;
+        gap: 190px;
+        margin-top: 150px;
         div{
             height: 300px;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex-box(center, space-between, column);
         }
     }
 }
@@ -279,7 +246,7 @@
     .container{
         display: block;
     }
-    .big-dark{
+    .m-20-0-100{
         margin: 20px 0 100px;
     }
     .bottom{
@@ -301,20 +268,14 @@
     .container{
         display: block;
         .top{
-            @include flex-box(unset, space-between, unset, unset);
             margin-bottom: 100px;
-            .bigger-dark{
+            .bigger{
                 margin-bottom: 20px;
-            }
-            .right{
-                p{
-                    width: 558px;
-                }
             }
         }
         .bottom{
             @include flex-box(center, space-between);
-            padding-right: 80px;
+            padding-right: 180px;
             div{
                 height: 300px;
                 @include flex-box(unset, space-between, column);
@@ -328,7 +289,7 @@
     .container{
         .left{
             margin-top: 60px;
-            .smaller-grey{
+            .smaller{
                 margin: 20px 0 70px;
             }
             div{
@@ -354,8 +315,8 @@
 #feature-13{
     .container{
         display: block;
+        text-align: center;
         .top{
-            text-align: center;
             margin-bottom: 100px;
         }
         .bottom{
@@ -363,13 +324,12 @@
             div{
                 width: 250px;
                 padding: 20px;
-                text-align: center;
                 img{
                     background-color: white;
                     padding: 10px;
                     border-radius: 50%;
                 }
-                .small-dark{
+                .small{
                     margin: 30px 0 15px;
                 }
             }
@@ -379,15 +339,14 @@
 #feature-14{
     .left{
         margin: auto 0;
-        .bigger-white{
+        .bigger{
             width: 392px;
             margin-top: 20px;
         }
     }
     .right{
-        div{
-            align-items: unset;
-        }
+        display: flex;
+        width: unset;
     }
     .bg-grey{
         display: block;
@@ -397,7 +356,7 @@
         padding: 50px 30px 40px;
         margin-bottom: 30px;
         margin-left: 30px;
-        .small-white{
+        .small{
             margin: 50px 0 15px;
         }
     }

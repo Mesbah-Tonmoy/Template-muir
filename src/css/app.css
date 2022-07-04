@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 120px;
 }
 
-.right-558 {
+.w-558 {
   width: 558px;
 }
 
@@ -802,27 +802,20 @@ a {
 }
 
 .feature-area .container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 120px 0;
   display: flex;
   align-items: unset;
   justify-content: space-between;
   flex-direction: unset;
   gap: 100px;
 }
-.feature-area .container .right .big-dark {
+.feature-area .container .right {
   width: 558px;
-  margin-bottom: 100px;
 }
-.feature-area .container .right div {
+.feature-area .container .right .mt-30 {
   display: flex;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
-  gap: unset;
-}
-.feature-area .container .right .mt-30 {
   gap: 40px;
   margin-top: 30px;
 }
@@ -841,73 +834,13 @@ a {
   padding: 20px 0;
   border-bottom: 1px solid #E9E9E9;
 }
-.feature-area .container .left ul li img {
+.feature-area .container .left ul li .ml-auto {
   margin-left: auto;
 }
-.feature-area p[class=bigger-dark] {
-  font-size: 34px;
-  line-height: 50px;
-  color: #191919;
-}
-.feature-area p[class=bigger-white] {
-  font-size: 34px;
-  line-height: 50px;
-  color: #ffffff;
-}
-.feature-area p[class=big] {
-  font-size: 24px;
-  line-height: 35px;
-  color: #A1A1A1;
-}
-.feature-area p[class=big-dark] {
-  font-size: 24px;
-  line-height: 35px;
-  color: #191919;
-}
-.feature-area p[class=big-white] {
-  font-size: 24px;
-  line-height: 35px;
-  color: #ffffff;
-}
-.feature-area p[class=medium] {
-  font-size: 20px;
-  line-height: 28px;
-  color: #A1A1A1;
-}
-.feature-area p[class=medium-dark] {
-  font-size: 20px;
-  line-height: 28px;
-  color: #191919;
-}
-.feature-area p[class=medium-white] {
-  font-size: 20px;
-  line-height: 28px;
-  color: #ffffff;
-}
-.feature-area p[class=small] {
-  font-size: 17px;
-  line-height: 27px;
-  color: #A1A1A1;
-}
-.feature-area p[class=small-dark] {
-  font-size: 17px;
-  line-height: 27px;
-  color: #191919;
-}
-.feature-area p[class=small-white] {
-  font-size: 17px;
-  line-height: 27px;
-  color: #ffffff;
-}
-.feature-area p[class=smaller] {
-  font-size: 14px;
-  line-height: 22px;
-  color: #ffffff;
-}
-.feature-area p[class=smaller-grey] {
-  font-size: 14px;
-  line-height: 22px;
-  color: #A1A1A1;
+
+/*============  Feature-1  ===========*/
+#feature-1 .right .big {
+  margin-bottom: 100px;
 }
 
 /*============  Feature-2  ===========*/
@@ -921,6 +854,9 @@ a {
   flex-direction: unset;
   gap: unset;
 }
+#feature-2 .container .top .right {
+  margin-bottom: 150px;
+}
 #feature-2 .container .bottom {
   display: flex;
   align-items: unset;
@@ -928,8 +864,8 @@ a {
   flex-direction: unset;
   gap: 80px;
 }
-#feature-2 .container .bottom .big-dark {
-  margin: 30px 0;
+#feature-2 .container .bottom .big {
+  margin: 35px 0 25px;
 }
 
 /*============  Feature-3  ===========*/
@@ -978,12 +914,14 @@ a {
 }
 
 /*============  Feature-4  ===========*/
-#feature-4 .container .right div p {
-  margin: 0;
+#feature-4 .container .right .mb-100 {
+  margin-bottom: 100px;
 }
 #feature-4 .container .right .medium {
   width: 490px;
-  margin: 50px 0;
+}
+#feature-4 .container .right .m-40-0-60 {
+  margin: 40px 0 60px;
 }
 #feature-4 .container .right ul {
   margin-top: 40px;
@@ -996,22 +934,21 @@ a {
   flex-direction: unset;
   gap: unset;
   border-top: 1px solid #E9E9E9;
-  padding: 25px 0;
+  padding: 33px 0;
 }
 
 /*============  Feature-5  ===========*/
 #feature-5 .container .right .bottom {
+  margin-top: 115px;
+  display: flex;
   gap: 100px;
 }
 #feature-5 .container .right .bottom div {
-  display: block;
   width: 200px;
 }
 #feature-5 .container .right .bottom div h1 {
   font-size: 70px;
   line-height: 100px;
-  color: #191919;
-  font-weight: 400;
   letter-spacing: -1px;
   margin-bottom: 15px;
 }
@@ -1019,7 +956,7 @@ a {
 /*============  Feature-6  ===========*/
 #feature-6 .container {
   display: block;
-  width: 100%;
+  padding: 120px 0;
 }
 #feature-6 .container .top {
   display: flex;
@@ -1055,58 +992,68 @@ a {
   align-items: flex-start;
   justify-content: unset;
   flex-direction: column;
-  gap: 30px;
-  margin-left: auto;
-}
-#feature-7 .top .big-dark {
+  gap: 35px;
   width: 754px;
-}
-#feature-7 .top .right {
   margin-left: auto;
+}
+#feature-7 .top .ml-auto {
+  margin-left: auto;
+}
+#feature-7 .top .orange {
+  color: #FF5C00;
 }
 
 /*============  Feature-8  ===========*/
+#feature-8 {
+  color: #A1A1A1;
+}
 #feature-8 .left .big {
   margin-bottom: 200px;
 }
 #feature-8 .left h1 {
   font-size: 40px;
   line-height: 70px;
-  color: #A1A1A1;
-  font-weight: 400;
   margin-top: 121px;
 }
-#feature-8 .right p {
+#feature-8 .right {
   width: 558px;
 }
-#feature-8 .right .big-white {
+#feature-8 .right .big {
   margin-bottom: 150px;
 }
 #feature-8 .right .bottom {
   display: block;
 }
-#feature-8 .right .bottom .medium-white {
+#feature-8 .right .bottom .medium {
   margin-top: 80px;
 }
-#feature-8 .right .bottom .smaller-grey {
+#feature-8 .right .bottom .smaller {
   margin-top: 20px;
 }
 
 /*============  Feature-9  ===========*/
+#feature-9 .left {
+  width: unset;
+}
 #feature-9 .bottom {
-  gap: 200px;
+  display: flex;
+  gap: 190px;
+  margin-top: 150px;
 }
 #feature-9 .bottom div {
   height: 300px;
-  flex-direction: column;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  gap: unset;
 }
 
 /*============  Feature-10  ===========*/
 #feature-10 .container {
   display: block;
 }
-#feature-10 .big-dark {
+#feature-10 .m-20-0-100 {
   margin: 20px 0 100px;
 }
 #feature-10 .bottom {
@@ -1135,18 +1082,10 @@ a {
   display: block;
 }
 #feature-11 .container .top {
-  display: flex;
-  align-items: unset;
-  justify-content: space-between;
-  flex-direction: unset;
-  gap: unset;
   margin-bottom: 100px;
 }
-#feature-11 .container .top .bigger-dark {
+#feature-11 .container .top .bigger {
   margin-bottom: 20px;
-}
-#feature-11 .container .top .right p {
-  width: 558px;
 }
 #feature-11 .container .bottom {
   display: flex;
@@ -1154,7 +1093,7 @@ a {
   justify-content: space-between;
   flex-direction: unset;
   gap: unset;
-  padding-right: 80px;
+  padding-right: 180px;
 }
 #feature-11 .container .bottom div {
   height: 300px;
@@ -1169,7 +1108,7 @@ a {
 #feature-12 .container .left {
   margin-top: 60px;
 }
-#feature-12 .container .left .smaller-grey {
+#feature-12 .container .left .smaller {
   margin: 20px 0 70px;
 }
 #feature-12 .container .left div {
@@ -1199,9 +1138,9 @@ a {
 /*============  Feature-13  ===========*/
 #feature-13 .container {
   display: block;
+  text-align: center;
 }
 #feature-13 .container .top {
-  text-align: center;
   margin-bottom: 100px;
 }
 #feature-13 .container .bottom {
@@ -1214,26 +1153,26 @@ a {
 #feature-13 .container .bottom div {
   width: 250px;
   padding: 20px;
-  text-align: center;
 }
 #feature-13 .container .bottom div img {
   background-color: white;
   padding: 10px;
   border-radius: 50%;
 }
-#feature-13 .container .bottom div .small-dark {
+#feature-13 .container .bottom div .small {
   margin: 30px 0 15px;
 }
 
 #feature-14 .left {
   margin: auto 0;
 }
-#feature-14 .left .bigger-white {
+#feature-14 .left .bigger {
   width: 392px;
   margin-top: 20px;
 }
-#feature-14 .right div {
-  align-items: unset;
+#feature-14 .right {
+  display: flex;
+  width: unset;
 }
 #feature-14 .bg-grey {
   display: block;
@@ -1244,7 +1183,7 @@ a {
   margin-bottom: 30px;
   margin-left: 30px;
 }
-#feature-14 .bg-grey .small-white {
+#feature-14 .bg-grey .small {
   margin: 50px 0 15px;
 }
 
@@ -1280,7 +1219,7 @@ a {
 }
 
 /*======== About 2 ========*/
-#about-2 .right p {
+#about-2 .right h3 {
   margin-bottom: 70px;
 }
 
@@ -1333,12 +1272,14 @@ a {
   margin: 30px 0 115px;
 }
 #about-4 .mt-30 {
+  margin-top: 30px;
+}
+#about-4 .mt-30 a {
   display: flex;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
   gap: 35px;
-  margin-top: 30px;
 }
 
 /*======== About 5 ========*/
@@ -1363,22 +1304,19 @@ a {
   flex-direction: column;
   gap: 30px;
 }
-#about-5 section .absolute button {
-  background: white;
+#about-5 section .absolute a {
+  background: #F8F8F8;
   border: none;
   border-bottom: 2px solid black;
   padding-bottom: 5px;
 }
-#about-5 section .absolute button span {
+#about-5 section .absolute a span {
   margin-right: 20px;
 }
 
 /*======== About 6 ========*/
 #about-6 .top {
   gap: 100px;
-}
-#about-6 .top .left {
-  margin: auto;
 }
 #about-6 .dark {
   width: 392px;
@@ -1392,15 +1330,11 @@ a {
   border: none;
 }
 #about-6 .bottom {
-  display: flex;
-  align-items: unset;
-  justify-content: space-between;
-  flex-direction: unset;
   gap: 100px;
   margin-top: 100px;
 }
 #about-6 .m-auto {
-  margin: auto 0;
+  margin: auto;
 }
 
 /*======== About 7 ========*/
@@ -1457,7 +1391,7 @@ a {
   width: 460px;
   margin: 25px 0 40px;
 }
-#about-9 .flex-g20 {
+#about-9 a {
   display: flex;
   align-items: center;
   justify-content: unset;
