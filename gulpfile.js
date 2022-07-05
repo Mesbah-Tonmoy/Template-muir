@@ -5,22 +5,22 @@ const sass = require('gulp-sass')(require('sass'));
 var autoprefixer = require('gulp-autoprefixer');
 var nunjucksRender = require('gulp-nunjucks-render');
 // var htmlbeautify = require('gulp-html-beautify');
-// // var gulpimage  = require('gulp-image');
-// var browserSync = require('browser-sync').create();
+// var gulpimage  = require('gulp-image');
+var browserSync = require('browser-sync').create();
 
 // // Browser Sync
-// gulp.task('browserSync', function() {
-//     browserSync.init({
-//         server: "public/"
-//     });
-//     gulp.watch("src/sass/**/*.scss", gulp.series('sass'));
-//     gulp.watch("src/html/**/*.html", gulp.series('nunjucksRender'));
-//     gulp.watch("src/js/**/*", gulp.series('copy-js'));
-//     gulp.watch("src/css/**/*", gulp.series('copy-css'));
-//     gulp.watch("src/sass/**/*", gulp.series('copy-scss'));
-//     gulp.watch("src/media/**/*", gulp.series('copy-img'));
-//     //gulp.watch("app/media/**/*", gulp.series('gulpimage'));
-// });
+gulp.task('browserSync', function() {
+    browserSync.init({
+        server: "public/"
+    });
+    gulp.watch("src/sass/**/*.scss", gulp.series('sass'));
+    gulp.watch("src/html/**/*.html", gulp.series('nunjucksRender'));
+    // gulp.watch("src/js/**/*", gulp.series('copy-js'));
+    // gulp.watch("src/css/**/*", gulp.series('copy-css'));
+    gulp.watch("src/sass/**/*", gulp.series('copy-scss'));
+    gulp.watch("src/media/**/*", gulp.series('copy-img'));
+    //gulp.watch("app/media/**/*", gulp.series('gulpimage'));
+});
 
 // Compile Sass File
 gulp.task('sass', function () {
@@ -30,7 +30,8 @@ gulp.task('sass', function () {
     // .pipe(cssbeautify({
     //     indent: '    ',
     // }))
-    .pipe(gulp.dest('public/assets/css'));
+    .pipe(gulp.dest('public/assets/css'))
+    .pipe(browserSync.stream());
 });
 
 // NunjucjsRender
@@ -39,7 +40,8 @@ gulp.task('nunjucksRender', function () {
     .pipe(nunjucksRender({
       path: ['src/html/template-parts/']
     }))
-    .pipe(gulp.dest('public/'));
+    .pipe(gulp.dest('public/'))
+    .pipe(browserSync.stream());
 });
 
 // Gulp Image //
@@ -69,15 +71,17 @@ gulp.task('nunjucksRender', function () {
 // copy Sass
 gulp.task('copy-scss', function () {
     return gulp.src('src/sass/**/*')
-        .pipe(gulp.dest('public/assets/sass'));
+        .pipe(gulp.dest('public/assets/sass'))
+        .pipe(browserSync.stream());
 });
 
 // copy Images
 gulp.task('copy-img', function () {
     return gulp.src('src/media/**/*')
-        .pipe(gulp.dest('public/assets/media'));
+        .pipe(gulp.dest('public/assets/media'))
+        .pipe(browserSync.stream());
 });
 
 
 //Defult Task
-gulp.task('default', gulp.series('sass', 'nunjucksRender', 'copy-scss', 'copy-img'));
+gulp.task('default', gulp.parallel('browserSync'));
