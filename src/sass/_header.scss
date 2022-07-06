@@ -13,12 +13,11 @@
 
 .header-content{
     position: relative;
-    color: #191919;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    font-size: 14px;
-    line-height: 22px;
+    color: #191919;
+    @include font(14px, 22px);
     h1{
         width: 558px;
         @include font(70px, 100px);
@@ -28,12 +27,7 @@
         width: 490px;
     }
     .button{
-        width: 195px;
-        height: 50px;
-        background: #191919;
-        border-radius: 3px;
-        color: white;
-        @include flex-box(center, center);
+        @include main-btn;
     }
     #paging{
         display: flex;
@@ -89,16 +83,6 @@
             background-color: #191919;
         }
     }
-}
-@mixin round-btn{
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    background: white;
-    color: #191919;
-    font-size: 20px;
-    border: none;
 }
 
 /*=============header-1============*/
@@ -226,8 +210,6 @@
             top: 48%;
         }
         .third-section{
-            display: flex;
-            justify-content: space-between;
             margin-top: 40px;
 
             .left{
@@ -286,7 +268,6 @@
             margin: 150px 0 300px;
             .round-btn{
                 @include round-btn;
-                @include flex-box(center, center);
                 position: unset;
             }
         }
@@ -395,7 +376,6 @@
         }
         .round-btn{
             @include round-btn;
-            @include flex-box(center, center);
             left: 30%;
         }
     }

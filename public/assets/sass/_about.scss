@@ -1,20 +1,13 @@
-@mixin round-btn($top: unset, $left: unset, $bg: white, $color:#191919){
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    background: $bg;
-    color: $color;
-    font-size: 20px;
-    border: 1px solid white;
-    top: $top;
-    left: $left;
+.menu-area{
+    background-color: #F8F8F8;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+    z-index: 22;
+    .container{
+        padding: 0;
+    }
 }
-.c-flex{
-    display: flex;
-    justify-content: space-between;
-}
-
 /*======== About 1 ========*/
 #about-1{
     .top{
@@ -23,8 +16,9 @@
     .bottom{
         position: relative;
         .round-btn{
-            @include round-btn(50%, 50%);
-            @include flex-box(center, center);
+            @include round-btn;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
         }
     }
@@ -51,9 +45,9 @@
         margin-top: 60px;
         .round-btn{
             @include round-btn;
-            @include flex-box(center, center);
             position: unset;
             background: #2F2F2F;
+            border: 1px solid white;
         }
         p{
             width: 362px;
@@ -124,11 +118,7 @@
         margin: 20px 0 40px;
     }
     .orange-btn{
-        background: #FF5C00;
-        color: white;
-        border-radius: 3px;
-        padding: 14px 50px;
-        border: none;
+        @include main-btn(195px, 50px, #FF5C00);
     }
     .bottom{
         gap: 100px;

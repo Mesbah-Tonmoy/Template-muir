@@ -34,17 +34,9 @@ a{
     list-style: none;
 }
 #download{
-    display: flex;
-    background-color: white;
-    align-items: center;
-    padding: 14px 37px;
+    @include main-btn(166px, 50px, white, #191919);
     gap: 10px;
-    width: 166px;
-    height: 50px;
-
-    /* Fill / Black */
     border: 1px solid #191919;
-    border-radius: 3px;
 }
 .mainmenu{
     display: flex;
@@ -57,12 +49,10 @@ a{
 /*====================*/
 #menu-1{
     #download-1{
-        width: 97px;
-        height: 82px;
-        background-color: #191919;
-        color: white;
+        @include main-btn(97px, 82px);
         margin-top: -27px;
         padding-top: 25px;
+        border-radius: 0;
     }
     .mainmenu{
         width: 50%;

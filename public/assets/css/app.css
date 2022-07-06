@@ -71,6 +71,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.c-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   margin-top: 11px;
 }
@@ -98,16 +103,16 @@ a {
 }
 
 #download {
-  display: flex;
-  background-color: white;
-  align-items: center;
-  padding: 14px 37px;
-  gap: 10px;
   width: 166px;
   height: 50px;
-  /* Fill / Black */
-  border: 1px solid #191919;
+  background-color: white;
+  color: #191919;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #191919;
 }
 
 .mainmenu {
@@ -124,8 +129,13 @@ a {
   height: 82px;
   background-color: #191919;
   color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: -27px;
   padding-top: 25px;
+  border-radius: 0;
 }
 #menu-1 .mainmenu {
   width: 50%;
@@ -233,10 +243,10 @@ a {
 
 .header-content {
   position: relative;
-  color: #191919;
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  color: #191919;
   font-size: 14px;
   line-height: 22px;
 }
@@ -252,14 +262,12 @@ a {
 .header-content .button {
   width: 195px;
   height: 50px;
-  background: #191919;
-  border-radius: 3px;
+  background-color: #191919;
   color: white;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: unset;
-  gap: unset;
 }
 .header-content #paging {
   display: flex;
@@ -449,13 +457,13 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 68%;
   top: 48%;
 }
 .header-style-5 .header-content .third-section {
-  display: flex;
-  justify-content: space-between;
   margin-top: 40px;
 }
 .header-style-5 .header-content .third-section .left .numbering {
@@ -535,7 +543,9 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 75%;
   top: 28%;
 }
@@ -580,12 +590,9 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: unset;
-  gap: unset;
   position: unset;
 }
 .header-style-7 .header-content .right .numbering {
@@ -608,7 +615,9 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 245px;
   right: 60px;
 }
@@ -635,7 +644,9 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: unset;
 }
 .header-style-8 .header-content .left h1 {
@@ -691,7 +702,9 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 82%;
 }
 
@@ -725,12 +738,9 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: unset;
-  gap: unset;
   left: 30%;
 }
 
@@ -796,7 +806,9 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fa3b00;
   color: white;
 }
@@ -875,7 +887,6 @@ a {
 #feature-3 .container h1 {
   font-size: 60px;
   line-height: 76px;
-  color: #191919;
   margin: 20px 0 80px;
   font-weight: 400;
   letter-spacing: -0.5px;
@@ -1187,9 +1198,16 @@ a {
   margin: 50px 0 15px;
 }
 
-.c-flex {
-  display: flex;
-  justify-content: space-between;
+.menu-area {
+  background-color: #F8F8F8;
+  padding: 0 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 22;
+}
+.menu-area .container {
+  padding: 0;
 }
 
 /*======== About 1 ========*/
@@ -1207,14 +1225,11 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: 1px solid white;
-  top: 50%;
-  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: unset;
-  gap: unset;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -1241,16 +1256,12 @@ a {
   background: white;
   color: #191919;
   font-size: 20px;
-  border: 1px solid white;
-  top: unset;
-  left: unset;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: unset;
-  gap: unset;
   position: unset;
   background: #2F2F2F;
+  border: 1px solid white;
 }
 #about-3 section p {
   width: 362px;
@@ -1323,11 +1334,14 @@ a {
   margin: 20px 0 40px;
 }
 #about-6 .orange-btn {
-  background: #FF5C00;
+  width: 195px;
+  height: 50px;
+  background-color: #FF5C00;
   color: white;
   border-radius: 3px;
-  padding: 14px 50px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #about-6 .bottom {
   gap: 100px;
