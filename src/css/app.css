@@ -908,6 +908,7 @@ a {
 #feature-3 .container .list div {
   padding: 30px 30px;
   border-left: 1px solid #E9E9E9;
+  cursor: pointer;
 }
 #feature-3 .container .list div .small {
   width: 650px;
@@ -916,12 +917,19 @@ a {
 #feature-3 .container .list img {
   margin: auto;
   margin-right: 0;
+  cursor: pointer;
 }
 #feature-3 .container .list:first-of-type {
   border-top: none;
 }
 #feature-3 .container .list:first-of-type img {
   margin: 38px 0 auto auto;
+}
+#feature-3 .container .hide {
+  display: none;
+}
+#feature-3 .container .show {
+  display: block;
 }
 
 /*============  Feature-4  ===========*/
@@ -1198,7 +1206,7 @@ a {
   margin: 50px 0 15px;
 }
 
-.about-area-menu {
+.menu-area {
   background-color: #F8F8F8;
   padding: 0 100px;
   position: -webkit-sticky;
@@ -1206,7 +1214,7 @@ a {
   top: 0;
   z-index: 22;
 }
-.about-area-menu .container {
+.menu-area .container {
   padding: 0;
 }
 

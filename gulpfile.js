@@ -15,7 +15,7 @@ gulp.task('browserSync', function() {
     });
     gulp.watch("src/sass/**/*.scss", gulp.series('sass'));
     gulp.watch("src/html/**/*.html", gulp.series('nunjucksRender'));
-    // gulp.watch("src/js/**/*", gulp.series('copy-js'));
+    gulp.watch("src/js/**/*", gulp.series('copy-js'));
     // gulp.watch("src/css/**/*", gulp.series('copy-css'));
     gulp.watch("src/sass/**/*", gulp.series('copy-scss'));
     gulp.watch("src/media/**/*", gulp.series('copy-img'));
@@ -55,11 +55,11 @@ gulp.task('nunjucksRender', function () {
 //});
 
 // copy JS
-// gulp.task('copy-js', function () {
-//     return gulp.src('src/js/**/*')
-//         .pipe(gulp.dest('public/assets/js'))
-//         .pipe(browserSync.stream());
-// });
+gulp.task('copy-js', function () {
+    return gulp.src('src/js/**/*')
+        .pipe(gulp.dest('public/assets/js'))
+        .pipe(browserSync.stream());
+});
 
 // // copy CSS
 // gulp.task('copy-css', function () {

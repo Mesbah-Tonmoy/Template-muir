@@ -76,6 +76,7 @@
             div{
                 padding: 30px 30px;
                 border-left: 1px solid #E9E9E9;
+                cursor: pointer;
                 .small{
                     width: 650px;
                     margin-top: 40px;
@@ -84,6 +85,7 @@
             img{
                 margin: auto;
                 margin-right: 0;
+                cursor: pointer;
             }
         }
         .list:first-of-type{
@@ -91,6 +93,12 @@
             img{
                 margin: 38px 0 auto auto;
             }
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
         }
     }
 }

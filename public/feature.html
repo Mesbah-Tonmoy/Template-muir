@@ -7,6 +7,7 @@
     <title>Muir | Feature All in One Page</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
         .header{
             margin-bottom: 150px;
@@ -134,10 +135,10 @@
             <div class="list">
                 <h1>1</h1>
                 <div>
-                    <h2 class="bigger dark">Download Anything Now A Days</h2>
-                    <p class="small grey">For business professionals caught between high OEM price and mediocre print and graphic output, there’s a solution: Business Express’s Eclipse line of compatible laser toner cartridges that meet or exceed OEM quality for 20% less than typical OEM price. While even brand name OEMs display “This cartridge may contain recycled components” on packaging, only Business Express.</p>
+                    <h2 onclick="accordion('p1', 'img1')" class="bigger dark">Download Anything Now A Days</h2>
+                    <p id="p1" class="small grey hide show">For business professionals caught between high OEM price and mediocre print and graphic output, there’s a solution: Business Express’s Eclipse line of compatible laser toner cartridges that meet or exceed OEM quality for 20% less than typical OEM price. While even brand name OEMs display “This cartridge may contain recycled components” on packaging, only Business Express.</p>
                 </div>
-                <img src="assets/media/Close.png" alt="close">
+                <img onclick="accordion('p1', 'img1')" id="img1" src="assets/media/Close.png" alt="close">
             </div>
             <div class="list">
                 <h1>2</h1>
@@ -523,6 +524,12 @@
 
 
 	</div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/app.js"></script>
     
 </body>
 </html>

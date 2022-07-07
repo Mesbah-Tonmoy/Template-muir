@@ -7,6 +7,7 @@
     <title>Muir | Header All in One Page</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
         .header{
             margin-bottom: 150px;
@@ -69,17 +70,28 @@
                                     <a href=""><img src="assets/media/Right 2.png"></a>
                                 </div>
                             </section>
-                            <section class="right">
-                                <img src="assets/media/Image1.png" alt="image of chair">
-                                <div id="paging">
-                                    <div>
-                                        <a href=""><img class="mr-20" src="assets/media/Left 2.png" alt="left arrow"></a>
-                                        <a href=""><img src="assets/media/Right 2.png" alt="right arrow"></a>
+                            <section class="right w-558">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="assets/media/Image1.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="assets/media/Image2.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="assets/media/Image3.png" alt="image of chair"></div>
                                     </div>
-                                    <div class="numbering">
-                                        <span>01</span>
-                                        <div id="line"></div>
-                                        <span>06</span>
+                                    <div id="paging">
+                                        <div>
+                                            <div class="swiper-button-next">
+                                            </div>
+                                            <div class="swiper-button-prev">
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                            <img class="mr-20" src="assets/media/Left 2.png" alt="left arrow">
+                                            <img src="assets/media/Right 2.png" alt="right arrow">
+                                        </div>
+                                        <div class="numbering">
+                                            <span>01</span>
+                                            <div id="line"></div>
+                                            <span>06</span>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -624,6 +636,12 @@
 
 
 	</div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/app.js"></script>
     
 </body>
 </html>
