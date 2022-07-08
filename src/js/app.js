@@ -7,12 +7,15 @@ var swiper = new Swiper(".mySwiper", {
       enabled: true,
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+      el: ".numbering",
+      type: 'custom',
+      renderCustom: function (swiper, current, total) {
+          return '0' + current + '<div id="line"></div>' + '0' + total; 
+      },
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
     },
 });
 

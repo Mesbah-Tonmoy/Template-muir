@@ -347,6 +347,15 @@ a {
   height: 1.5px;
   background-color: #191919;
 }
+.header-style-1 .header-content .right #paging .numbering {
+  width: unset;
+}
+.header-style-1 .header-content .right #paging div {
+  display: flex;
+}
+.header-style-1 .header-content .right #paging div img {
+  cursor: pointer;
+}
 .header-style-1 .header-content .right #paging .mr-20 {
   margin-right: 20px;
 }

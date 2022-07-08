@@ -108,6 +108,15 @@
                 justify-content: space-between;
 
                 @include numbering;
+                .numbering{
+                    width: unset;
+                }
+                div{
+                    display: flex;
+                    img{
+                        cursor: pointer;
+                    }
+                }
                 .mr-20{
                     margin-right: 20px;
                 }
