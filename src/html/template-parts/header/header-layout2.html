@@ -7,6 +7,10 @@
     <title>  Muir | Header 2 </title>
     <link rel="stylesheet" href="../../../css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="../../../css/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div id="main-wrapper" class="main-wrapper">		
@@ -41,20 +45,39 @@
 
                         <div class="header-content">
                             <section class="left">
-                                <h1>Thousands Now Adware Removal</h1>
-                                <p class="small middle-text">It is a good idea to think of your PC as an office. It stores files, programs, pictures. </p>
-                                <a href="" class="button"><span>Download</span><img src="../../../media/Download-white.png"> </a>
-                            </section>
-                            <section class="right">
-                                <img src="../../../media/image2.png" alt="image of chair">
-                                <div>
-                                    <div id="paging">
-                                        <a href="" id="prev">Prev</a>
-                                        <div id="small"></div>
-                                        <div id="big"></div>
-                                        <a href="" id="next">Next</a>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <h1>Thousands Now Adware Removal</h1>
+                                            <p class="small middle-text">It is a good idea to think of your PC as an office. It stores files, programs, pictures. </p>
+                                            <a href="" class="button"><span>Download</span><img src="../../../media/Download-white.png"> </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <h1>Bidding Directories</h1>
+                                            <p class="small middle-text">If you are in the market for a computer, there are a number of factors to consider.</p>
+                                            <a href="" class="button"><span>Download</span><img src="../../../media/Download-white.png"> </a>
+                                        </div>
                                     </div>
-                                    <img id="img4-2" src="../../../media/image2-2.png" alt="image of chair">
+                                </div>
+                            </section>
+                            <section class="right w-558">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image2.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image2-2.png" alt="image of chair"></div>
+                                    </div>
+                                    <div id="paging">
+                                        <a href="" id="prev" class="swiper-prev">Prev</a>
+                                        <!-- <div id="small"></div> -->
+                                        <div id="big"></div>
+                                        <a href="" id="next" class="swiper-next">Next</a>
+                                    </div>
+                                </div>
+                                <div class="swiper mySwiper" id="img2-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image2-2.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image2.png" alt="image of chair"></div>
+                                    </div>
                                 </div>
                             </section>
                         </div>
@@ -64,6 +87,13 @@
         </div>
 
 	</div>
+
+    <!-- Swiper JS -->
+    <script src="../../../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../../../js/app.js"></script>
     
 </body>
 </html>
+
