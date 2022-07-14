@@ -32,6 +32,10 @@
     <title>  Muir | Header 3 </title>
     <link rel="stylesheet" href="../../../css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="../../../css/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div id="main-wrapper" class="main-wrapper">		
@@ -77,13 +81,19 @@
                                 <p class="medium middle-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer</p>
                                 <a href="" class="button" id="l_more">Learn More</a>
                             </section>
-                            <section class="right">
-                                <img src="../../../media/Image3.png" alt="image of chair">
-                                <div id="paging">
-                                    <a href="" id="prev">Prev</a>
-                                    <div id="small"></div>
-                                    <div id="big"></div>
-                                    <a href="" id="next">Next</a>
+                            <section class="right" style="width: 705px;">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="../../../media/Image3.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="../../../media/Image2.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="../../../media/Image1.png" alt="image of chair"></div>
+                                    </div>
+                                    <div id="paging">
+                                        <a href="" id="prev" class="swiper-prev">Prev</a>
+                                        <!-- <div id="small"></div> -->
+                                        <div id="big"></div>
+                                        <a href="" id="next"  class="swiper-next">Next</a>
+                                    </div>
                                 </div>
                             </section>
                         </div>
@@ -93,6 +103,12 @@
         </div>
 
 	</div>
+
+    <!-- Swiper JS -->
+    <script src="../../../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../../../js/app.js"></script>
     
 </body>
 </html>

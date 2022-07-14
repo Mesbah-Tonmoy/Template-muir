@@ -7,6 +7,7 @@
     <title>  Muir | Header 7 </title>
     <link rel="stylesheet" href="../../../css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../../css/swiper-bundle.min.css">
 </head>
 <body>
     <div id="main-wrapper" class="main-wrapper">		
@@ -45,11 +46,21 @@
                                 <p class="medium middle-text">If you are in the market for a computer, there are a number of factors to consider.</p>
                                 <a href="" class="round-btn"><img src="../../../media/Play.png"><span>play</span></a>
                             </section>
-                            <section class="right">
-                                <img src="../../../media/image7.png" alt="image of chair">
-                                <img id="img7-2" src="../../../media/image7-2.png" alt="image of chair">
-                                <a href="" class="round-btn">Next</a>
-                                <div class="numbering">
+                            <section class="right w-558">
+                                <div class="swiper mySwiper7">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image7.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image7.png" alt="image of chair"></div>
+                                    </div>
+                                    <a href="" class="round-btn swiper-next">Next</a>
+                                </div>
+                                <div class="swiper mySwiper7" id="img7-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image7-2.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image7-2.png" alt="image of chair"></div>
+                                    </div>
+                                </div>
+                                <div class="numbering" id="numbering7">
                                     <span>01</span>
                                     <div id="line"></div>
                                     <span>09</span>
@@ -62,6 +73,12 @@
         </div>
 
 	</div>
+
+    <!-- Swiper JS -->
+    <script src="../../../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../../../js/app.js"></script>
     
 </body>
 </html>

@@ -7,6 +7,10 @@
     <title>  Muir | Header </title>
     <link rel="stylesheet" href="../../../css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="../../../css/swiper-bundle.min.css"
+    />
     <style>
         .header{
             margin-bottom: 150px;
@@ -35,18 +39,19 @@
                                     <div  class="mainmenu">
                                         <ul id="onepagenav">
                                             <li class="nav-item">
-                                                <a class="scroll active" href="#main-wrapper">Features</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="scroll" href="#pricing">Pricing</a> 
+                                                <a class="scroll active" href="header.html">Header</a> 
                                             </li> 
+                                            
+                                            <li class="nav-item">
+                                                <a class="scroll" href="feature.html">Features</a>
+                                            </li>
                         
                                             <li class="nav-item">
-                                                <a class="scroll" href="#about">About</a>
-                                            </li>            
+                                                <a class="scroll" href="about.html">About</a>
+                                            </li>               
                                         </ul>
                         
-                                        <button id="download-1"><p id="text" style="margin-top: 23px;">Download</p></button>
+                                        <a href="" id="download-1"><p id="text">Download</p></a>
                                     </div>
                                 </div>
                             </nav>
@@ -56,23 +61,26 @@
                         <div class="header-content">
                             <section class="left">
                                 <h1>Live Poker How To Win Tournament Games</h1>
-                                <p class="middle-text">Sony laptops are among the most well known laptops on today’s market. Sony is a name that over time has established itself as creating a solid product</p>
+                                <p class="big middle-text">Sony laptops are among the most well known laptops on today’s market. Sony is a name that over time has established itself as creating a solid product</p>
                                 <div class="inputMail">
                                     <input type="email" name="email" placeholder="Your email">
                                     <a href=""><img src="../../../media/Right 2.png"></a>
                                 </div>
                             </section>
-                            <section class="right">
-                                <img src="../../../media/Image1.png" alt="image of chair">
-                                <div id="paging">
-                                    <div>
-                                        <img src="../../../media/Left 2.png" alt="left arrow" style="margin-right: 20px;">
-                                        <img src="../../../media/Right 2.png" alt="right arrow">
+                            <section class="right w-558">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="../../../media/Image1.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="../../../media/Image2.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="../../../media/Image3.png" alt="image of chair"></div>
                                     </div>
-                                    <div class="numbering">
-                                        <span>01</span>
-                                        <div id="line"></div>
-                                        <span>06</span>
+                                    <div id="paging">
+                                        <div>
+                                            <img class="swiper-prev mr-20" src="../../../media/Left 2.png" alt="left arrow">
+                                            <img class="swiper-next" src="../../../media/Right 2.png" alt="right arrow">
+                                        </div>
+                                        <div class="numbering">
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -113,27 +121,46 @@
 
                         <div class="header-content">
                             <section class="left">
-                                <h1>Thousands Now Adware Removal</h1>
-                                <p class="middle-text">It is a good idea to think of your PC as an office. It stores files, programs, pictures. </p>
-                                <button id="download-black"><span>Download</span><img src="../../../media/Download-white.png"> </button>
-                            </section>
-                            <section class="right">
-                                <img src="../../../media/image2.png" alt="image of chair">
-                                <div>
-                                    <div id="paging">
-                                        <span id="prev">Prev</span>
-                                        <div id="small"></div>
-                                        <div id="big"></div>
-                                        <span id="next">Next</span>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <h1>Thousands Now Adware Removal</h1>
+                                            <p class="small middle-text">It is a good idea to think of your PC as an office. It stores files, programs, pictures. </p>
+                                            <a href="" class="button"><span>Download</span><img src="../../../media/Download-white.png"> </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <h1>Bidding Directories</h1>
+                                            <p class="small middle-text">If you are in the market for a computer, there are a number of factors to consider.</p>
+                                            <a href="" class="button"><span>Download</span><img src="../../../media/Download-white.png"> </a>
+                                        </div>
                                     </div>
-                                    <img id="img4-2" src="../../../media/image2-2.png" alt="image of chair">
+                                </div>
+                            </section>
+                            <section class="right w-558">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image2.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image2-2.png" alt="image of chair"></div>
+                                    </div>
+                                    <div id="paging">
+                                        <a href="" id="prev" class="swiper-prev">Prev</a>
+                                        <!-- <div id="small"></div> -->
+                                        <div id="big"></div>
+                                        <a href="" id="next" class="swiper-next">Next</a>
+                                    </div>
+                                </div>
+                                <div class="swiper mySwiper" id="img2-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image2-2.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image2.png" alt="image of chair"></div>
+                                    </div>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </div>
             </div> 
-        </div>	
+        </div>
 
         <!--=        Header 3 Start         =-->
         <!--=====================================-->
@@ -154,18 +181,18 @@
                                     <div  class="mainmenu">
                                         <ul id="onepagenav">
                                             <li class="nav-item">
-                                                <a class="scroll active" href="#main-wrapper">Features</a>
+                                                <a class="scroll active" href="../feature/feature.html">Features</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="scroll" href="#pricing">Pricing</a> 
+                                                <a class="scroll" href="header.html">Header</a> 
                                             </li> 
                         
                                             <li class="nav-item">
-                                                <a class="scroll" href="#about">About</a>
-                                            </li>            
+                                                <a class="scroll" href="../about/about.html">About</a>
+                                            </li>                        
                                         </ul>
                         
-                                        <button id="download"><p>Download</p><img src="../../../media/Download-black.png"> </button>
+                                        <a href="" id="download"><p>Download</p><img src="../../../media/Download-black.png"> </a>
                                     </div>
                                 </div>
                             </nav>
@@ -174,23 +201,29 @@
                         <div class="header-content">
                             <section class="left">
                                 <h1>Video Games Playing With Imagination</h1>
-                                <p class="middle-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer</p>
-                                <button id="l_more">Learn More</button>
+                                <p class="medium middle-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer</p>
+                                <a href="" class="button" id="l_more">Learn More</a>
                             </section>
-                            <section class="right">
-                                <img src="../../../media/Image3.png" alt="image of chair">
-                                <div id="paging">
-                                    <span id="prev">Prev</span>
-                                    <div id="small"></div>
-                                    <div id="big"></div>
-                                    <span id="next">Next</span>
+                            <section class="right" style="width: 705px;">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="../../../media/Image3.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="../../../media/Image2.png" alt="image of chair"></div>
+                                      <div class="swiper-slide"><img src="../../../media/Image1.png" alt="image of chair"></div>
+                                    </div>
+                                    <div id="paging">
+                                        <a href="" id="prev" class="swiper-prev">Prev</a>
+                                        <!-- <div id="small"></div> -->
+                                        <div id="big"></div>
+                                        <a href="" id="next"  class="swiper-next">Next</a>
+                                    </div>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </div>
             </div> 
-        </div>		
+        </div>	
 
         <!--=        Header 4 Start         =-->
         <!--=====================================-->
@@ -288,20 +321,24 @@
 
                         <div class="header-content">
                             <h1>Restorative Dentist New York</h1>
-                            <img id="img5" src="../../../media/Image5.png" alt="image 5">
-                            <button class="round-btn">Drag</button>
-                            <div class="third-section">
+                            <div class="swiper mySwiperAuto">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
+                                  <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
+                                  <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
+                                </div>
+                            </div>
+                            <a href="" class="round-btn">Drag</a>
+                            <div class="third-section c-flex">
                                 <section class="left">
-                                    
-                                    <div class="numbering">
+                                    <div class="numbering" id="numbering5">
                                         <span>01</span>
                                         <div id="line"></div>
                                         <span>06</span>
                                     </div>
-                                
                                 </section>
                                 <section class="right">
-                                    <p>The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools to help prevent getting infected.</p>
+                                    <p class="small">The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools to help prevent getting infected.</p>
                                     <div class="inputMail">
                                         <input type="email" name="email" placeholder="Email">
                                         <a href="">Get started
@@ -313,7 +350,7 @@
                     </div>
                 </div>
             </div> 
-        </div>		
+        </div>	
 
         <!--=        Header 6 Start         =-->
         <!--=====================================-->
@@ -362,7 +399,7 @@
                                 <section class="left">
                                     <h1>Kook 2 Directory Add Url Free</h1>
                                     
-                                    <div class="numbering">
+                                    <div class="numbering" id="numbering6">
                                         <span>01</span>
                                         <div id="line"></div>
                                         <span>06</span>
@@ -370,10 +407,16 @@
                                 
                                 </section>
                                 <section class="right">
-                                    <img id="img6" src="../../../media/Image6.png" alt="image 6">
-                                    <button class="round-btn"><img src="../../../media/Right long.png"></button>
+                                    <div class="swiper mySwiper6">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img id="img6" src="../../../media/Image6.png" alt="image 6"></div>
+                                            <div class="swiper-slide"><img src="../../../media/Image6.png" alt="image 6"></div>
+                                            <div class="swiper-slide"><img src="../../../media/Image6.png" alt="image 6"></div>
+                                        </div>
+                                        <a href="" class="round-btn swiper-next"><img src="../../../media/Right long.png"></a>
+                                    </div>
                                     <div class="m-l-a">
-                                        <p>Stu Unger is one of the biggest superstars to have immerged from the professional poker world.</p>
+                                        <p class="medium">Stu Unger is one of the biggest superstars to have immerged from the professional poker world.</p>
                                         <div class="inputMail">
                                             <input type="email" name="email" placeholder="Email">
                                             <a href=""><img src="../../../media/Right 2.png"></a>
@@ -384,7 +427,7 @@
                     </div>
                 </div>
             </div> 
-        </div>	
+        </div>
     
         <!--=        Header 7 Start         =-->
         <!--=====================================-->
@@ -418,14 +461,24 @@
                         <div class="header-content">
                             <section class="left">
                                 <h1>Bidding Directories</h1>
-                                <p class="middle-text">If you are in the market for a computer, there are a number of factors to consider.</p>
-                                <button class="round-btn"><img src="../../../media/Play.png"><span>play</span></button>
+                                <p class="medium middle-text">If you are in the market for a computer, there are a number of factors to consider.</p>
+                                <a href="" class="round-btn"><img src="../../../media/Play.png"><span>play</span></a>
                             </section>
-                            <section class="right">
-                                <img src="../../../media/image7.png" alt="image of chair">
-                                <img id="img7-2" src="../../../media/image7-2.png" alt="image of chair">
-                                <button class="round-btn">Next</button>
-                                <div class="numbering">
+                            <section class="right w-558">
+                                <div class="swiper mySwiper7">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image7.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image7.png" alt="image of chair"></div>
+                                    </div>
+                                    <a href="" class="round-btn swiper-next">Next</a>
+                                </div>
+                                <div class="swiper mySwiper7" id="img7-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/image7-2.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/image7-2.png" alt="image of chair"></div>
+                                    </div>
+                                </div>
+                                <div class="numbering" id="numbering7">
                                     <span>01</span>
                                     <div id="line"></div>
                                     <span>09</span>
@@ -468,14 +521,19 @@
                         <div class="header-content">
                             <section class="left">
                                 <h1>Understanding Operating System</h1>
-                                <p class="middle-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices.</p>
-                                <button class="round-btn">Start</button>
+                                <p class="small grey middle-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices.</p>
+                                <a href="" class="round-btn">Start</a>
                             </section>
-                            <section class="right">
-                                <img src="../../../media/Image8.png" alt="image of chair">
-                                <div>
-                                    <img src="../../../media/Left 2.png" alt="left arrow" style="margin-right: 30px;">
-                                    <img src="../../../media/Right 2.png" alt="right arrow">
+                            <section class="right w-558">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/Image8.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/Image8.png" alt="image of chair"></div>
+                                    </div>
+                                    <div class="navigation">
+                                        <a href="" class="swiper-prev"><img class="mr-30" src="../../../media/Left 2.png" alt="left arrow"></a>
+                                        <a href="" class="swiper-next"><img src="../../../media/Right 2.png" alt="right arrow"></a>
+                                    </div>
                                 </div>
                             </section>
                         </div>
@@ -515,7 +573,7 @@
                         <div class="header-content">
                             <h1>Using Banner Stands To Increase Trade</h1>
                             <img id="select" src="../../../media/Select.png" alt="">
-                            <button class="round-btn">Drag</button>
+                            <a href="" class="round-btn">Drag</a>
                             <img src="../../../media/Image9.png" alt="image of chair">
                             
                         </div>
@@ -555,8 +613,8 @@
                         <div class="header-content">
                             <h1>Not All Blank Cassettes Are Created Equal</h1>
                             <img id="select" src="../../../media/Select.png" alt="">
-                            <button class="round-btn"><img src="../../../media/Play.png"><span>play</span></button>
-                            <p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that over time has established itself as creating a solid product with a stellar reputation.</p>
+                            <a href="" class="round-btn"><img src="../../../media/Play.png"><span>play</span></a>
+                            <p class="big">Sony laptops are among the most well known laptops on today’s market. Sony is a name that over time has established itself as creating a solid product with a stellar reputation.</p>
                             
                         </div>
                     </div>
@@ -594,20 +652,25 @@
 
                         <div class="header-content">
                             <section class="left">
-                                <img src="../../../media/Image11.png" alt="image of chair">
-                                <div id="paging">
-                                    <span id="prev">Prev</span>
-                                    <div id="small"></div>
-                                    <div id="big"></div>
-                                    <span id="next">Next</span>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../../media/Image11.png" alt="image of chair"></div>
+                                        <div class="swiper-slide"><img src="../../../media/Image11.png" alt="image of chair"></div>
+                                    </div>
+                                    <div id="paging">
+                                        <a href="" id="prev" class="swiper-prev">Prev</a>
+                                        <!-- <div id="small"></div> -->
+                                        <div id="big"></div>
+                                        <a href="" id="next" class="swiper-next">Next</a>
+                                    </div>
                                 </div>
                             </section>
                             <section class="right">
                                 <h1>Help Finding Information</h1>
                                 <img src="../../../media/Select.png" alt="">
                                 <div>
-                                    <p class="middle-text">HDMI, or high definition multimedia interface, is a type of audio and viedo interface that is used for the transmission of uncompressed digital streams.</p>
-                                    <button class="round-btn">Start</button>
+                                    <p class="medium middle-text">HDMI, or high definition multimedia interface, is a type of audio and viedo interface that is used for the transmission of uncompressed digital streams.</p>
+                                    <a href="" class="round-btn">Start</a>
                                 </div>
                             </section>
                         </div>
@@ -617,6 +680,12 @@
         </div>
 
 	</div>
+
+    <!-- Swiper JS -->
+    <script src="../../../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../../../js/app.js"></script>
     
 </body>
 </html>

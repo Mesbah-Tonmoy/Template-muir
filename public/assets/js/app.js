@@ -1,6 +1,7 @@
 /*              Swiper              */
 /*==================================*/
 var swiper = new Swiper(".mySwiper", {
+    loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
     keyboard: {
@@ -17,6 +18,68 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-next",
       prevEl: ".swiper-prev",
     },
+    scrollbar: {
+      el: "#big",
+      hide: false,
+    },
+});
+
+var swiper = new Swiper(".mySwiperAuto", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: "#numbering5",
+    type: 'custom',
+    renderCustom: function (swiper, current, total) {
+        return '0' + current + '<div id="line"></div>' + '0' + total; 
+    },
+  },
+});
+
+var swiper = new Swiper(".mySwiper6", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: "#numbering6",
+    type: 'custom',
+    renderCustom: function (swiper, current, total) {
+        return '0' + current + '<div id="line"></div>' + '0' + total; 
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+  },
+});
+
+var swiper = new Swiper(".mySwiper7", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: "#numbering7",
+    type: 'custom',
+    renderCustom: function (swiper, current, total) {
+        return '0' + current + '<div id="line"></div>' + '0' + total; 
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+  },
 });
 
 /*            Accordion             */

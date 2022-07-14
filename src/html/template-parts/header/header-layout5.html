@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  Muir | Header 5 </title>
     <link rel="stylesheet" href="../../../css/app.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <link
+      rel="stylesheet"
+      href="../../../css/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div id="main-wrapper" class="main-wrapper">		
@@ -41,11 +45,17 @@
 
                         <div class="header-content">
                             <h1>Restorative Dentist New York</h1>
-                            <img id="img5" src="../../../media/Image5.png" alt="image 5">
+                            <div class="swiper mySwiperAuto">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
+                                  <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
+                                  <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
+                                </div>
+                            </div>
                             <a href="" class="round-btn">Drag</a>
                             <div class="third-section c-flex">
                                 <section class="left">
-                                    <div class="numbering">
+                                    <div class="numbering" id="numbering">
                                         <span>01</span>
                                         <div id="line"></div>
                                         <span>06</span>
@@ -67,6 +77,12 @@
         </div>
 
 	</div>
+
+    <!-- Swiper JS -->
+    <script src="../../../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../../../js/app.js"></script>
     
 </body>
 </html>
