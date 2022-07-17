@@ -18,23 +18,25 @@
             <section class="left">
                 <h3 class="big grey">Why Use External It Support</h3>
                 <ul>
-                    <li><p class="small">01</p><a href=""><p class="big">Hero</p></a><a href="" class="ml-auto"><img src="../../../media/Right 2.png"></a></li>
-                    <li><p class="small grey">02</p><a href=""><p class="big grey">Features</p></a></li>
-                    <li><p class="small grey">03</p><a href=""><p class="big grey">Call to action</p></a></li>
-                    <li><p class="small grey">04</p><a href=""><p class="big grey">Pricing</p></a></li>
-                    <li><p class="small grey">05</p><a href=""><p class="big grey">Teams</p></a></li>
+                    <li id="li_1" class="active"><p class="small">01</p><a onclick="accordion2('li_1', 'All hero blocks', 'feature-1.png')"><p class="big">Hero</p></a><img class="ml-auto" src="../../../media/Right 2.png"></li>
+                    <li id="li_2"><p class="small">02</p><a onclick="accordion2('li_2', 'All features blocks', 'feature-4.png')"><p class="big">Features</p></a><img class="ml-auto" src="../../../media/Right 2.png"></li>
+                    <li id="li_3"><p class="small">03</p><a onclick="accordion2('li_3', 'All call blocks', 'About/AI-2.png')"><p class="big">Call to action</p></a><img class="ml-auto" src="../../../media/Right 2.png"></li>
+                    <li id="li_4"><p class="small">04</p><a onclick="accordion2('li_4', 'All pricing blocks', 'feature-1.png')"><p class="big">Pricing</p></a><img class="ml-auto" src="../../../media/Right 2.png"></li>
+                    <li id="li_5"><p class="small">05</p><a onclick="accordion2('li_5', 'All teams blocks', 'feature-1.png')"><p class="big">Teams</p></a><img class="ml-auto" src="../../../media/Right 2.png"></li>
                 </ul>
             </section>
             <section class="right">
                 <h3 class="big">Computers have become ubiquitous in almost every facet of our lives.</h3>
-                <img src="../../../media/feature-1.png">
+                <img id="acc_img" src="../../../media/feature-1.png">
                 <a href="" class="mt-30">
-                    <p class="medium">All hero blocks</p>
+                    <p id="acc_p" class="medium">All hero blocks</p>
                     <img src="../../../media/Right long.png">
                 </a>
             </section>
         </div>
     </div>
+
+    <script src="../../../js/app.js"></script>
     
 </body>
 </html>

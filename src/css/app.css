@@ -885,6 +885,18 @@ a {
 }
 
 /*============  Feature-1  ===========*/
+#feature-1 li a, #feature-1 li img {
+  cursor: pointer;
+}
+#feature-1 li:not([class=active]) {
+  color: #A1A1A1;
+}
+#feature-1 li:not([class=active]) img {
+  display: none;
+}
+#feature-1 li:not([class=active]) a {
+  color: #A1A1A1;
+}
 #feature-1 .right .big {
   margin-bottom: 100px;
 }
@@ -959,12 +971,6 @@ a {
 #feature-3 .container .list:first-of-type img {
   margin: 38px 0 auto auto;
 }
-#feature-3 .container .hide {
-  display: none;
-}
-#feature-3 .container .show {
-  display: block;
-}
 
 /*============  Feature-4  ===========*/
 #feature-4 .container .right .mb-100 {
@@ -973,11 +979,16 @@ a {
 #feature-4 .container .right .medium {
   width: 490px;
 }
-#feature-4 .container .right .m-40-0-60 {
-  margin: 40px 0 60px;
+#feature-4 .container .right .show {
+  margin-top: 40px;
+}
+#feature-4 .container .right #fi-4 {
+  margin: 60px 0 40px;
+}
+#feature-4 .container .right h3, #feature-4 .container .right h4, #feature-4 .container .right img:not([id=fi-4]) {
+  cursor: pointer;
 }
 #feature-4 .container .right ul {
-  margin-top: 40px;
   list-style: none;
 }
 #feature-4 .container .right ul li {

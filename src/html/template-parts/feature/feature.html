@@ -20,7 +20,7 @@
                         </li> 
     
                         <li class="nav-item">
-                            <a class="scroll active" href="about.html">About</a>
+                            <a class="scroll" href="about.html">About</a>
                         </li>            
                     </ul>
     
@@ -41,18 +41,18 @@
             <section class="left">
                 <h3 class="big grey">Why Use External It Support</h3>
                 <ul>
-                    <li><p class="small">01</p><a href=""><p class="big">Hero</p></a><a href="" class="ml-auto"><img src="assets/media/Right 2.png"></a></li>
-                    <li><p class="small grey">02</p><a href=""><p class="big grey">Features</p></a></li>
-                    <li><p class="small grey">03</p><a href=""><p class="big grey">Call to action</p></a></li>
-                    <li><p class="small grey">04</p><a href=""><p class="big grey">Pricing</p></a></li>
-                    <li><p class="small grey">05</p><a href=""><p class="big grey">Teams</p></a></li>
+                    <li id="li_1" class="active"><p class="small">01</p><a onclick="accordion2('li_1', 'All hero blocks', 'feature-1.png')"><p class="big">Hero</p></a><img class="ml-auto" src="assets/media/Right 2.png"></li>
+                    <li id="li_2"><p class="small">02</p><a onclick="accordion2('li_2', 'All features blocks', 'feature-4.png')"><p class="big">Features</p></a><img class="ml-auto" src="assets/media/Right 2.png"></li>
+                    <li id="li_3"><p class="small">03</p><a onclick="accordion2('li_3', 'All call blocks', 'About/AI-2.png')"><p class="big">Call to action</p></a><img class="ml-auto" src="assets/media/Right 2.png"></li>
+                    <li id="li_4"><p class="small">04</p><a onclick="accordion2('li_4', 'All pricing blocks', 'feature-1.png')"><p class="big">Pricing</p></a><img class="ml-auto" src="assets/media/Right 2.png"></li>
+                    <li id="li_5"><p class="small">05</p><a onclick="accordion2('li_5', 'All teams blocks', 'feature-1.png')"><p class="big">Teams</p></a><img class="ml-auto" src="assets/media/Right 2.png"></li>
                 </ul>
             </section>
             <section class="right">
                 <h3 class="big">Computers have become ubiquitous in almost every facet of our lives.</h3>
-                <img src="assets/media/feature-1.png">
+                <img id="acc_img" src="assets/media/feature-1.png">
                 <a href="" class="mt-30">
-                    <p class="medium">All hero blocks</p>
+                    <p id="acc_p" class="medium">All hero blocks</p>
                     <img src="assets/media/Right long.png">
                 </a>
             </section>
@@ -111,7 +111,7 @@
                 <h1>1</h1>
                 <div>
                     <h2 onclick="accordion('p1', 'img1')" class="bigger dark">Download Anything Now A Days</h2>
-                    <p id="p1" class="small grey hide show">For business professionals caught between high OEM price and mediocre print and graphic output, there’s a solution: Business Express’s Eclipse line of compatible laser toner cartridges that meet or exceed OEM quality for 20% less than typical OEM price. While even brand name OEMs display “This cartridge may contain recycled components” on packaging, only Business Express.</p>
+                    <p id="p1" class="small grey show">For business professionals caught between high OEM price and mediocre print and graphic output, there’s a solution: Business Express’s Eclipse line of compatible laser toner cartridges that meet or exceed OEM quality for 20% less than typical OEM price. While even brand name OEMs display “This cartridge may contain recycled components” on packaging, only Business Express.</p>
                 </div>
                 <img onclick="accordion('p1', 'img1')" id="img1" src="assets/media/Close.png" alt="close">
             </div>
@@ -151,11 +151,11 @@
             <section class="right">
                 <h3 class="big mb-100">A Discount Toner Cartridge Is Better Than Ever And You Will Save 50 Or More</h3>
                 <div class="c-flex">
-                    <h3 class="big">Download Free Song For Ipod</h3>
-                    <img src="assets/media/Close.png" alt="close">
+                    <h3 onclick="accordion('p2', 'img2')" class="big">Download Free Song For Ipod</h3>
+                    <img onclick="accordion('p2', 'img2')" id="img2" src="assets/media/Close.png" alt="close">
                 </div>
-                <p class="medium grey m-40-0-60">Chances are unless you are very lucky you will go thru many different relationships before you find your special someone.</p>
-                <img src="assets/media/feature-4.png">
+                <p id="p2" class="medium grey show">Chances are unless you are very lucky you will go thru many different relationships before you find your special someone.</p>
+                <img id="fi-4" src="assets/media/feature-4.png">
                 <ul>
                     <li>
                         <h4 class="medium">The Best Answers</h4>
