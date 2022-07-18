@@ -95,6 +95,9 @@
                     width: 650px;
                     margin-top: 40px;
                 }
+                p:not([id= 'p1']){
+                    display: none;
+                }
             }
             img{
                 margin: auto;
@@ -121,7 +124,7 @@
             .medium{
                 width: 490px;
             }
-            .show{
+            #f4-p1{
                 margin-top: 40px;
             }
             #fi-4{
@@ -136,6 +139,10 @@
                     @include flex-box(center, space-between);
                     border-top: 1px solid #E9E9E9;
                     padding: 33px 0;
+                }
+                p{
+                    margin-bottom: 40px;
+                    display: none;
                 }
             }
         }
@@ -201,6 +208,9 @@
         }
         .orange{
             color: #FF5C00;
+        }
+        .mr-50{
+            margin-right: 50px;
         }
     }
 }

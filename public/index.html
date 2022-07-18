@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function( $ ) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
     <style>
         .header{
             margin-bottom: 150px;
@@ -125,6 +135,9 @@
 
     <!-- Initialize Swiper -->
     <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
     
 </body>
 </html>

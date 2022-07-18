@@ -89,10 +89,15 @@ var swiper = new Swiper(".mySwiper7", {
 function accordion(pid, img){
     var pid = document.getElementById(pid);
     var img = document.getElementById(img);
+    var show = document.querySelector('.show');
     if (pid.className.indexOf("show") == -1) {
       pid.className += " show";
       pid.style.display = "block";
       img.src = "assets/media/Close.png";
+      show.className = show.className.replace(" show", "");
+      show.style.display = "none";
+      var img_id = show.getAttribute('data-id');
+      document.getElementById(img_id).src = "assets/media/Open.png";
     } else { 
       pid.className = pid.className.replace(" show", "");
       pid.style.display = "none";

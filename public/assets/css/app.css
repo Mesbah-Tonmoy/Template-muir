@@ -960,6 +960,9 @@ a {
   width: 650px;
   margin-top: 40px;
 }
+#feature-3 .container .list div p:not([id=p1]) {
+  display: none;
+}
 #feature-3 .container .list img {
   margin: auto;
   margin-right: 0;
@@ -979,7 +982,7 @@ a {
 #feature-4 .container .right .medium {
   width: 490px;
 }
-#feature-4 .container .right .show {
+#feature-4 .container .right #f4-p1 {
   margin-top: 40px;
 }
 #feature-4 .container .right #fi-4 {
@@ -999,6 +1002,10 @@ a {
   gap: unset;
   border-top: 1px solid #E9E9E9;
   padding: 33px 0;
+}
+#feature-4 .container .right ul p {
+  margin-bottom: 40px;
+  display: none;
 }
 
 /*============  Feature-5  ===========*/
@@ -1065,6 +1072,9 @@ a {
 }
 #feature-7 .top .orange {
   color: #FF5C00;
+}
+#feature-7 .top .mr-50 {
+  margin-right: 50px;
 }
 
 /*============  Feature-8  ===========*/
