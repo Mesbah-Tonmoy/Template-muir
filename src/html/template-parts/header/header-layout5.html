@@ -45,14 +45,14 @@
 
                         <div class="header-content">
                             <h1>Restorative Dentist New York</h1>
-                            <div class="swiper mySwiperAuto">
+                            <div class="swiper mySwiperAuto" id="myDiv">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
                                   <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
                                   <div class="swiper-slide"><img id="img5" src="../../../media/Image5.png" alt="image 5"></div>
                                 </div>
                             </div>
-                            <a href="" class="round-btn">Drag</a>
+                            <a href="" class="round-btn btn-5">Drag</a>
                             <div class="third-section c-flex">
                                 <section class="left">
                                     <div class="numbering" id="numbering">
@@ -77,6 +77,16 @@
         </div>
 
 	</div>
+
+    <script>
+        var round_btn = document.querySelector('.btn-5');
+        document.getElementById("myDiv").addEventListener("mousemove", function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            round_btn.style.left = (x-120) + "px";
+            round_btn.style.top = y + "px";
+        });
+    </script>
 
     <!-- Swiper JS -->
     <script src="../../../js/swiper-bundle.min.js"></script>

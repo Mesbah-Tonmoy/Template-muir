@@ -228,16 +228,20 @@
             width: 588px;
             @include font(60px, 76px);
             letter-spacing: -0.5px;
+            margin-bottom: 80px;
         }
         #img5{
             width: 100%;
-            margin-top: 80px;
+            cursor: none;
         }
         .round-btn{
             @include round-btn;
-            left: 68%;
-            top: 48%;
             z-index: 11;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        .mySwiperAuto:hover ~ .round-btn{
+            display: flex;
         }
         .third-section{
             margin-top: 40px;

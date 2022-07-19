@@ -124,26 +124,21 @@
             .medium{
                 width: 490px;
             }
-            #f4-p1{
-                margin-top: 40px;
-            }
             #fi-4{
                 margin: 60px 0 40px;
             }
             h3, h4, img:not([id='fi-4']){
                 cursor: pointer;
             }
-            ul{
-                list-style: none;
-                li{
-                    @include flex-box(center, space-between);
-                    border-top: 1px solid #E9E9E9;
-                    padding: 33px 0;
-                }
-                p{
-                    margin-bottom: 40px;
-                    display: none;
-                }
+            .c-flex{
+                align-items: center;
+                padding: 33px 0;
+            }
+            .c-flex:not(:first-of-type){
+                border-top: 1px solid #E9E9E9;
+            }
+            .hide{
+                display: none;
             }
         }
     }

@@ -250,6 +250,16 @@
 
     <!-- Magnific Popup core JS file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <script>
+        var round_btn = document.querySelector('.btn-5');
+        document.getElementById("myDiv").addEventListener("mousemove", function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            round_btn.style.left = (x-120) + "px";
+            round_btn.style.top = y + "px";
+        });
+    </script>
     
 </body>
 </html>

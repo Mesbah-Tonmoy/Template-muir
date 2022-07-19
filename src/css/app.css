@@ -463,10 +463,11 @@ a {
   font-size: 60px;
   line-height: 76px;
   letter-spacing: -0.5px;
+  margin-bottom: 80px;
 }
 .header-style-5 .header-content #img5 {
   width: 100%;
-  margin-top: 80px;
+  cursor: none;
 }
 .header-style-5 .header-content .round-btn {
   position: absolute;
@@ -479,9 +480,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 68%;
-  top: 48%;
   z-index: 11;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.header-style-5 .header-content .mySwiperAuto:hover ~ .round-btn {
+  display: flex;
 }
 .header-style-5 .header-content .third-section {
   margin-top: 40px;
@@ -982,29 +986,20 @@ a {
 #feature-4 .container .right .medium {
   width: 490px;
 }
-#feature-4 .container .right #f4-p1 {
-  margin-top: 40px;
-}
 #feature-4 .container .right #fi-4 {
   margin: 60px 0 40px;
 }
 #feature-4 .container .right h3, #feature-4 .container .right h4, #feature-4 .container .right img:not([id=fi-4]) {
   cursor: pointer;
 }
-#feature-4 .container .right ul {
-  list-style: none;
-}
-#feature-4 .container .right ul li {
-  display: flex;
+#feature-4 .container .right .c-flex {
   align-items: center;
-  justify-content: space-between;
-  flex-direction: unset;
-  gap: unset;
-  border-top: 1px solid #E9E9E9;
   padding: 33px 0;
 }
-#feature-4 .container .right ul p {
-  margin-bottom: 40px;
+#feature-4 .container .right .c-flex:not(:first-of-type) {
+  border-top: 1px solid #E9E9E9;
+}
+#feature-4 .container .right .hide {
   display: none;
 }
 
@@ -1541,5 +1536,7 @@ a {
   width: min-content;
 }
 #portfolio-3 .bottom div .medium {
+  margin: 15px 0 10px;
+}edium {
   margin: 15px 0 10px;
 }

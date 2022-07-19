@@ -365,17 +365,17 @@
 
                         <div class="header-content">
                             <h1>Restorative Dentist New York</h1>
-                            <div class="swiper mySwiperAuto">
+                            <div class="swiper mySwiperAuto" id="myDiv">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide"><img id="img5" src="assets/media/Image5.png" alt="image 5"></div>
                                   <div class="swiper-slide"><img id="img5" src="assets/media/Image5.png" alt="image 5"></div>
                                   <div class="swiper-slide"><img id="img5" src="assets/media/Image5.png" alt="image 5"></div>
                                 </div>
                             </div>
-                            <a href="" class="round-btn">Drag</a>
+                            <a href="" class="round-btn btn-5">Drag</a>
                             <div class="third-section c-flex">
                                 <section class="left">
-                                    <div class="numbering" id="numbering5">
+                                    <div class="numbering" id="numbering">
                                         <span>01</span>
                                         <div id="line"></div>
                                         <span>06</span>
@@ -738,6 +738,16 @@
 
     <!-- Magnific Popup core JS file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <script>
+        var round_btn = document.querySelector('.btn-5');
+        document.getElementById("myDiv").addEventListener("mousemove", function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            round_btn.style.left = (x-120) + "px";
+            round_btn.style.top = y + "px";
+        });
+    </script>
     
 </body>
 </html>
