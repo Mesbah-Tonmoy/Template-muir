@@ -1058,23 +1058,24 @@ a {
 }
 
 /*============  Feature-7  ===========*/
-#feature-7 .top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: unset;
-  flex-direction: column;
-  gap: 35px;
+#feature-7 .top .mySwiper {
   width: 754px;
-  margin-left: auto;
+  margin-bottom: 40px;
 }
-#feature-7 .top .ml-auto {
-  margin-left: auto;
+#feature-7 .top .big {
+  margin: 35px 0;
 }
 #feature-7 .top .orange {
   color: #FF5C00;
 }
 #feature-7 .top .mr-50 {
   margin-right: 50px;
+}
+#feature-7 .ml-auto {
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 /*============  Feature-8  ===========*/

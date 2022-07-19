@@ -8,13 +8,44 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-        jQuery(document).ready(function( $ ) {
+        $(document).ready(function() {
             $('.counter').counterUp({
                 delay: 10,
                 time: 1000
+            });
+
+            /*==================================*/
+            /*          Magnific Popup          */
+            /*==================================*/
+
+            $('.play').magnificPopup({
+                type: 'iframe',
+                iframe: {
+                    markup: '<div class="mfp-iframe-scaler">'+
+                                '<div class="mfp-close"></div>'+
+                                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                            '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+                    patterns: {
+                        youtube: {
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
+
+                        src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                        }
+                    },
+
+                    srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+                    }
             });
         });
     </script>
@@ -292,16 +323,22 @@
 
     <div class="feature-area bg-light" id="feature-7">
         <div class="container">
-            <div class="top">
-                <img src="assets/media/Quotes.png" alt="quote">
-                <h3 class="big">Today, many people rely on computers to do homework, work, and create or store <span class="orange">useful information.</span> Therefore, it is important for the information on the computer to be stored and kept properly. </h3>
-                <div>
-                    <p class="small">Alex Smit</p>
-                    <p class="smaller grey">Founder of Stic</p>
+            <div class="top ml-auto">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/media/Quotes.png" alt="quote">
+                            <h3 class="big">Today, many people rely on computers to do homework, work, and create or store <span class="orange">useful information.</span> Therefore, it is important for the information on the computer to be stored and kept properly. </h3>
+                            <div>
+                                <p class="small">Alex Smit</p>
+                                <p class="smaller grey">Founder of Stic</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="ml-auto">
-                    <a href="" class="mr-50"><img src="assets/media/Left long.png" alt="left arrow"></a>
-                    <a href=""><img src="assets/media/Right long.png" alt="right arrow"></a>
+                    <a href="" class="mr-50 swiper-prev"><img src="assets/media/Left long.png" alt="left arrow"></a>
+                    <a href="" class="swiper-next"><img src="assets/media/Right long.png" alt="right arrow"></a>
                 </div>
             </div>
         </div>
@@ -350,14 +387,14 @@
                 <h3 class="big dark">Website Hosting Reviews Free The Best Resource For Website Hosting</h3>
                 <div class="bottom">
                     <div>
-                        <img src="assets/media/brands/Dropbox.png" onmouseover="this.src='assets/media/brands/Dropbox-black.png';" onmouseout="this.src='assets/media/brands/Dropbox.png';" alt="Dropbox">
-                        <img src="assets/media/brands/Tesla.png" onmouseover="this.src='assets/media/brands/Tesla-black.png';" onmouseout="this.src='assets/media/brands/Tesla.png';" alt="Tesla">
-                        <img src="assets/media/brands/Facebook.png" onmouseover="this.src='assets/media/brands/Facebook-black.png';" onmouseout="this.src='assets/media/brands/Facebook.png';" alt="Facebook">
+                        <a href="https://www.dropbox.com/" target="_blank"><img src="assets/media/brands/Dropbox.png" onmouseover="this.src='assets/media/brands/Dropbox-black.png';" onmouseout="this.src='assets/media/brands/Dropbox.png';" alt="Dropbox"></a>
+                        <a href="https://www.tesla.com/" target="_blank"><img src="assets/media/brands/Tesla.png" onmouseover="this.src='assets/media/brands/Tesla-black.png';" onmouseout="this.src='assets/media/brands/Tesla.png';" alt="Tesla"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="assets/media/brands/Facebook.png" onmouseover="this.src='assets/media/brands/Facebook-black.png';" onmouseout="this.src='assets/media/brands/Facebook.png';" alt="Facebook"></a>
                     </div>
                     <div>
-                        <img src="assets/media/brands/Google.png" onmouseover="this.src='assets/media/brands/Google-black.png';" onmouseout="this.src='assets/media/brands/Google.png';" alt="Google">
-                        <img src="assets/media/brands/Microsoft.png" onmouseover="this.src='assets/media/brands/Microsoft-black.png';" onmouseout="this.src='assets/media/brands/Microsoft.png';" alt="Microsoft">
-                        <img src="assets/media/brands/Spotify.png" onmouseover="this.src='assets/media/brands/Spotify-black.png';" onmouseout="this.src='assets/media/brands/Spotify.png';" alt="Spotify">
+                        <a href="https://www.google.com/" target="_blank"><img src="assets/media/brands/Google.png" onmouseover="this.src='assets/media/brands/Google-black.png';" onmouseout="this.src='assets/media/brands/Google.png';" alt="Google"></a>
+                        <a href="https://www.microsoft.com/" target="_blank"><img src="assets/media/brands/Microsoft.png" onmouseover="this.src='assets/media/brands/Microsoft-black.png';" onmouseout="this.src='assets/media/brands/Microsoft.png';" alt="Microsoft"></a>
+                        <a href="https://www.spotify.com/" target="_blank"><img src="assets/media/brands/Spotify.png" onmouseover="this.src='assets/media/brands/Spotify-black.png';" onmouseout="this.src='assets/media/brands/Spotify.png';" alt="Spotify"></a>
                     </div>
                 </div>
             </section>
@@ -416,24 +453,24 @@
             </div>
             <div class="bottom">
                 <div>
-                    <img src="assets/media/brands2/Spotify.png" onmouseover="this.src='assets/media/brands2/Spotify-black.png';" onmouseout="this.src='assets/media/brands2/Spotify.png';" alt="Spotify">
-                    <img src="assets/media/brands2/Slack.png" onmouseover="this.src='assets/media/brands2/Slack-black.png';" onmouseout="this.src='assets/media/brands2/Slack.png';" alt="Slack">
-                    <img src="assets/media/brands2/Netflix.png" onmouseover="this.src='assets/media/brands2/Dropbox-black.png';" onmouseout="this.src='assets/media/brands2/Dropbox.png';" alt="Netflix">
+                    <a href="https://www.spotify.com/" target="_blank"><img src="assets/media/brands2/Spotify.png" onmouseover="this.src='assets/media/brands2/Spotify-black.png';" onmouseout="this.src='assets/media/brands2/Spotify.png';" alt="Spotify"></a>
+                    <a href="https://slack.com/" target="_blank"><img src="assets/media/brands2/Slack.png" onmouseover="this.src='assets/media/brands2/Slack-black.png';" onmouseout="this.src='assets/media/brands2/Slack.png';" alt="Slack"></a>
+                    <a href="https://www.netflix.com/" target="_blank"><img src="assets/media/brands2/Netflix.png" onmouseover="this.src='assets/media/brands2/Dropbox-black.png';" onmouseout="this.src='assets/media/brands2/Dropbox.png';" alt="Netflix"></a>
                 </div>
                 <div>
-                    <img src="assets/media/brands2/Microsoft.png" onmouseover="this.src='assets/media/brands2/Microsoft-black.png';" onmouseout="this.src='assets/media/brands2/Microsoft.png';" alt="Microsoft">
-                    <img src="assets/media/brands2/Dropbox.png" onmouseover="this.src='assets/media/brands2/Dropbox-black.png';" onmouseout="this.src='assets/media/brands2/Dropbox.png';" alt="Dropbox">
-                    <img src="assets/media/brands2/Facebook.png" onmouseover="this.src='assets/media/brands2/Facebook-black.png';" onmouseout="this.src='assets/media/brands2/Facebook.png';" alt="Facebook">
+                    <a href="https://www.microsoft.com/" target="_blank"><img src="assets/media/brands2/Microsoft.png" onmouseover="this.src='assets/media/brands2/Microsoft-black.png';" onmouseout="this.src='assets/media/brands2/Microsoft.png';" alt="Microsoft"></a>
+                    <a href="https://www.dropbox.com/" target="_blank"><img src="assets/media/brands2/Dropbox.png" onmouseover="this.src='assets/media/brands2/Dropbox-black.png';" onmouseout="this.src='assets/media/brands2/Dropbox.png';" alt="Dropbox"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="assets/media/brands2/Facebook.png" onmouseover="this.src='assets/media/brands2/Facebook-black.png';" onmouseout="this.src='assets/media/brands2/Facebook.png';" alt="Facebook"></a>
                 </div>
                 <div>
-                    <img src="assets/media/brands2/Tesla.png" onmouseover="this.src='assets/media/brands2/Tesla-black.png';" onmouseout="this.src='assets/media/brands2/Tesla.png';" alt="Tesla">
-                    <img src="assets/media/brands2/Lenovo.png" onmouseover="this.src='assets/media/brands2/Lenovo-black.png';" onmouseout="this.src='assets/media/brands2/Lenovo.png';" alt="Lenovo">
-                    <img src="assets/media/brands2/Android.png" onmouseover="this.src='assets/media/brands2/Android-black.png';" onmouseout="this.src='assets/media/brands2/Android.png';" alt="Android">
+                    <a href="https://www.tesla.com/" target="_blank"><img src="assets/media/brands2/Tesla.png" onmouseover="this.src='assets/media/brands2/Tesla-black.png';" onmouseout="this.src='assets/media/brands2/Tesla.png';" alt="Tesla"></a>
+                    <a href="https://www.lenovo.com/bd/en/" target="_blank"><img src="assets/media/brands2/Lenovo.png" onmouseover="this.src='assets/media/brands2/Lenovo-black.png';" onmouseout="this.src='assets/media/brands2/Lenovo.png';" alt="Lenovo"></a>
+                    <a href="https://www.android.com/" target="_blank"><img src="assets/media/brands2/Android.png" onmouseover="this.src='assets/media/brands2/Android-black.png';" onmouseout="this.src='assets/media/brands2/Android.png';" alt="Android"></a>
                 </div>
                 <div>
-                    <img src="assets/media/brands2/Vimeo.png" onmouseover="this.src='assets/media/brands2/Vimeo-black.png';" onmouseout="this.src='assets/media/brands2/Vimeo.png';" alt="Vimeo">
-                    <img src="assets/media/brands2/Airbnb.png" onmouseover="this.src='assets/media/brands2/Airbnb-black.png';" onmouseout="this.src='assets/media/brands2/Airbnb.png';" alt="Airbnb">
-                    <img src="assets/media/brands2/Google.png" onmouseover="this.src='assets/media/brands2/Google-black.png';" onmouseout="this.src='assets/media/brands2/Google.png';" alt="Google">
+                    <a href="https://vimeo.com/" target="_blank"><img src="assets/media/brands2/Vimeo.png" onmouseover="this.src='assets/media/brands2/Vimeo-black.png';" onmouseout="this.src='assets/media/brands2/Vimeo.png';" alt="Vimeo"></a>
+                    <a href="https://www.airbnb.com/" target="_blank"><img src="assets/media/brands2/Airbnb.png" onmouseover="this.src='assets/media/brands2/Airbnb-black.png';" onmouseout="this.src='assets/media/brands2/Airbnb.png';" alt="Airbnb"></a>
+                    <a href="https://www.google.com/" target="_blank"><img src="assets/media/brands2/Google.png" onmouseover="this.src='assets/media/brands2/Google-black.png';" onmouseout="this.src='assets/media/brands2/Google.png';" alt="Google"></a>
                 </div>
             </div>
         </div>
@@ -549,6 +586,9 @@
 
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     
 </body>
 </html>

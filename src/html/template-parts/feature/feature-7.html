@@ -7,6 +7,10 @@
     <title>Muir | Feature 7 </title>
     <link rel="stylesheet" href="../../../css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="../../../css/swiper-bundle.min.css"
+    />
 </head>
 <body>   
 <!--=====================================-->
@@ -15,20 +19,32 @@
 
     <div class="feature-area bg-light" id="feature-7">
         <div class="container">
-            <div class="top">
-                <img src="../../../media/Quotes.png" alt="quote">
-                <h3 class="big">Today, many people rely on computers to do homework, work, and create or store <span class="orange">useful information.</span> Therefore, it is important for the information on the computer to be stored and kept properly. </h3>
-                <div>
-                    <p class="small">Alex Smit</p>
-                    <p class="smaller grey">Founder of Stic</p>
+            <div class="top ml-auto">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../../media/Quotes.png" alt="quote">
+                            <h3 class="big">Today, many people rely on computers to do homework, work, and create or store <span class="orange">useful information.</span> Therefore, it is important for the information on the computer to be stored and kept properly. </h3>
+                            <div>
+                                <p class="small">Alex Smit</p>
+                                <p class="smaller grey">Founder of Stic</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="ml-auto">
-                    <a href="" class="mr-50"><img src="../../../media/Left long.png" alt="left arrow"></a>
-                    <a href=""><img src="../../../media/Right long.png" alt="right arrow"></a>
+                    <a href="" class="mr-50 swiper-prev"><img src="../../../media/Left long.png" alt="left arrow"></a>
+                    <a href="" class="swiper-next"><img src="../../../media/Right long.png" alt="right arrow"></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="../../../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../../../js/app.js"></script>
     
 </body>
 </html>
