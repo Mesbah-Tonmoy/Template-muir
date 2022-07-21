@@ -457,6 +457,7 @@ a {
 /*=============header-5============*/
 .header-style-5 .header-content {
   display: block;
+  overflow: hidden;
 }
 .header-style-5 .header-content h1 {
   width: 588px;
@@ -1524,7 +1525,7 @@ a {
 }
 
 /*========  portfolio-3  ========*/
-#portfolio-3 .right {
+#portfolio-3 .w-558 {
   margin: 20px 0 85px;
 }
 #portfolio-3 .bottom {
@@ -1537,4 +1538,118 @@ a {
 }
 #portfolio-3 .bottom div .medium {
   margin: 15px 0 10px;
+}
+
+/*========  portfolio-4  ========*/
+#portfolio-4 ul {
+  list-style: none;
+  display: flex;
+  gap: 55px;
+  margin: 0 0 50px auto;
+}
+#portfolio-4 .active {
+  border-bottom: 2px solid;
+}
+#portfolio-4 .m-auto-0 {
+  margin: auto 0;
+}
+#portfolio-4 section:not(:last-of-type) {
+  margin-bottom: 150px;
+}
+
+/*========  portfolio-5  ========*/
+#portfolio-5 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin: 100px 0 20px;
+}
+#portfolio-5 .active {
+  font-weight: unset;
+  position: relative;
+}
+#portfolio-5 .active img {
+  position: absolute;
+  top: -19px;
+  left: -18px;
+}
+#portfolio-5 .m-auto-0 {
+  margin: auto 0;
+}
+#portfolio-5 section {
+  padding: 60px 0;
+}
+#portfolio-5 section:not(:last-of-type) {
+  border-bottom: 1px solid #E9E9E9;
+}
+
+/*========  portfolio-6  ========*/
+#portfolio-6 ul {
+  list-style: none;
+  display: flex;
+  gap: 55px;
+  margin: 100px 0 60px auto;
+}
+#portfolio-6 .active {
+  border-bottom: 2px solid;
+}
+#portfolio-6 .bottom div:not([class=absolute]) {
+  padding: 55px 30px 0;
+  width: 260px;
+  height: 390px;
+}
+#portfolio-6 .bottom span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #E9E9E9;
+  margin-bottom: 20px;
+}
+#portfolio-6 .bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-direction: unset;
+  gap: 20px;
+  margin-top: 180px;
+}
+#portfolio-6 .bottom #three {
+  position: relative;
+  background-image: url("../media/portfolio/PI-6.png");
+}
+#portfolio-6 .bottom #three:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#portfolio-6 .bottom .absolute {
+  position: absolute;
+}
+#portfolio-6 .bottom .medium {
+  width: 180px;
+}
+
+/*========  portfolio-7  ========*/
+#portfolio-7 .w-558 {
+  margin: 25px 0 110px;
+}
+#portfolio-7 h2 {
+  padding: 40px 0;
+  text-align: center;
+}
+#portfolio-7 a {
+  background: url("../media/portfolio/PI-7.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: unset;
+  gap: 20px;
 }

@@ -223,7 +223,7 @@
 .header-style-5{
     .header-content{
         display: block;
-
+        overflow: hidden;
         h1{
             width: 588px;
             @include font(60px, 76px);
