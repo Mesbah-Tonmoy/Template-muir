@@ -183,3 +183,174 @@
         @include flex-box(center, center, unset, 20px);
     }
 }
+
+/*========  portfolio-8  ========*/
+#portfolio-8{
+    ul{
+        list-style: none;
+        margin: 80px 0 50px;
+        li{
+            padding: 10px 0;
+            a{
+                display: flex;
+                align-items: center;
+                .line{
+                    display: block;
+                    width: 25px;
+                    height: 1px;
+                    background: #2F2F2F;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .bottom{
+        gap: 30px;
+    }
+    .gradient{
+        position: relative;
+        margin-bottom: 30px;
+        
+        &:before{
+            content: "";
+            display: block;
+            position:absolute;
+            height: 0%;
+            width: 100%;
+            bottom: 0;
+            transition: height 0.5s ease-out;
+            background: linear-gradient(180deg, rgba(213, 213, 213, 0.601672) 0%, #FFFFFF 100%);
+        }
+        &:hover:before {
+            height: 100%;
+        }
+    }
+    .detail{
+        position: absolute;
+        left: 45px;
+        bottom: 35px;
+    }
+}
+
+/*========  portfolio-9  ========*/
+#portfolio-9{
+    .container{
+        padding: 120px 0;
+    }
+    .left{
+        padding-left: 120px;
+    }
+    .right{
+        width: 870px;
+    }
+    .w-100{
+        overflow: auto;
+    }
+    .mySwiperAll{
+        width: 1150px;
+        margin: 100px 0 40px;
+    }
+    .swiper-slide{
+        width: 362px;
+    }
+    .round-btn{
+        @include round-btn;
+        background: #191919;
+        color: white;
+        z-index: 11;
+        top: 34%;
+        left: 55%;
+    }
+}
+
+/*========  portfolio-10  ========*/
+#portfolio-10{
+    ul{
+        width: 558px;
+        list-style: none;
+        display: flex;
+        gap: 55px;
+        margin: 80px 0 70px auto;
+        border-bottom: 1px solid #E9E9E9;
+        padding-bottom: 10px;
+    }
+    .active{
+        position: relative;
+        img{
+            position: absolute;
+            top: -25px;
+            left: -48px;
+        }
+    }
+    .w-min{
+        background: white;
+        width: min-content;
+        position: relative;
+    }
+    .text{
+        padding: 25px;
+        h6{
+            @include font(12px, 20px);
+        }
+        h4{
+            margin: 15px 0 65px;
+        }
+        a{
+            @include flex-box(center, unset, unset, 20px);
+            position: absolute;
+            bottom: 25px;
+        }
+    }
+}
+
+/*========  portfolio-11  ========*/
+#portfolio-11{
+    .container{
+        padding: 200px 0;
+    }
+    .top{
+        padding: 0 150px 150px;
+        .big{
+            margin-bottom: 20px;
+        }
+    }
+    .bottom{
+        width: 100%;
+        overflow: auto;
+        .c-flex{
+            position: relative;
+            width: fit-content;
+            gap: 95px;
+            padding-bottom: 100px;
+        }
+    }
+    .w-min{
+        position: relative;
+        width: 585px;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        .text{
+            position: absolute;
+        }
+        img{
+            margin-left: auto;
+        }
+    }
+    .mt-170{
+        margin-top: 170px;
+    }
+    .mt-260{
+        margin-top: 260px;
+    }
+    .round-btn{
+        @include round-btn;
+        z-index: 11;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    h1{
+        @include font(48px, 70px);
+    }
+}

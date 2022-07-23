@@ -44,6 +44,18 @@ var swiper = new Swiper(".mySwiperAuto", {
   },
 });
 
+var swiper = new Swiper(".mySwiperAll", {
+  slidesPerView: "All",
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+});
+
 var swiper = new Swiper(".mySwiper6", {
   loop: true,
   slidesPerView: 1,
@@ -116,4 +128,16 @@ function accordion(pid, img){
     li.className += "active";
     acc_p.innerHTML = text;
     acc_img.src = 'assets/media/'+img_name;
+}
+
+/*==================================*/
+/*              Scroll              */
+/*==================================*/
+
+window.onload = toBottom;
+var scroll70 = document.querySelector('.scroll-70');
+
+function toBottom()
+{
+    scroll70.scrollTo(70, 0);
 }

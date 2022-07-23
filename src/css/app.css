@@ -457,6 +457,7 @@ a {
 /*=============header-5============*/
 .header-style-5 .header-content {
   display: block;
+  overflow: hidden;
 }
 .header-style-5 .header-content h1 {
   width: 588px;
@@ -1524,7 +1525,7 @@ a {
 }
 
 /*========  portfolio-3  ========*/
-#portfolio-3 .right {
+#portfolio-3 .w-558 {
   margin: 20px 0 85px;
 }
 #portfolio-3 .bottom {
@@ -1537,7 +1538,6 @@ a {
 }
 #portfolio-3 .bottom div .medium {
   margin: 15px 0 10px;
-}rgin: 15px 0 10px;
 }
 
 /*========  portfolio-4  ========*/
@@ -1652,4 +1652,196 @@ a {
   justify-content: center;
   flex-direction: unset;
   gap: 20px;
+}
+
+/*========  portfolio-8  ========*/
+#portfolio-8 ul {
+  list-style: none;
+  margin: 80px 0 50px;
+}
+#portfolio-8 ul li {
+  padding: 10px 0;
+}
+#portfolio-8 ul li a {
+  display: flex;
+  align-items: center;
+}
+#portfolio-8 ul li a .line {
+  display: block;
+  width: 25px;
+  height: 1px;
+  background: #2F2F2F;
+  margin-right: 15px;
+}
+#portfolio-8 .bottom {
+  gap: 30px;
+}
+#portfolio-8 .gradient {
+  position: relative;
+  margin-bottom: 30px;
+}
+#portfolio-8 .gradient:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 0.5s ease-out;
+  background: linear-gradient(180deg, rgba(213, 213, 213, 0.601672) 0%, #FFFFFF 100%);
+}
+#portfolio-8 .gradient:hover:before {
+  height: 100%;
+}
+#portfolio-8 .detail {
+  position: absolute;
+  left: 45px;
+  bottom: 35px;
+}
+
+/*========  portfolio-9  ========*/
+#portfolio-9 .container {
+  padding: 120px 0;
+}
+#portfolio-9 .left {
+  padding-left: 120px;
+}
+#portfolio-9 .right {
+  width: 870px;
+}
+#portfolio-9 .w-100 {
+  overflow: auto;
+}
+#portfolio-9 .mySwiperAll {
+  width: 1150px;
+  margin: 100px 0 40px;
+}
+#portfolio-9 .swiper-slide {
+  width: 362px;
+}
+#portfolio-9 .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #191919;
+  color: white;
+  z-index: 11;
+  top: 34%;
+  left: 55%;
+}
+
+/*========  portfolio-10  ========*/
+#portfolio-10 ul {
+  width: 558px;
+  list-style: none;
+  display: flex;
+  gap: 55px;
+  margin: 80px 0 70px auto;
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: 10px;
+}
+#portfolio-10 .active {
+  position: relative;
+}
+#portfolio-10 .active img {
+  position: absolute;
+  top: -25px;
+  left: -48px;
+}
+#portfolio-10 .w-min {
+  background: white;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  position: relative;
+}
+#portfolio-10 .text {
+  padding: 25px;
+}
+#portfolio-10 .text h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+#portfolio-10 .text h4 {
+  margin: 15px 0 65px;
+}
+#portfolio-10 .text a {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-direction: unset;
+  gap: 20px;
+  position: absolute;
+  bottom: 25px;
+}
+
+/*========  portfolio-11  ========*/
+#portfolio-11 .container {
+  padding: 200px 0;
+}
+#portfolio-11 .top {
+  padding: 0 150px 150px;
+}
+#portfolio-11 .top .big {
+  margin-bottom: 20px;
+}
+#portfolio-11 .bottom {
+  width: 100%;
+  overflow: auto;
+}
+#portfolio-11 .bottom .c-flex {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 95px;
+  padding-bottom: 100px;
+}
+#portfolio-11 .w-min {
+  position: relative;
+  width: 585px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+#portfolio-11 .w-min .text {
+  position: absolute;
+}
+#portfolio-11 .w-min img {
+  margin-left: auto;
+}
+#portfolio-11 .mt-170 {
+  margin-top: 170px;
+}
+#portfolio-11 .mt-260 {
+  margin-top: 260px;
+}
+#portfolio-11 .round-btn {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: white;
+  color: #191919;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+#portfolio-11 h1 {
+  font-size: 48px;
+  line-height: 70px;
 }
