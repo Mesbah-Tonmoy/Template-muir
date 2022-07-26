@@ -15,52 +15,75 @@
 
     <div class="portfolio-area bg-light" id="portfolio-4">
         <div class="container">
-            <section class="one c-flex">
+            <div class="c-flex">
                 <h3 class="big grey">Portfolio</h3>
                 <h3 class="big right-750">Website Hosting Reviews Free The Best Resource For Website Hosting Comparison</h3>
-            </section>
+            </div>
 
             <ul class="portfolio-menu right-750">
-                <li><a href="" class="small active">All project</a></li>
-                <li><a href="" class="small grey">Web design</a></li>
-                <li><a href="" class="small grey">Branding</a></li>
-                <li><a href="" class="small grey">Animation</a></li>
+                <li class="small grey active" data-filter="*">All project</li>
+                <li class="small grey" data-filter=".web">Web design</li>
+                <li class="small grey" data-filter=".branding">Branding</li>
+                <li class="small grey" data-filter=".animation">Animation</li>
             </ul>
 
-            <section class="two c-flex">
-                <div class="m-auto-0">
-                    <p class="medium grey">UI kit</p>
-                    <p class="bigger">Baby Monitor</p>
-                </div>
-                <img src="../../../media/portfolio/PI-4-1.png" alt="img-1">
-            </section>
+            <div class="p-items">
+                <section class="c-flex">
+                    <div class="m-auto-0">
+                        <p class="medium grey">UI kit</p>
+                        <p class="bigger">Baby Monitor</p>
+                    </div>
+                    <img src="../../../media/portfolio/PI-4-1.png" alt="img-1">
+                </section>
 
-            <section class="three c-flex">
-                <div class="m-auto-0">
-                    <p class="medium grey">Web design</p>
-                    <p class="bigger">Myspace Layouts</p>
-                </div>
-                <img src="../../../media/portfolio/PI-4-2.png" alt="img-2">
-            </section>
+                <section class="web c-flex">
+                    <div class="m-auto-0">
+                        <p class="medium grey">Web design</p>
+                        <p class="bigger">Myspace Layouts</p>
+                    </div>
+                    <img src="../../../media/portfolio/PI-4-2.png" alt="img-2">
+                </section>
 
-            <section class="four c-flex">
-                <div class="m-auto-0">
-                    <p class="medium grey">Branding</p>
-                    <p class="bigger">Fta Keys</p>
-                </div>
-                <img src="../../../media/portfolio/PI-4-3.png" alt="img-3">
-            </section>
+                <section class="branding c-flex">
+                    <div class="m-auto-0">
+                        <p class="medium grey">Branding</p>
+                        <p class="bigger">Fta Keys</p>
+                    </div>
+                    <img src="../../../media/portfolio/PI-4-3.png" alt="img-3">
+                </section>
 
-            <section class="five c-flex">
-                <div class="m-auto-0">
-                    <p class="medium grey">Animation</p>
-                    <p class="bigger">Video Games</p>
-                </div>
-                <img src="../../../media/portfolio/PI-4-4.png" alt="img-4">
-            </section>
+                <section class="animation c-flex">
+                    <div class="m-auto-0">
+                        <p class="medium grey">Animation</p>
+                        <p class="bigger">Video Games</p>
+                    </div>
+                    <img src="../../../media/portfolio/PI-4-4.png" alt="img-4">
+                </section>
+            </div>
 
         </div>
     </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
     
 </body>
 </html>

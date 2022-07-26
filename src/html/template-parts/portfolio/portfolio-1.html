@@ -7,6 +7,7 @@
     <title>Muir | Portfolio 1</title>
     <link rel="stylesheet" href="../../../css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>   
 <!--=====================================-->
@@ -27,43 +28,74 @@
             <div class="bottom c-flex">
                 <section class="left">
                     <ul class="portfolio-menu">
-                        <li><a href="" class="small active">All project</a></li>
-                        <li><a href="" class="small grey">Web design</a></li>
-                        <li><a href="" class="small grey">Branding</a></li>
-                        <li><a href="" class="small grey">Animation</a></li>
+                        <li class="small grey active" data-filter="*"><span class="line"></span>All project</li>
+                        <li class="small grey" data-filter=".web"><span class="line"></span>Web design</li>
+                        <li class="small grey" data-filter=".branding"><span class="line"></span>Branding</li>
+                        <li class="small grey" data-filter=".animation"><span class="line"></span>Animation</li>
                     </ul>
                 </section>
-                <section class="right-750 c-flex">
-                    <div class="left-side">
-                        <img src="../../../media/portfolio/PI-1-1.png" alt="img-1">
-                        <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
-                        <p class="smaller grey">Web design</p>
+                <section class="right-750">
+                    <div class="left-side p-items">
+                        <div class="web">
+                            <img src="../../../media/portfolio/PI-1-1.png" alt="img-1">
+                            <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
+                            <p class="smaller grey">Web design</p>
+                        </div>
                         
-                        <img src="../../../media/portfolio/PI-1-2.png" alt="img-2">
-                        <h4 class="medium black">How Plasma Tvs And Lcd Tvs Differ</h4>
-                        <p class="smaller grey">Animation</p>
+                        <div class="animation">
+                            <img src="../../../media/portfolio/PI-1-2.png" alt="img-2">
+                            <h4 class="medium black">How Plasma Tvs And Lcd Tvs Differ</h4>
+                            <p class="smaller grey">Animation</p>
+                        </div>
                         
-                        <img src="../../../media/portfolio/PI-1-3.png" alt="img-3">
-                        <h4 class="medium black">Anonymous Proxy</h4>
-                        <p class="smaller grey">Animation</p>
+                        <div class="animation">
+                            <img src="../../../media/portfolio/PI-1-3.png" alt="img-3">
+                            <h4 class="medium black">Anonymous Proxy</h4>
+                            <p class="smaller grey">Animation</p>
+                        </div>
                     </div>
-                    <div class="right-side">
-                        <img src="../../../media/portfolio/PI-1-4.png" alt="img-4">
-                        <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
-                        <p class="smaller grey">Branding</p>
+                    <div class="right-side p-items">
+                        <div class="branding">
+                            <img src="../../../media/portfolio/PI-1-4.png" alt="img-4">
+                            <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
+                            <p class="smaller grey">Branding</p>
+                        </div>
                         
-                        <img src="../../../media/portfolio/PI-1-5.png" alt="img-5">
-                        <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
-                        <p class="smaller grey">Animation</p>
+                        <div class="animation">
+                            <img src="../../../media/portfolio/PI-1-5.png" alt="img-5">
+                            <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
+                            <p class="smaller grey">Animation</p>
+                        </div>
                         
-                        <img src="../../../media/portfolio/PI-1-6.png" alt="img-6">
-                        <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
-                        <p class="smaller grey mb-0">Web design</p>
+                        <div class="web">
+                            <img src="../../../media/portfolio/PI-1-6.png" alt="img-6">
+                            <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
+                            <p class="smaller grey mb-0">Web design</p>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
     
 </body>
 </html>

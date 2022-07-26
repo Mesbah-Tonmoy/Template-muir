@@ -20,10 +20,10 @@
                 <p class="medium w-558">5 Reasons To Choose A Notebook Over A Computer Desktop</p>
             </div>
             <ul class="portfolio-menu">
-                <li class="active"><a href="" class="small">Yearly</a><img src="../../../media/Select-small.png" alt="round"></li>
-                <li><a href="" class="small">Monthly</a></li>
-                <li><a href="" class="small">Daily</a></li>
-                <li><a href="" class="small">Hourly</a></li>
+                <li class="small active">Yearly<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small">Monthly<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small">Daily<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small">Hourly<img src="../../../media/Select-small.png" alt="round"></li>
             </ul>
 
             <div class="bottom c-flex">
@@ -74,6 +74,27 @@
             </div>
         </div>
     </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
     
 </body>
 </html>

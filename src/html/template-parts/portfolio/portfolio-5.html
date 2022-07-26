@@ -20,48 +20,74 @@
                 <h3 class="big">Audio player software is used to play back sound recordings in one of the many formats.</h3>
 
                 <ul class="portfolio-menu">
-                    <li class="active"><a href="" class="big">All project</a>
-                    <img src="../../../media/Select-small.png" alt="round"></li>
-                    <li><a href="" class="small grey">Web design</a></li>
-                    <li><a href="" class="small grey">Branding</a></li>
-                    <li><a href="" class="small grey">Animation</a></li>
+                    <li class="small grey active" data-filter="*">All project
+                        <img src="../../../media/Select-small.png" alt="round"></li>
+                    <li class="small grey" data-filter=".web">Web design
+                        <img src="../../../media/Select-small.png" alt="round"></li>
+                    <li class="small grey" data-filter=".branding">Branding
+                        <img src="../../../media/Select-small.png" alt="round"></li>
+                    <li class="small grey" data-filter=".animation">Animation
+                        <img src="../../../media/Select-small.png" alt="round"></li>
                 </ul>
 
-                <section class="c-flex">
-                    <div class="m-auto-0">
-                        <p class="medium grey">UI kit</p>
-                        <p class="bigger">Video Games</p>
-                    </div>
-                    <img src="../../../media/portfolio/PI-5-1.png" alt="img-1">
-                </section>
-    
-                <section class="c-flex">
-                    <div class="m-auto-0">
-                        <p class="medium grey">Web design</p>
-                        <p class="bigger">What Is Hdcp</p>
-                    </div>
-                    <img src="../../../media/portfolio/PI-5-2.png" alt="img-2">
-                </section>
-    
-                <section class="c-flex">
-                    <div class="m-auto-0">
-                        <p class="medium grey">Animation</p>
-                        <p class="bigger">Converter Ipod</p>
-                    </div>
-                    <img src="../../../media/portfolio/PI-5-3.png" alt="img-3">
-                </section>
-    
-                <section class="c-flex">
-                    <div class="m-auto-0">
-                        <p class="medium grey">Branding</p>
-                        <p class="bigger">Microsoft Patch</p>
-                    </div>
-                    <img src="../../../media/portfolio/PI-5-4.png" alt="img-4">
-                </section>
+                <div class="p-items">
+                    <section class="c-flex">
+                        <div class="m-auto-0">
+                            <p class="medium grey">UI kit</p>
+                            <p class="bigger">Video Games</p>
+                        </div>
+                        <img src="../../../media/portfolio/PI-5-1.png" alt="img-1">
+                    </section>
+        
+                    <section class="web c-flex">
+                        <div class="m-auto-0">
+                            <p class="medium grey">Web design</p>
+                            <p class="bigger">What Is Hdcp</p>
+                        </div>
+                        <img src="../../../media/portfolio/PI-5-2.png" alt="img-2">
+                    </section>
+        
+                    <section class="animation c-flex">
+                        <div class="m-auto-0">
+                            <p class="medium grey">Animation</p>
+                            <p class="bigger">Converter Ipod</p>
+                        </div>
+                        <img src="../../../media/portfolio/PI-5-3.png" alt="img-3">
+                    </section>
+        
+                    <section class="branding c-flex">
+                        <div class="m-auto-0">
+                            <p class="medium grey">Branding</p>
+                            <p class="bigger">Microsoft Patch</p>
+                        </div>
+                        <img src="../../../media/portfolio/PI-5-4.png" alt="img-4">
+                    </section>
+                </div>
             </div>
 
         </div>
     </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
     
 </body>
 </html>

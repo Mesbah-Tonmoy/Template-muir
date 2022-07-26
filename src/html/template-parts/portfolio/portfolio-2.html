@@ -22,35 +22,66 @@
                 <section class="right-750">
                     <h3 class="big dark">Many people were hoping that if the Democrats won control of Congress they would reverse the online gambling ban.</h3>
                     <ul class="portfolio-menu">
-                        <li><a href="" class="small active">All project</a></li>
-                        <li><a href="" class="small grey">Web design</a></li>
-                        <li><a href="" class="small grey">Branding</a></li>
-                        <li><a href="" class="small grey">Animation</a></li>
+                        <li class="small grey active" data-filter="*">All project</li>
+                        <li class="small grey" data-filter=".web">Web design</li>
+                        <li class="small grey" data-filter=".branding">Branding</li>
+                        <li class="small grey" data-filter=".animation">Animation</li>
                     </ul>
-                    <img src="../../../media/portfolio/PI-2-1.png" alt="img-1">
-                    <h4 class="medium black">How To Meet That Special Someone</h4>
-                    <p class="smaller grey">Animation</p>
+                    <div class="p-items">
+                        <div class="animation">
+                            <img src="../../../media/portfolio/PI-2-1.png" alt="img-1">
+                            <h4 class="medium black">How To Meet That Special Someone</h4>
+                            <p class="smaller grey">Animation</p>
+                        </div>
+                    </div>
                 </section>
             </div>
 
             <div class="bottom c-flex">
-                <section class="left-side">
-                    <img src="../../../media/portfolio/PI-2-2.png" alt="img-2">
-                    <h4 class="medium black">How Plasma Tvs And Lcd Tvs Differ</h4>
-                    <p class="smaller grey">Animation</p>
+                <section class="left-side p-items">
+                    <div class="animation">
+                        <img src="../../../media/portfolio/PI-2-2.png" alt="img-2">
+                        <h4 class="medium black">How Plasma Tvs And Lcd Tvs Differ</h4>
+                        <p class="smaller grey">Animation</p>
+                    </div>
                     
-                    <img class="mt-550" src="../../../media/portfolio/PI-2-4.png" alt="img-4">
-                    <h4 class="medium black">Anonymous Proxy</h4>
-                    <p class="smaller grey">Animation</p>
+                    <div class="animation">
+                        <img class="mt-550" src="../../../media/portfolio/PI-2-4.png" alt="img-4">
+                        <h4 class="medium black">Anonymous Proxy</h4>
+                        <p class="smaller grey">Animation</p>
+                    </div>
                 </section>
-                <section class="right-side">
-                    <img src="../../../media/portfolio/PI-2-3.png" alt="img-3">
-                    <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
-                    <p class="smaller grey">Branding</p>
+                <section class="right-side p-items">
+                    <div class="branding">
+                        <img src="../../../media/portfolio/PI-2-3.png" alt="img-3">
+                        <h4 class="medium black">Party Jokes Startling But Unnecessary</h4>
+                        <p class="smaller grey">Branding</p>
+                    </div>
                 </section>
             </div>
         </div>
     </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
     
 </body>
 </html>

@@ -20,12 +20,12 @@
                 <h3 class="big w-558">Audio player software is used to play back sound recordings in one of the many formats available.</h3>
             </section>
 
-                <ul class="portfolio-menu w-558">
-                    <li class="active"><a href="" class="small">All project</a>
-                    <li><a href="" class="small grey">Web design</a></li>
-                    <li><a href="" class="small grey">Branding</a></li>
-                    <li><a href="" class="small grey">Animation</a></li>
-                </ul>
+            <ul class="portfolio-menu w-558">
+                <li class="small grey active" data-filter="*">All project</li>
+                <li class="small grey" data-filter=".web">Web design</li>
+                <li class="small grey" data-filter=".branding">Branding</li>
+                <li class="small grey" data-filter=".animation">Animation</li>
+            </ul>
 
             <section class="bottom c-flex">
                 <div>
@@ -55,6 +55,27 @@
 
         </div>
     </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
     
 </body>
 </html>
