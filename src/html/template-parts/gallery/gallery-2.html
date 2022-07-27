@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muir | Gallery 2</title>
+    <link rel="stylesheet" href="../../../css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <!--=====================================-->
+    <!--=       Gallery Area 2 Start      =-->
+    <!--=====================================-->
+
+    <div class="gallery-area bg-light" id="gallery-2">
+        <div class="container">
+            <div class="top c-flex">
+                <h3 class="big grey">Gallery</h3>
+                <h3 class="big w-750">Create custom landing pages with Muir that convert more visitors than any website.</h3>
+            </div>
+            <ul class="portfolio-menu w-750">
+                <li class="small active" data-filter="*">Yearly<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".monthly, .daily, .hourly">Monthly<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".daily, .hourly">Daily<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".hourly">Hourly<img src="../../../media/Select-small.png" alt="round"></li>
+            </ul>
+
+            <div class="bottom">
+                <div class="p-items">
+                    <div class="monthly one">
+                        <img src="../../../media/gallery/GI-2-1.png" alt="img">
+                    </div>
+                
+                    <div class="yearly two">
+                        <img src="../../../media/gallery/GI-2-2.png" alt="img">
+                    </div>
+                
+                    <div class="daily three">
+                        <img src="../../../media/gallery/GI-2-3.png" alt="img">
+                    </div>
+                
+                    <div class="monthly four">
+                        <img src="../../../media/gallery/GI-2-4.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items mt-580">
+                    <div class="yearly five">
+                        <img src="../../../media/gallery/GI-2-7.png" alt="img">
+                    </div>
+                    
+                    <div class="daily six">
+                        <img src="../../../media/gallery/GI-2-6.png" alt="img">
+                    </div>
+                    
+                    <div class="yearly seven">
+                        <img src="../../../media/gallery/GI-2-5.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+    
+</body>
+</html>

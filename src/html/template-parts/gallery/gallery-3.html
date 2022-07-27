@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muir | Gallery 3</title>
+    <link rel="stylesheet" href="../../../css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <!--=====================================-->
+    <!--=       Gallery Area 3 Start      =-->
+    <!--=====================================-->
+
+    <div class="gallery-area bg-light" id="gallery-3">
+        <div class="container">
+            <div class="top c-flex">
+                <h3 class="big grey">Gallery</h3>
+                <h3 class="big w-558">With so many different ways today to find information online, it can sometimes.</h3>
+            </div>
+            <ul class="portfolio-menu">
+                <li class="small grey active" data-filter="*"><span class="line"></span>Web design
+                    <img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small grey" data-filter=".branding"><span class="line"></span>Branding
+                    <img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small grey" data-filter=".service"><span class="line"></span>Service
+                    <img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small grey" data-filter=".graphics"><span class="line"></span>Graphics
+                    <img src="../../../media/Select-small.png" alt="round"></li>
+            </ul>
+
+            <div class="bottom c-flex">
+                <div class="p-items">
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-3-1.png" alt="img">
+                    </div>
+                
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-3-2.png" alt="img">
+                    </div>
+                
+                    <div class="service">
+                        <img src="../../../media/gallery/GI-3-3.png" alt="img">
+                    </div>
+                
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-3-4.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items">
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-3-5.png" alt="img">
+                    </div>
+                    
+                    <div class="service">
+                        <img src="../../../media/gallery/GI-3-6.png" alt="img">
+                    </div>
+                    
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-3-7.png" alt="img">
+                    </div>
+                    
+                    <div class="graphics">
+                        <img src="../../../media/gallery/GI-3-8.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items">
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-1-1.png" alt="img">
+                    </div>
+                
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-1-2.png" alt="img">
+                    </div>
+                
+                    <div class="service">
+                        <img src="../../../media/gallery/GI-3-9.png" alt="img">
+                    </div>
+
+                    <div class="graphics">
+                        <img src="../../../media/gallery/GI-1-8.png" alt="img">
+                    </div>
+
+                    <div class="graphics">
+                        <img src="../../../media/gallery/GI-1-7.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items">
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-3-10.png" alt="img">
+                    </div>
+                
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-3-11.png" alt="img">
+                    </div>
+                
+                    <div class="service">
+                        <img src="../../../media/gallery/GI-3-13.png" alt="img">
+                    </div>
+
+                    <div class="graphics">
+                        <img src="../../../media/gallery/GI-3-12.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+    
+</body>
+</html>

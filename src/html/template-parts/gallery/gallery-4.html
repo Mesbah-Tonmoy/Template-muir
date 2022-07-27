@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muir | Gallery 4</title>
+    <link rel="stylesheet" href="../../../css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <!--=====================================-->
+    <!--=       Gallery Area 4 Start      =-->
+    <!--=====================================-->
+
+    <div class="gallery-area bg-dark" id="gallery-4">
+        <div class="container">
+            <div class="top c-flex">
+                <h3 class="big grey">Anonymous Proxy</h3>
+                <h3 class="big white w-558">Mg Shadow Computer Monitoring Software A Watchdog Protecting Your Interests</h3>
+            </div>
+
+            <div class="bottom">
+                <div class="p-items c-flex scroll-50">
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-4-1.png" alt="img">
+                    </div>
+                
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-4-2.png" alt="img">
+                    </div>
+                
+                    <div class="service">
+                        <img src="../../../media/gallery/GI-4-3.png" alt="img">
+                    </div>
+                
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-4-4.png" alt="img">
+                    </div>
+                
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-4-1.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items c-flex scroll-240">
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-4-5.png" alt="img">
+                    </div>
+                    
+                    <div class="service">
+                        <img src="../../../media/gallery/GI-4-6.png" alt="img">
+                    </div>
+                    
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-4-7.png" alt="img">
+                    </div>
+                    
+                    <div class="graphics">
+                        <img src="../../../media/gallery/GI-4-8.png" alt="img">
+                    </div>
+                
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-4-9.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items c-flex scroll-50">
+                    <div class="web">
+                        <img src="../../../media/gallery/GI-4-10.png" alt="img">
+                    </div>
+                
+                    <div class="branding">
+                        <img src="../../../media/gallery/GI-4-11.png" alt="img">
+                    </div>
+                
+                    <div class="service">
+                        <img src="../../../media/gallery/GI-4-12.png" alt="img">
+                    </div>
+
+                    <div class="graphics">
+                        <img src="../../../media/gallery/GI-4-13.png" alt="img">
+                    </div>
+
+                    <div class="graphics">
+                        <img src="../../../media/gallery/GI-4-10.png" alt="img">
+                    </div>
+                </div>
+            </div>
+
+            <ul class="portfolio-menu">
+                <li class="small grey active" data-filter="*">web design</li>
+                <li class="small grey" data-filter=".branding">branding</li>
+                <li class="small grey" data-filter=".service">service</li>
+                <li class="small grey" data-filter=".graphics">graphics</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        window.onload=toBottom;
+        var scroll50 = document.querySelectorAll('.scroll-50');
+        var scroll100 = document.querySelector('.scroll-240');
+
+        function toBottom()
+        {
+            scroll50[0].scrollTo(50, 0);
+            scroll50[1].scrollTo(50, 0);
+            scroll100.scrollTo(240, 0);
+        }
+        
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+    
+</body>
+</html>

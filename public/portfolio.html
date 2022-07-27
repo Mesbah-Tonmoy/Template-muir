@@ -53,7 +53,7 @@
         .header{
             margin-bottom: 150px;
         }
-        .feature-area, .about-area, .portfolio-area{
+        .feature-area, .about-area, .portfolio-area, .gallery-area{
             margin: 100px 100px 150px;
         }
     </style>
@@ -604,7 +604,7 @@
                     </div>
                     
                     <div class="swiper-slide">
-                      <img src="assets/media/portfolio/PI-9-1.png" alt="img1">
+                      <img src="assets/media/portfolio/PI-9-3.png" alt="img1">
                       <h4 class="medium white">Linux Or Windows Which Is It</h4>
                       <p class="small grey">Wallis and Futuna</p>
                     </div>
@@ -745,6 +745,17 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
 
     <script>
+        window.onload=toBottom;
+        var scroll50 = document.querySelectorAll('.scroll-50');
+        var scroll100 = document.querySelector('.scroll-240');
+
+        function toBottom()
+        {
+            scroll50[0].scrollTo(50, 0);
+            scroll50[1].scrollTo(50, 0);
+            scroll100.scrollTo(240, 0);
+        }
+        
         // init Isotope
         var $grid = $('.p-items').isotope({
         // options

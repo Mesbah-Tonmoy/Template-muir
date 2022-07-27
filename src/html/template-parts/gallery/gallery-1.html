@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muir | Gallery 1</title>
+    <link rel="stylesheet" href="../../../css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <!--=====================================-->
+    <!--=       Gallery Area 1 Start      =-->
+    <!--=====================================-->
+
+    <div class="gallery-area bg-light" id="gallery-1">
+        <div class="container">
+            <div class="top c-flex">
+                <h3 class="big grey">Gallery</h3>
+                <h3 class="big w-750">If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</h3>
+            </div>
+            <ul class="portfolio-menu w-750">
+                <li class="small active" data-filter="*">Yearly<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".monthly, .daily, .hourly">Monthly<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".daily, .hourly">Daily<img src="../../../media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".hourly">Hourly<img src="../../../media/Select-small.png" alt="round"></li>
+            </ul>
+
+            <div class="bottom c-flex">
+                <div class="p-items">
+                    <div class="monthly">
+                        <img src="../../../media/gallery/GI-1-1.png" alt="img">
+                    </div>
+                
+                    <div class="yearly">
+                        <img src="../../../media/gallery/GI-1-4.png" alt="img">
+                    </div>
+                
+                    <div class="daily">
+                        <img src="../../../media/gallery/GI-1-7.png" alt="img">
+                    </div>
+                
+                    <div class="monthly">
+                        <img src="../../../media/gallery/GI-1-9.png" alt="img">
+                    </div>
+                
+                    <div class="hourly">
+                        <img src="../../../media/gallery/GI-1-12.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items">
+                    <div class="yearly">
+                        <img src="../../../media/gallery/GI-1-2.png" alt="img">
+                    </div>
+                    
+                    <div class="daily">
+                        <img src="../../../media/gallery/GI-1-5.png" alt="img">
+                    </div>
+                    
+                    <div class="yearly">
+                        <img src="../../../media/gallery/GI-1-8.png" alt="img">
+                    </div>
+                    
+                    <div class="hourly">
+                        <img src="../../../media/gallery/GI-1-10.png" alt="img">
+                    </div>
+                    
+                    <div class="monthly">
+                        <img src="../../../media/gallery/GI-1-13.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items">
+                    <div class="yearly">
+                        <img src="../../../media/gallery/GI-1-3.png" alt="img">
+                    </div>
+                
+                    <div class="monthly">
+                        <img src="../../../media/gallery/GI-1-6.png" alt="img">
+                    </div>
+                
+                    <div class="daily">
+                        <img src="../../../media/gallery/GI-1-11.png" alt="img">
+                    </div>
+
+                    <div class="hourly">
+                        <img src="../../../media/gallery/GI-1-14.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../../../js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+    
+</body>
+</html>

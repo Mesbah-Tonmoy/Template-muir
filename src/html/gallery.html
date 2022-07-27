@@ -1,0 +1,22 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Muir | Gallery All in One Page{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class=""{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Gallery Area Start       =-->
+<!--=====================================-->
+{% include 'gallery/gallery.html' %}
+	
+
+{% endblock %}
