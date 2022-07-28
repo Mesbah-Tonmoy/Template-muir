@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muir | Richtext All in One Page</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+
+            /*==================================*/
+            /*          Magnific Popup          */
+            /*==================================*/
+
+            $('.play').magnificPopup({
+                type: 'iframe',
+                iframe: {
+                    markup: '<div class="mfp-iframe-scaler">'+
+                                '<div class="mfp-close"></div>'+
+                                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                            '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+                    patterns: {
+                        youtube: {
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
+
+                        src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                        }
+                    },
+
+                    srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+                    }
+            });
+        });
+    </script>
+    <style>
+        .header{
+            margin-bottom: 150px;
+        }
+        .feature-area, .about-area, .portfolio-area, .gallery-area, .richtext-area{
+            margin: 100px 100px 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-wrapper" class="main-wrapper">
+		
+<!--=====================================-->
+<!--=         Richtext Area Start       =-->
+<!--=====================================-->
+<!--=          Menu Area Start          =-->
+<!--=====================================-->
+<div class="menu-area header-main-nav" id="menu-2">
+    <!-- Start Mainmanu Nav -->
+    <nav class="mainmenu-nav" id="mobilemenu-popup">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html">  
+                    <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
+                </a>
+            </div>
+            <div  class="mainmenu">
+                <ul id="onepagenav">
+                    <li class="nav-item">
+                        <a class="scroll" href="header.html">Header</a> 
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="scroll" href="feature.html">Features</a>
+                    </li> 
+
+                    <li class="nav-item">
+                        <a class="scroll" href="about.html">About</a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a class="scroll" href="portfolio.html">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="scroll" href="gallery.html">Gallery</a>
+                    </li>    
+
+                    <li class="nav-item">
+                        <a class="scroll" href="richtext.html">Richtext</a>
+                    </li>             
+                </ul>
+
+                <a href="" id="download"><p>Download</p><img src="assets/media/Download-black.png"> </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Mainmanu Nav -->
+</div>
+
+  
+    <!--=====================================-->
+    <!--=        Richtext Area 1 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-light" id="richtext-1">
+        <div class="container">
+            <h3 class="big w-750 ml-auto">Mg Shadow Computer Monitoring Software A Watchdog Protecting Your Interests</h3>
+            <div class="c-flex m-100-0-70">
+                <h4 class="medium">An Ugly Myspace Profile Will Sure Ruin Your Reputation</h4>
+                <p class="small w-750">All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.</p>
+            </div>
+
+            <div class="w-750 c-flex ml-auto">
+                <img src="assets/media/richtext/RI-1-1.png" alt="img">
+                <img src="assets/media/richtext/RI-1-2.png" alt="img">
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/media/Quotes-small.png" alt="quote">
+                        <h3 class="big">Every avid independent filmmaker has dreamed about making that special interest documentary, or short film to show off their <span class="orange">creative</span> prowess.</h3>
+                        <p class="small"><b>Antonio Porter</b></p>
+                        <div class="c-flex">
+                            <p class="smaller grey">Jordynmouth</p>
+                            <div class="navigation">
+                                <a href="" class="mr-40 swiper-prev"><img src="assets/media/Left.png" alt="left arrow"></a>
+                                <a href="" class="swiper-next"><img src="assets/media/Right.png" alt="right arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-flex">
+                <h4 class="medium">How To Protect Your Computer Very Useful Tips</h4>
+                <div class="w-750">
+                    <div class="c-flex">
+                        <p class="small w-295">WordPress, the premier free open-source blogging utility, has gone through several upgrades in its life. Today it’s one of the most popular blogging tools</p>
+                        <p class="small w-295">Point of Sale hardware, the till at a shop check out, has become very complex over the past ten years. Modern POS hardware includes the cash till, bar-code readers, scales.</p>
+                    </div>
+                    <img class="m-100-0-70" src="assets/media/richtext/RI-1-3.png" alt="img">
+                    <p class="small">Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and blackjack you may have to play dozens of hands until you get a winning hand, and it is the same with relationships.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--=====================================-->
+    <!--=        Richtext Area 2 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-light" id="richtext-2">
+        <div class="container">
+            <h3 class="big w-558 ml-auto">For Women Only Your Computer Usage Could Cost You Your Job</h3>
+            <div class="c-flex m-100-0-115">
+                <h4 class="medium">Las Vegas How To Have Non Gambling Related Fun</h4>
+                <p class="small w-558">If you are looking for a new way to promote your business that won’t cost you more money, maybe printing is one of the options you won’t resist. Printing is a widely use process in making printed materials that are used for advertising. Brochure, catalogs, flyers, banners, posters, and booklets are some of several examples of printed materials.</p>
+            </div>
+
+            <div class="c-flex w-558 ml-auto">
+                <p class="small w-264">WordPress, the premier free open-source blogging utility, has gone through several upgrades in its life. Today it’s one of the most popular blogging tools</p>
+                <p class="small w-264">Point of Sale hardware, the till at a shop check out, has become very complex over the past ten years. Modern POS hardware includes the cash till, bar-code readers, scales.</p>
+            </div>
+
+            <div class="swiper mySwiper w-750 ml-auto">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/media/Quotes-small.png" alt="quote">
+                        <h3 class="big">Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices of what to do in a live tournament games, here is the <span class="orange">best</span> place to learn them.</h3>
+                        <p class="small"><b>Randy Gray</b></p>
+                        <div class="c-flex">
+                            <p class="smaller grey">South Jerrell</p>
+                            <div class="navigation">
+                                <a href="" class="mr-40 swiper-prev"><img src="assets/media/Left.png" alt="left arrow"></a>
+                                <a href="" class="swiper-next"><img src="assets/media/Right.png" alt="right arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="c-flex m-150-0-115">
+                <h4 class="medium">A Pocket Pc Is Portability At It S Best</h4>
+                <p class="small w-558">If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office or perhaps even your home office combo? First off, you will need to set a budget for your new purchase before deciding whether to shop for notebook or desktop computers.</p>
+            </div>
+
+            <div class="c-flex">
+                <img src="assets/media/richtext/RI-2-1.png" alt="img">
+                <img src="assets/media/richtext/RI-2-2.png" alt="img">
+            </div>
+            
+            <div class="c-flex m-150-0-115">
+                <h4 class="medium">Myspace Layouts The Missing Element</h4>
+                <p class="small w-558">Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</p>
+            </div>
+            
+            <img class="w-100" src="assets/media/richtext/RI-2-3.png" alt="img">
+        </div>
+    </div>
+
+  
+    <!--=====================================-->
+    <!--=       Richtext Area 3 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-light" id="richtext-3">
+        <div class="container c-flex">
+            <h4 class="medium">Video Games Playing With Imagination</h4>
+            <div>
+                <h2 class="bigger w-558 mb-100">Althusser Competing Interpellations And The Third Text</h2>
+                <p class="small">Can you imagine what we will be downloading in another twenty years? I mean who would have ever thought that you could record sound with digital quality fifty years ago? Now we routinely download whole albums worth of music in a couple of minutes to ipods that hold thousands of songs in the space the size of a zippo lighter!</p>
+                <p class="small m-70-0">Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</p>
+                <p class="small mb-100">Can you imagine what we will be downloading in another twenty years? I mean who would have ever thought that you could record sound with digital quality fifty years ago? Now we routinely download whole albums worth of music in a couple of minutes to ipods that hold thousands of songs in the space the size of a zippo lighter!</p>
+                <img src="assets/media/richtext/RI-3.png" alt="img">
+            </div>
+            
+        </div>
+    </div>
+
+  
+    <!--=====================================-->
+    <!--=       Richtext Area 4 Start       =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-light" id="richtext-4">
+        <div class="container">
+            <div class="top c-flex">
+                <h3 class="big grey">A Guide To Mri Scans</h3>
+                <div class="right">
+                    <h2 class="bigger">SpaceX reuses rocket from historic astronaut mission to launch satellite</h2>
+                    <div class="w-556 m-60-0">
+                        <p class="smaller">The SpaceX rocket booster that carried two NASA astronauts on a historic journey to the International Space Station two months ago took flight once again on Monday evening — this time to launch a hefty communications satellite into orbit.<br>
+                            The rocket took off from Florida's Cape Canaveral Air Force Station around 5:30 pm ET.<br>
+                            Inside the bulbous nose cone at the rocket's tip was a communications satellite that belongs to the South Korean military. SpaceX did not show the satellite deploying from rocket, something the company typically leaves out of its webcasts when taking sensitive national security-related cargo to space.
+                            <br><br>
+                            But the company did show the landing of its first-stage booster, the bottom-most portion of the rocket equipped with nine massive engines that provided the Falcon 9 rocket's initial thrust at liftoff. The rocket booster SpaceX used for Monday's mission was previously flown on SpaceX's first-ever mission with humans on board.</p>
+
+                            <div class="flex">
+                                <div>
+                                    <h1><span class="counter">350</span></h1>
+                                    <p class="smaller grey">Lake Neilmouth</p>
+                                </div>
+                                <div>
+                                    <h1><span class="counter">520</span></h1>
+                                    <p class="smaller grey">Zackaryborough</p>
+                                </div>
+                                <div>
+                                    <h1><span class="counter">190</span></h1>
+                                    <p class="smaller grey">Minervaview</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-calc ml-auto">
+                <img class="w-100" src="assets/media/richtext/RI-4.png" alt="">
+            </div>
+
+            <div class="w-558 m-80-0">
+                <p class="small">If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen, and the sound quality is surprisingly good too. Now imagine if you knew how to download Iphone movies without having to pay.</p>
+                <span class="smaller mt-20"><b>Katherine Gonzalez</b></span>
+                <span class="s-12 grey">CEO of Estec LTD</span>
+            </div>
+            
+            <div class="bottom">
+                <div class="right ml-auto">
+                    <h2 class="bigger">Will The Democrats Be Able To Reverse The Online Gambling Ban</h2>
+                    <p class="smaller w-558">For years, the company has routinely recovered the boosters: After the first-stage spends most of its fuel, it detaches from the rocket's second stage and then steers itself back to an upright landing on seafaring platforms or a ground pad.<br>
+                        <br>
+                        The second, non-reusable stage of the rocket then fires up its own engine to finish off the mission.<br>
+                        Recapturing, refurbishing and reflying rocket hardware saves SpaceX money, the company says, and it's at the core of CEO Elon Musk's mission to drive down the cost of launching satellites — or people — into outer space.<br>
+                        <br>
+                        The company's success in developing reusable rocket technology upended a fairly uncompetitive industry, and many of its competitors, such as legacy rocket builder United Launch Alliance and newcomer Blue Origin, are attempting to create reusable vehicles of their own.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--=====================================-->
+    <!--=       Richtext Area 5 Start       =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-light" id="richtext-5">
+
+        <div class="header-main-nav" id="menu-6">
+            <!-- Start Mainmanu Nav -->
+            <nav class="mainmenu-nav" id="mobilemenu-popup">
+                <div class="container">
+                    <div class="nav-logo">
+                        <a href="index.html">  
+                            <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
+                        </a>
+                    </div>
+                    <div  class="mainmenu">
+                        <div class="humburger">
+                            <div class="hum-1"></div>
+                            <div class="hum-2"></div>
+                            <div class="hum-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Mainmanu Nav -->
+        </div>
+
+        <div class="richtext-body">
+            <div class="container">
+                <section class="middle">
+                    <div class="circle"></div>
+                    <h5 class="small">Nelle Coleman</h5>
+                    <p class="smaller grey">CO-Founder  MCV</p>
+                    <h1>Using Banner Stands To Increase Trade </h1>
+                </section>
+
+                <div class="c-flex">
+                    <div class="w-460">
+                        <p class="smaller grey">It is hard to know what kind of pan works best for what kind of dish, so keep this handy guideline on hand</p>
+                    </div>
+                    <p class="w-558 medium">When it comes to buying good cookware, there are a lot of different options. Some people like to buy a matched set of cookware, but seasoned cooks often like to mix and match making an eclectic set that assures them the perfect finish to every dish they create.<br>
+                        <br>
+                        It is hard to know what kind of pan works best for what kind of dish, so keep this handy guideline on hand and you will never choose the wrong type of pan for whatever delectable dish you whip up.<br>
+                        <br>
+                        Aluminum: Aluminum makes for an all around pan that can be used for many things. It takes a little bit of steel wool applied with elbow grease to keep it shining, but the finished product is well worth the effort. A good aluminum pan will provide even heat distribution making it the perfect choice for saut </p>
+                </div>
+
+                <div class="c-flex m-250-0-100">
+                    <img src="assets/media/Quotes-large.png" alt="img">
+                    <div>
+                        <p class="bigger">All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation.</p>
+                        <p class="smaller mt-40">Jackson Sandoval</p>
+                        <span class="smaller grey">Venezuela</span>
+                    </div>
+                </div>
+            </div>
+            
+            <img id="ri-5" src="assets/media/richtext/RI-5.png" alt="img">
+            <p class="w-558 medium last">When it comes to buying good cookware, there are a lot of different options. Some people like to buy a matched set of cookware, but seasoned cooks often like to mix and match making an eclectic set that assures them the perfect finish to every dish they create.<br>
+                <br>
+                It is hard to know what kind of pan works best for what kind of dish, so keep this handy guideline on hand and you will never choose the wrong type of pan for whatever delectable dish you whip up.<br>
+                <br>
+                Aluminum: Aluminum makes for an all around pan that can be used for many things. It takes a little bit of steel wool applied with elbow grease to keep it shining, but the finished product is well worth the effort. A good aluminum pan will provide even heat distribution making it the perfect choice for saut</p>
+        </div>
+    </div>
+
+  
+    <!--=====================================-->
+    <!--=       Richtext Area 6 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-light" id="richtext-6">
+        <div class="container c-flex">
+            <h3 class="big grey">Popular Uses Of The Internet</h3>
+            <div class="right w-558">
+                <h2 class="bigger">All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation.</h2>
+                <p class="smaller grey">*It is hard to know what kind of pan works best for what kind of dish, so keep this handy guideline on hand and you will never choose the wrong type of pan for whatever delectable dish you whip up.</p>
+            </div>
+        </div>
+    </div>
+
+  
+    <!--=====================================-->
+    <!--=        Richtext Area 7 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-dark" id="richtext-7">
+        <div class="container c-flex">
+            <h1 class="white">Large businesses require a lot of IT infrastructure and a department to look after it.</h1>
+            <div>
+                <p class="small grey mb-40">You have just invested in a new vehicle, the one of your dreams, and you take it on a trip across Canada. You only put gas in it and drive sightseeing and following your nose. Filters and oil changes are ignored. The car breaks down in the middle of that long stretch of road between Manitoba and Alberta. It takes two days to get you up and running and the bill is more than a year’s worth of oil changes and regular maintenance.</p>
+                <p class="small grey">It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological advancement are concerned.</p>
+            </div>
+        </div>
+    </div> 
+
+ 
+    <!--=====================================-->
+    <!--=        Richtext Area 8 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-dark" id="richtext-8">
+        <div class="container">
+            <div class="ml-auto w-558">
+                <h1 class="white w-558">Stocking A Commercial Kitchen Finding High Quality Cookware Online</h1>
+                <div class="flex">
+                    <p class="small grey">There are number of instructions to be followed at the time of refilling an inkjet cartridge. So whenever your printer ink runs</p>
+                    <p class="small grey">All users on MySpace will know that there are millions of people out there. Every day besides so many people joining this community</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <!--=====================================-->
+    <!--=        Richtext Area 9 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-light" id="richtext-9">
+        <div class="container">
+            <h2 class="bigger w-750 ml-auto">Stocking A Commercial Kitchen Finding High Quality Cookware Online</h2>
+            <div class="c-flex">
+                <div>
+                    <h4 class="medium">Headset no longer</h4>
+                    <p class="small grey">With easy access to Broadband and DSL the number of people using the Internet has skyrocket in recent years. Email, instant messaging and file sharing.</p>
+                </div>
+                <div>
+                    <h4 class="medium">Get the boot a birds</h4>
+                    <p class="small grey">If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+                </div>
+                <div>
+                    <h4 class="medium">Why Use External It Support</h4>
+                    <p class="small grey">Planning to visit Las Vegas or any other vacational resort where casinos are a major portion of their business? I have just the thing for you.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <!--=====================================-->
+    <!--=       Richtext Area 10 Start      =-->
+    <!--=====================================-->
+
+    <div class="richtext-area bg-dark" id="richtext-10">
+        <div class="container">
+            <h2 class="bigger white w-558 ml-auto">Are You Ready To Buy A Home Theater Audio System</h2>
+            <div class="c-flex">
+                <div>
+                    <h4 class="medium white">Understanding Operating Systems</h4>
+                    <p class="small grey">If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office or perhaps even your home office combo? First off, you will need to set a budget</p>
+                </div>
+                <div>
+                    <h4 class="medium white">Stu Unger Rise And Fall Of A Poker Genius</h4>
+                    <p class="small grey">Finding the perfect learning tool for Flash is a daunting task to any novice web developer. One can find help in a number of ways through books, friends and private tutors. These methods are great but not often readily available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+
+	</div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Isotope JS -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <script>
+        window.onload=toBottom;
+        var scroll50 = document.querySelectorAll('.scroll-50');
+        var scroll100 = document.querySelector('.scroll-240');
+
+        function toBottom()
+        {
+            scroll50[0].scrollTo(50, 0);
+            scroll50[1].scrollTo(50, 0);
+            scroll100.scrollTo(240, 0);
+        }
+        
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+
+    <script>
+        var round_btn = document.querySelector('.btn-5');
+        document.getElementById("myDiv").addEventListener("mousemove", function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            round_btn.style.left = (x-120) + "px";
+            round_btn.style.top = y + "px";
+        });
+    </script>
+    
+</body>
+</html>

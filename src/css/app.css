@@ -30,6 +30,10 @@ body {
   color: #ffffff;
 }
 
+.orange {
+  color: #FF5C00;
+}
+
 .bigger {
   font-size: 34px;
   line-height: 50px;
@@ -67,6 +71,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 558px;
 }
 
+.w-750 {
+  width: 750px;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -74,6 +82,10 @@ h1, h2, h3, h4, h5, h6 {
 .c-flex {
   display: flex;
   justify-content: space-between;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .logo {
@@ -1058,9 +1070,6 @@ a {
 }
 #feature-7 .top .big {
   margin: 35px 0;
-}
-#feature-7 .top .orange {
-  color: #FF5C00;
 }
 #feature-7 .top .mr-50 {
   margin-right: 50px;
@@ -2068,4 +2077,225 @@ a {
   justify-content: center;
   position: unset;
   margin: 70px auto 0;
+}
+
+.richtext-area h1 {
+  font-size: 48px;
+  line-height: 70px;
+}
+
+/*========  richtext-1  ========*/
+#richtext-1 h4 {
+  width: 264px;
+}
+#richtext-1 .m-100-0-70 {
+  margin: 100px 0 70px;
+}
+#richtext-1 .mySwiper {
+  width: 950px;
+  margin: 160px 0 160px auto;
+}
+#richtext-1 .mySwiper h3 {
+  margin: 33px 0 40px;
+}
+#richtext-1 .mySwiper .mr-40 {
+  margin-right: 40px;
+}
+#richtext-1 .w-295 {
+  width: 295px;
+}
+
+/*========  richtext-2  ========*/
+#richtext-2 h4 {
+  width: 362px;
+}
+#richtext-2 .w-264 {
+  width: 264px;
+}
+#richtext-2 .mySwiper {
+  margin: 165px 0 150px auto;
+}
+#richtext-2 .mySwiper h3 {
+  margin: 33px 0 40px;
+}
+#richtext-2 .mySwiper .mr-40 {
+  margin-right: 40px;
+}
+#richtext-2 .m-100-0-115 {
+  margin: 100px 0 115px;
+}
+#richtext-2 .m-150-0-115 {
+  margin: 150px 0 115px;
+}
+
+/*========  richtext-3  ========*/
+#richtext-3 .container {
+  padding: 120px 0;
+}
+#richtext-3 h4 {
+  margin: 200px 0 0 120px;
+}
+#richtext-3 .mb-100 {
+  margin-bottom: 100px;
+}
+#richtext-3 .m-70-0 {
+  margin: 70px 0;
+}
+#richtext-3 .small {
+  width: 460px;
+}
+
+/*========  richtext-4  ========*/
+#richtext-4 .container {
+  padding: 120px 0;
+}
+#richtext-4 .top {
+  padding: 0 120px;
+}
+#richtext-4 .right {
+  width: 656px;
+}
+#richtext-4 .w-556 {
+  width: 556px;
+}
+#richtext-4 .m-60-0 {
+  margin: 60px 0;
+}
+#richtext-4 .flex {
+  display: flex;
+  gap: 100px;
+  margin-top: 60px;
+}
+#richtext-4 .w-calc {
+  width: calc(100% - 120px);
+}
+#richtext-4 .m-80-0 {
+  margin: 80px 120px 80px auto;
+}
+#richtext-4 .m-80-0 .mt-20 {
+  display: block;
+  margin-top: 20px;
+}
+#richtext-4 .m-80-0 .s-12 {
+  font-size: 12px;
+  line-height: 20px;
+}
+#richtext-4 .bottom {
+  background: #E9E9E9;
+  margin-left: 120px;
+  padding: 80px 120px 80px 0;
+}
+#richtext-4 .bottom .right {
+  padding: 80px 120px 80px auto;
+}
+#richtext-4 .bottom .right .bigger {
+  margin-bottom: 60px;
+}
+
+/*========  richtext-5  ========*/
+#richtext-5 .mainmenu-nav {
+  height: unset;
+  padding: 80px 0 50px;
+}
+#richtext-5 .container {
+  padding: 0 120px;
+}
+#richtext-5 .circle {
+  background: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: auto;
+}
+#richtext-5 .middle {
+  width: 950px;
+  text-align: center;
+  margin: 0 auto;
+}
+#richtext-5 .middle h5 {
+  font-weight: 700;
+  margin-top: 15px;
+}
+#richtext-5 .middle h1 {
+  margin: 50px 0 100px;
+  font-size: 140px;
+  line-height: 142px;
+}
+#richtext-5 .w-460 {
+  width: 460px;
+  border-top: 1px solid #E9E9E9;
+  margin-top: 234px;
+}
+#richtext-5 .w-460 p {
+  width: 196px;
+  padding-top: 20px;
+  text-align: end;
+}
+#richtext-5 .m-250-0-100 {
+  margin: 250px 0 100px;
+  align-items: flex-start;
+}
+#richtext-5 .m-250-0-100 p {
+  width: 852px;
+}
+#richtext-5 .m-250-0-100 .mt-40 {
+  margin-top: 40px;
+  font-weight: 700;
+}
+#richtext-5 #ri-5 {
+  width: calc(100% - 120px);
+}
+#richtext-5 .last {
+  margin: 100px 120px 0 auto;
+  padding-bottom: 120px;
+}
+
+/*========  richtext-6  ========*/
+#richtext-6 p {
+  margin-top: 60px;
+  padding-top: 15px;
+  border-top: 1px solid #E9E9E9;
+}
+
+/*========  richtext-7  ========*/
+#richtext-7 .c-flex {
+  margin-right: 100px;
+}
+#richtext-7 p {
+  width: 460px;
+}
+#richtext-7 .mb-40 {
+  margin-bottom: 40px;
+}
+
+/*========  richtext-8  ========*/
+#richtext-8 p {
+  width: 200px;
+}
+#richtext-8 .flex {
+  display: flex;
+  gap: 100px;
+  margin-top: 70px;
+}
+
+/*========  richtext-9  ========*/
+#richtext-9 .c-flex {
+  margin: 100px 100px 0 0;
+}
+#richtext-9 .c-flex div {
+  width: 264px;
+}
+#richtext-9 .c-flex div h4 {
+  margin-bottom: 25px;
+}
+
+/*========  richtext-10  ========*/
+#richtext-10 .c-flex {
+  margin: 100px 100px 0 0;
+}
+#richtext-10 .c-flex div {
+  width: 460px;
+}
+#richtext-10 .c-flex div h4 {
+  margin-bottom: 25px;
 }

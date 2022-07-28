@@ -58,6 +58,9 @@ body{
 .white{
     color: #ffffff;
 }
+.orange{
+    color: #FF5C00;
+}
 .bigger{
     @include font(34px, 50px);
 }
@@ -83,10 +86,16 @@ h1, h2, h3, h4, h5, h6{
 .w-558{
     width: 558px;
 }
+.w-750{
+    width: 750px;
+}
 .w-100{
     width: 100%;
 }
 .c-flex{
     display: flex;
     justify-content: space-between;
+}
+.ml-auto{
+    margin-left: auto;
 }

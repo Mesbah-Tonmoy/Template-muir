@@ -1,0 +1,238 @@
+.richtext-area{
+    h1{
+        @include font(48px, 70px);
+    }
+}
+/*========  richtext-1  ========*/
+#richtext-1{
+    h4{
+        width: 264px;
+    }
+    .m-100-0-70{
+        margin: 100px 0 70px;
+    }
+    .mySwiper{
+        width: 950px;
+        margin: 160px 0 160px auto;
+        h3{
+            margin: 33px 0 40px;
+        }
+        .mr-40{
+            margin-right: 40px;
+        }
+    }
+    .w-295{
+        width: 295px;
+    }
+}
+
+/*========  richtext-2  ========*/
+#richtext-2{
+    h4{
+        width: 362px;
+    }
+    .w-264{
+        width: 264px;
+    }
+    .mySwiper{
+        margin: 165px 0 150px auto;
+        h3{
+            margin: 33px 0 40px;
+        }
+        .mr-40{
+            margin-right: 40px;
+        }
+    }
+    .m-100-0-115{
+        margin: 100px 0 115px;
+    }
+    .m-150-0-115{
+        margin: 150px 0 115px;
+    }
+}
+
+/*========  richtext-3  ========*/
+#richtext-3{
+    .container{
+        padding: 120px 0;
+    }
+    h4{
+        margin: 200px 0 0 120px;
+    }
+    .mb-100{
+        margin-bottom: 100px;
+    }
+    .m-70-0{
+        margin: 70px 0;
+    }
+    .small{
+        width: 460px;
+    }
+}
+
+/*========  richtext-4  ========*/
+#richtext-4{
+    .container{
+        padding: 120px 0;
+    }
+    .top{
+        padding: 0 120px;
+    }
+    .right{
+        width: 656px;
+    }
+    .w-556{
+        width: 556px;
+    }
+    .m-60-0{
+        margin: 60px 0;
+    }
+    .flex{
+        display: flex;
+        gap: 100px;
+        margin-top: 60px;
+    }
+    .w-calc{
+        width: calc(100% - 120px);
+    }
+    .m-80-0{
+        margin: 80px 120px 80px auto;
+        .mt-20{
+            display: block;
+            margin-top: 20px;
+        }
+        .s-12{
+            @include font(12px, 20px);
+        }
+    }
+    .bottom{
+        background: #E9E9E9;
+        margin-left: 120px;
+        padding: 80px 120px 80px 0;
+        .right{
+            padding: 80px 120px 80px auto;
+            .bigger{
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+/*========  richtext-5  ========*/
+#richtext-5{
+    .mainmenu-nav{
+        height: unset;
+        padding: 80px 0 50px;
+    }
+    .container{
+        padding: 0 120px;
+    }
+    .circle{
+        background: white;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .middle{
+        width: 950px;
+        text-align: center;
+        margin: 0 auto;
+        h5{
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        h1{
+            margin: 50px 0 100px;
+            @include font(140px, 142px);
+        }
+    }
+    .w-460{
+        width: 460px;
+        border-top: 1px solid #E9E9E9;
+        margin-top: 234px;
+        p{
+            width: 196px;
+            padding-top: 20px;
+            text-align: end;
+        }
+    }
+    .m-250-0-100{
+        margin: 250px 0 100px;
+        align-items: flex-start;
+        p{
+            width: 852px;
+        }
+        .mt-40{
+            margin-top: 40px;
+            font-weight: 700;
+        }
+    }
+    #ri-5{
+        width: calc(100% - 120px);
+    }
+    .last{
+        margin: 100px 120px 0 auto;
+        padding-bottom: 120px;
+    }
+}
+
+/*========  richtext-6  ========*/
+#richtext-6{
+    p{
+        margin-top: 60px;
+        padding-top: 15px;
+        border-top: 1px solid #E9E9E9;
+    }
+}
+
+/*========  richtext-7  ========*/
+#richtext-7{
+    .c-flex{
+        margin-right: 100px;
+    }
+    p{
+        width: 460px;
+    }
+    .mb-40{
+        margin-bottom: 40px;
+    }
+}
+
+/*========  richtext-8  ========*/
+#richtext-8{
+    p{
+        width: 200px;
+    }
+    .flex{
+        display: flex;
+        gap: 100px;
+        margin-top: 70px;
+    }
+}
+
+/*========  richtext-9  ========*/
+#richtext-9{
+    .c-flex{
+        margin: 100px 100px 0 0;
+        div{
+            width: 264px;
+            h4{
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+/*========  richtext-10  ========*/
+#richtext-10{
+    .c-flex{
+        margin: 100px 100px 0 0;
+        div{
+            width: 460px;
+            h4{
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
