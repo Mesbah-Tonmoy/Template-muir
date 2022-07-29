@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muir | Testimonial All in One Page</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+
+            /*==================================*/
+            /*          Magnific Popup          */
+            /*==================================*/
+
+            $('.play').magnificPopup({
+                type: 'iframe',
+                iframe: {
+                    markup: '<div class="mfp-iframe-scaler">'+
+                                '<div class="mfp-close"></div>'+
+                                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                            '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+                    patterns: {
+                        youtube: {
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
+
+                        src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                        }
+                    },
+
+                    srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+                    }
+            });
+        });
+    </script>
+    <style>
+        .header{
+            margin-bottom: 150px;
+        }
+        .feature-area, .about-area, .portfolio-area, .gallery-area, .richtext-area, .testimonial-area{
+            margin: 100px 100px 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-wrapper" class="main-wrapper">
+		
+<!--=====================================-->
+<!--=       Testimonial Area Start      =-->
+<!--=====================================-->
+<!--=          Menu Area Start          =-->
+<!--=====================================-->
+<div class="menu-area header-main-nav" id="menu-2">
+    <!-- Start Mainmanu Nav -->
+    <nav class="mainmenu-nav" id="mobilemenu-popup">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html">  
+                    <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
+                </a>
+            </div>
+            <div  class="mainmenu">
+                <ul id="onepagenav">
+                    <li class="nav-item">
+                        <a class="scroll" href="header.html">Header</a> 
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="scroll" href="feature.html">Features</a>
+                    </li> 
+
+                    <li class="nav-item">
+                        <a class="scroll" href="about.html">About</a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a class="scroll" href="portfolio.html">Portfolio</a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a class="scroll" href="gallery.html">Gallery</a>
+                    </li>    
+
+                    <li class="nav-item">
+                        <a class="scroll" href="richtext.html">Richtext</a>
+                    </li>            
+
+                    <li class="nav-item">
+                        <a class="scroll" href="testimonial.html">Testimonial</a>
+                    </li>            
+                </ul>
+
+                <a href="" id="download"><p>Download</p><img src="assets/media/Download-black.png"> </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Mainmanu Nav -->
+</div>
+
+    <!--=========================================-->
+    <!--=       Testimonial Area 1 Start        =-->
+    <!--=========================================-->
+
+    <div class="testimonial-area bg-light" id="testimonial-1">
+        <div class="container">
+            <h3 class="big grey">When The Morning Dawns</h3>
+            <p class="bigger">«You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that you can have it; it is also feeling that it is possible» </p>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="smaller grey mb-50">*MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself.</p>
+                        <div class="flex">
+                            <img src="assets/media/testimonial/TI-1.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Josephine Roy</b></p>
+                                <p class="smaller grey">Yemen</p>
+                            </div>
+                            <div class="navigation ml-auto">
+                                <a href="" class="mr-40 swiper-prev"><img src="assets/media/Left.png" alt="left arrow"></a>
+                                <a href="" class="swiper-next"><img src="assets/media/Right.png" alt="right arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--=========================================-->
+    <!--=       Testimonial Area 2 Start        =-->
+    <!--=========================================-->
+
+    <div class="testimonial-area bg-light" id="testimonial-2">
+        <div class="container">
+            <div class="swiper mySwiperPag">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img class="swiper-prev" src="assets/media/Left.png" alt="left arrow"></a>
+        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-1.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Max Copeland</b></p>
+                                <p class="smaller grey">Iceland</p>
+                            </div>
+                            <p class="medium">«Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices»</p>
+                        </div>
+                        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-2.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Todd May</b></p>
+                                <p class="smaller grey">Luxembourg</p>
+                            </div>
+                            <p class="medium">«It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game»</p>
+                        </div>
+
+                        <a href=""><img class="swiper-next" src="assets/media/Right.png" alt="right arrow"></a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href=""><img class="swiper-prev" src="assets/media/Left.png" alt="left arrow"></a>
+        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-1.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Max Copeland</b></p>
+                                <p class="smaller grey">Iceland</p>
+                            </div>
+                            <p class="medium">«Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices»</p>
+                        </div>
+                        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-2.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Todd May</b></p>
+                                <p class="smaller grey">Luxembourg</p>
+                            </div>
+                            <p class="medium">«It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game»</p>
+                        </div>
+
+                        <a href=""><img class="swiper-next" src="assets/media/Right.png" alt="right arrow"></a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href=""><img class="swiper-prev" src="assets/media/Left.png" alt="left arrow"></a>
+        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-1.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Max Copeland</b></p>
+                                <p class="smaller grey">Iceland</p>
+                            </div>
+                            <p class="medium">«Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices»</p>
+                        </div>
+                        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-2.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Todd May</b></p>
+                                <p class="smaller grey">Luxembourg</p>
+                            </div>
+                            <p class="medium">«It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game»</p>
+                        </div>
+
+                        <a href=""><img class="swiper-next" src="assets/media/Right.png" alt="right arrow"></a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href=""><img class="swiper-prev" src="assets/media/Left.png" alt="left arrow"></a>
+        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-1.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Max Copeland</b></p>
+                                <p class="smaller grey">Iceland</p>
+                            </div>
+                            <p class="medium">«Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices»</p>
+                        </div>
+                        
+                        <div class="w-422">
+                            <img src="assets/media/testimonial/TI-2-2.png" alt="quote">
+                            <div class="user">
+                                <p class="small"><b>Todd May</b></p>
+                                <p class="smaller grey">Luxembourg</p>
+                            </div>
+                            <p class="medium">«It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game»</p>
+                        </div>
+
+                        <a href=""><img class="swiper-next" src="assets/media/Right.png" alt="right arrow"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--=========================================-->
+    <!--=       Testimonial Area 3 Start        =-->
+    <!--=========================================-->
+
+    <div class="testimonial-area bg-dark" id="testimonial-3">
+        <div class="container">
+            <h3 class="big white w-558 ml-auto">Going Wireless With Your Headphones</h3>
+            <div class="swiper mySwiperPagAll">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="assets/media/testimonial/TI-3-1.png" alt="quote">
+                            <div class="user">
+                                <p class="smaller white">Clara Gonzalez</p>
+                                <p class="s-12 grey">Switzerland</p>
+                            </div>
+                        </div>
+                        <p class="small grey">«Many people were hoping that if the Democrats won control of Congress they would reverse the online»</p>
+                        <a href="" class="flex">
+                            <p class="smaller white">View more</p>
+                            <img src="assets/media/Right long white.png">
+                        </a>
+                    </div>  
+                    
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="assets/media/testimonial/TI-3-1.png" alt="quote">
+                            <div class="user">
+                                <p class="smaller white">Clara Gonzalez</p>
+                                <p class="s-12 grey">Switzerland</p>
+                            </div>
+                        </div>
+                        <p class="small grey">«Many people were hoping that if the Democrats won control of Congress they would reverse the online»</p>
+                        <a href="" class="flex">
+                            <p class="smaller white">View more</p>
+                            <img src="assets/media/Right long white.png">
+                        </a>
+                    </div>  
+                    
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="assets/media/testimonial/TI-3-1.png" alt="quote">
+                            <div class="user">
+                                <p class="smaller white">Clara Gonzalez</p>
+                                <p class="s-12 grey">Switzerland</p>
+                            </div>
+                        </div>
+                        <p class="small grey">«Many people were hoping that if the Democrats won control of Congress they would reverse the online»</p>
+                        <a href="" class="flex">
+                            <p class="smaller white">View more</p>
+                            <img src="assets/media/Right long white.png">
+                        </a>
+                    </div>  
+                    
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="assets/media/testimonial/TI-3-1.png" alt="quote">
+                            <div class="user">
+                                <p class="smaller white">Clara Gonzalez</p>
+                                <p class="s-12 grey">Switzerland</p>
+                            </div>
+                        </div>
+                        <p class="small grey">«Many people were hoping that if the Democrats won control of Congress they would reverse the online»</p>
+                        <a href="" class="flex">
+                            <p class="smaller white">View more</p>
+                            <img src="assets/media/Right long white.png">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--=========================================-->
+    <!--=       Testimonial Area 4 Start        =-->
+    <!--=========================================-->
+
+    <div class="testimonial-area bg-light" id="testimonial-4">
+        <div class="container c-flex">
+            <section class="left">
+                <img src="assets/media/brands2/Spotify.png" alt="">
+                <h2 class="bigger">«Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system»</h2>
+                <div class="user">
+                    <p class="medium">Daisy Delgado</p>
+                    <p class="smaller grey">Manager Spotify</p>
+                </div>
+            </section>
+            <section class="right">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/media/testimonial/TI-4.png" alt="image of chair"></div>
+                      <div class="swiper-slide"><img src="assets/media/testimonial/TI-4.png" alt="image of chair"></div>
+                      <div class="swiper-slide"><img src="assets/media/testimonial/TI-4.png" alt="image of chair"></div>
+                    </div>
+                    <div class="paging">
+                        <div class="arrow">
+                            <a href=""><img class="swiper-prev mr-20" src="assets/media/Left 2.png" alt="left arrow"></a>
+                            <a href=""><img class="swiper-next" src="assets/media/Right 2.png" alt="right arrow"></a>
+                        </div>
+                        <div class="numbering">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--=========================================-->
+    <!--=       Testimonial Area 5 Start        =-->
+    <!--=========================================-->
+
+    <div class="testimonial-area bg-dark" id="testimonial-5">
+        <div class="container c-flex">
+            <section class="left">
+                <div class="swiper mySwiperPag">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="medium white">«If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen, and the sound quality is surprisingly good too»</p>
+                            <div class="user">
+                                <p class="medium white">Jim Anderson</p>
+                                <p class="smaller grey">Manager Spotify</p>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <p class="medium white">«If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen, and the sound quality is surprisingly good too»</p>
+                            <div class="user">
+                                <p class="medium white">Jim Anderson</p>
+                                <p class="smaller grey">Manager Spotify</p>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <p class="medium white">«If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen, and the sound quality is surprisingly good too»</p>
+                            <div class="user">
+                                <p class="medium white">Jim Anderson</p>
+                                <p class="smaller grey">Manager Spotify</p>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <p class="medium white">«If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen, and the sound quality is surprisingly good too»</p>
+                            <div class="user">
+                                <p class="medium white">Jim Anderson</p>
+                                <p class="smaller grey">Manager Spotify</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+            <section class="right w-558">
+                <div class="swiper mySwiperPag">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/media/testimonial/TI-5.png" alt="image of chair"></div>
+                      <div class="swiper-slide"><img src="assets/media/testimonial/TI-5.png" alt="image of chair"></div>
+                      <div class="swiper-slide"><img src="assets/media/testimonial/TI-5.png" alt="image of chair"></div>
+                      <div class="swiper-slide"><img src="assets/media/testimonial/TI-5.png" alt="image of chair"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--=========================================-->
+    <!--=       Testimonial Area 6 Start        =-->
+    <!--=========================================-->
+
+    <div class="testimonial-area bg-light" id="testimonial-6">
+        <div class="container">
+            <div class="p-70">
+                <div class="swiper mySwiperPag">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="big">«Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical interface of the versions, therefore it has remained Microsoft’s product. Although, Lycoris, Red Hat, Mandrake, Suse, Knoppix, Slackware and Lindows make up some of the different versions of LINUX»</p>
+                            <div class="flex">
+                                <img src="assets/media/testimonial/TI-6.png" alt="quote">
+                                <div class="user">
+                                    <p class="medium">Sarah Sims</p>
+                                    <p class="smaller grey">Manager Microsoft</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="big">«Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical interface of the versions, therefore it has remained Microsoft’s product. Although, Lycoris, Red Hat, Mandrake, Suse, Knoppix, Slackware and Lindows make up some of the different versions of LINUX»</p>
+                            <div class="flex">
+                                <img src="assets/media/testimonial/TI-6.png" alt="quote">
+                                <div class="user">
+                                    <p class="medium">Sarah Sims</p>
+                                    <p class="smaller grey">Manager Microsoft</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="big">«Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical interface of the versions, therefore it has remained Microsoft’s product. Although, Lycoris, Red Hat, Mandrake, Suse, Knoppix, Slackware and Lindows make up some of the different versions of LINUX»</p>
+                            <div class="flex">
+                                <img src="assets/media/testimonial/TI-6.png" alt="quote">
+                                <div class="user">
+                                    <p class="medium">Sarah Sims</p>
+                                    <p class="smaller grey">Manager Microsoft</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="big">«Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical interface of the versions, therefore it has remained Microsoft’s product. Although, Lycoris, Red Hat, Mandrake, Suse, Knoppix, Slackware and Lindows make up some of the different versions of LINUX»</p>
+                            <div class="flex">
+                                <img src="assets/media/testimonial/TI-6.png" alt="quote">
+                                <div class="user">
+                                    <p class="medium">Sarah Sims</p>
+                                    <p class="smaller grey">Manager Microsoft</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination6"></div>
+            </div>
+        </div>
+    </div>
+	
+
+
+	</div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Isotope JS -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <script>
+        window.onload=toBottom;
+        var scroll50 = document.querySelectorAll('.scroll-50');
+        var scroll100 = document.querySelector('.scroll-240');
+
+        function toBottom()
+        {
+            scroll50[0].scrollTo(50, 0);
+            scroll50[1].scrollTo(50, 0);
+            scroll100.scrollTo(240, 0);
+        }
+        
+        // init Isotope
+        var $grid = $('.p-items').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+        // filter items on button click active
+        $('.portfolio-menu').on( 'click', 'li', function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+
+    <script>
+        var round_btn = document.querySelector('.btn-5');
+        document.getElementById("myDiv").addEventListener("mousemove", function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            round_btn.style.left = (x-120) + "px";
+            round_btn.style.top = y + "px";
+        });
+    </script>
+    
+</body>
+</html>

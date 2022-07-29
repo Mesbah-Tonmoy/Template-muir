@@ -94,6 +94,34 @@ var swiper = new Swiper(".mySwiper7", {
   },
 });
 
+var swiper = new Swiper(".mySwiperPag", {
+  loop: true,
+  slidesPerView: 1,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+});
+
+var swiper = new Swiper(".mySwiperPagAll", {
+  loop: true,
+  slidesPerView: 'All',
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+
 /*==================================*/
 /*            Accordion             */
 /*==================================*/
