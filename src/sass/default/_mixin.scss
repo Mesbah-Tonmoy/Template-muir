@@ -1,0 +1,33 @@
+@mixin font ($size, $l-h){
+    font-size: $size !important;
+    line-height: $l-h;
+}
+@mixin flex-box ($a-i:unset, $j-c:unset, $f-d:unset, $gap:unset) {
+    display: flex;
+    align-items: $a-i;
+    justify-content: $j-c;
+    flex-direction: $f-d;
+    gap: $gap;
+}
+@mixin main-btn ($width:195px, $height:50px, $bg:#191919, $color:white) {
+    width: $width;
+    height: $height;
+    background-color: $bg;
+    color: $color;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin round-btn{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: white;
+    color: #191919;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

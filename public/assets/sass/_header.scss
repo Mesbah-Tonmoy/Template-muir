@@ -1,13 +1,35 @@
+.bigger{
+    @include font(34px, 50px);
+}
+.big{
+    @include font(24px, 35px);
+}
+.medium{
+    @include font(20px, 28px);
+}
+.small{
+    @include font(17px, 27px);
+}
+.smaller{
+    @include font(14px, 22px);
+}
+
 .header{
     min-height: 100vh;
-    .container{
-        padding: 0 120px 120px;
+    // .container{
+    //     padding: 0 120px 120px;
+    // }
+    ul, p{
+        margin: 0;
     }
     .mainmenu-nav{
         padding: 27px 0 0 0;
         .container{
             padding: 0;
         }
+    }
+    .middle-text{
+        margin: 40px 0 55px 0;
     }
 }
 
@@ -51,9 +73,6 @@
             background: #E9E9E9;
         }
     }
-}
-.middle-text{
-    margin: 40px 0 55px 0;
 }
 @mixin inputMail {
     .inputMail{
@@ -173,20 +192,20 @@
 
 /*=============header-3============*/
 .header-style-3{
+    .container{
+        padding-top: 0;
+    }
     .header-content{
         .left{
             margin: 100px 0;
             z-index: 11;
+            .button{
+                background: var(--color-primary);
+            }
         }
         .right{
             position: absolute;
             right: -120px;
-            .swiper-slide{
-                img{
-                    width: 705px;
-                    height: 670px;
-                }
-            }
         }
     }
     #big{

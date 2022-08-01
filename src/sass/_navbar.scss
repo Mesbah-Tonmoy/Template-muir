@@ -11,10 +11,6 @@
         line-height: 22px;
     }
 }
-a{
-    text-decoration: none;
-    color: black;
-}
 @mixin a-hover {
     a:after {    
         content: "";
@@ -32,6 +28,9 @@ a{
     display: flex;
     gap: 70px;
     list-style: none;
+    a{
+        color: var(--color-text-dark);
+    }
 }
 #download{
     @include main-btn(166px, 50px, white, #191919);

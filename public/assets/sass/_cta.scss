@@ -1,0 +1,16 @@
+/*          cta-2          */
+/*=========================*/
+.cta-area-2{
+    .bigger{
+        width: 460px;
+    }
+    .small{
+        margin: 40px 0;
+        width: 362px;
+    }
+    .button{
+        @include main-btn;
+        background-color: var(--color-primary);
+        gap: 10px;
+    }
+}

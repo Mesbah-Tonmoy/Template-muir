@@ -1,0 +1,17 @@
+/*-----------------------------
+            table-2
+-----------------------------*/
+.table-area-2{
+    h3{
+        margin-bottom: 120px;
+    }
+    th{
+        font-weight: 400;
+    }
+    .table > :not(caption) > * > *{
+        padding: 20px;
+    }
+    .s-12{
+        @include font(12px, 20px);
+    }
+}

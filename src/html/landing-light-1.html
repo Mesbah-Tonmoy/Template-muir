@@ -1,0 +1,50 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Muir | Header All in One Page{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header"{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Header Area Start       	=-->
+<!--=====================================-->
+{% include 'header/header-layout3 copy.html' %}
+<!--=====================================-->
+<!--=        About Area Start       	=-->
+<!--=====================================-->
+{% include 'about/about-7 copy.html' %}
+<!--=====================================-->
+<!--=        feature Area Start       	=-->
+<!--=====================================-->
+{% include 'feature/feature-2.html' %}
+<!--=====================================-->
+<!--=        Gallery Area Start       	=-->
+<!--=====================================-->
+{% include 'gallery/gallery-5 copy.html' %}
+<!--=====================================-->
+<!--=       Testimonial Area Start    	=-->
+<!--=====================================-->
+{% include 'testimonial/testimonial-1.html' %}
+<!--=====================================-->
+<!--=       Table Area Start    	=-->
+<!--=====================================-->
+{% include 'table/table-2.html' %}
+<!--=====================================-->
+<!--=      Call-to-Action Area Start    =-->
+<!--=====================================-->
+{% include 'call-to-action/cta-2.html' %}
+<!--=====================================-->
+<!--=           Footer Area Start    	=-->
+<!--=====================================-->
+{% include 'footer/footer-9.html' %}
+	
+
+{% endblock %}

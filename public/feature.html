@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muir | Feature All in One Page</title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Magnific Popup core CSS file -->
@@ -49,14 +50,6 @@
             });
         });
     </script>
-    <style>
-        .header{
-            margin-bottom: 150px;
-        }
-        .feature-area, .about-area, .portfolio-area, .gallery-area, .richtext-area, .testimonial-area{
-            margin: 100px 100px 150px;
-        }
-    </style>
 </head>
 <body>
     <div id="main-wrapper" class="main-wrapper">
@@ -610,6 +603,9 @@
     <!-- Isotope JS -->
     <script src="assets/js/isotope.pkgd.min.js"></script>
 
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     <script>
         window.onload=toBottom;
         var scroll50 = document.querySelectorAll('.scroll-50');
@@ -623,28 +619,34 @@
         }
         
         // init Isotope
-        var $grid = $('.p-items').isotope({
-        // options
-        });
-        // filter items on button click
-        $('.portfolio-menu').on( 'click', 'li', function() {
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-        });
-        // filter items on button click active
-        $('.portfolio-menu').on( 'click', 'li', function() {
-            $('.active').removeClass('active');
-            $(this).addClass('active');
-        });
+        // var $grid = $('.p-items').isotope({
+        // // options
+        // });
+        // // filter items on button click
+        // $('.portfolio-menu').on( 'click', 'li', function() {
+        // var filterValue = $(this).attr('data-filter');
+        // $grid.isotope({ filter: filterValue });
+        // });
+        // // filter items on button click active
+        // $('.portfolio-menu').on( 'click', 'li', function() {
+        //     $('.active').removeClass('active');
+        //     $(this).addClass('active');
+        // });
     </script>
 
     <script>
+        var top2 = 0;
+        window.addEventListener("scroll", function(){ 
+            var top = this.scrollY;
+            top2 = parseInt(top, 10);
+        });
         var round_btn = document.querySelector('.btn-5');
-        document.getElementById("myDiv").addEventListener("mousemove", function(e) {
+        document.addEventListener("mousemove", function(e) {
             var x = e.clientX;
             var y = e.clientY;
-            round_btn.style.left = (x-120) + "px";
-            round_btn.style.top = y + "px";
+            var z = y + top2;
+            round_btn.style.left = x + "px";
+            round_btn.style.top = (z-50) + "px";
         });
     </script>
     

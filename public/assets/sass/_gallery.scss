@@ -154,7 +154,7 @@
         padding: 10px 0;
         border-bottom: 1px solid #2F2F2F;
         .active{
-            color: white;
+            color: var(--color-text-dark);
         }
     }
     .bottom{
@@ -170,6 +170,42 @@
     }
     .round-btn{
         @include round-btn;
+        position: unset;
+        margin: 70px auto 0;
+    }
+}
+
+/*========  gallery-5-new  ========*/
+.gallery-area-5{
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 35px;
+        margin: 100px 0 100px auto;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--color-grey3);
+        .active{
+            color: var(--color-text-dark);
+        }
+    }
+    .bottom{
+        gap: 30px;
+    }
+    .p-items{
+        width: 50%;
+        height: unset !important;
+        img{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .grid-item{
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .round-btn{
+        @include round-btn;
+        background-color: var(--color-grey4);
         position: unset;
         margin: 70px auto 0;
     }

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muir | Header All in One Page</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+
+            /*==================================*/
+            /*          Magnific Popup          */
+            /*==================================*/
+
+            $('.play').magnificPopup({
+                type: 'iframe',
+                iframe: {
+                    markup: '<div class="mfp-iframe-scaler">'+
+                                '<div class="mfp-close"></div>'+
+                                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                            '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+                    patterns: {
+                        youtube: {
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
+
+                        src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                        }
+                    },
+
+                    srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+                    }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="main-wrapper" class="main-wrapper">
+		
+<!--=====================================-->
+<!--=        Header Area Start       	=-->
+<!--=====================================-->
+<!--=         Header Area Start         =-->
+<!--=====================================-->
+<div class="header header-style-3 bg-light">
+    <div class="header-mainmenu">
+        <div class="container">
+            <div class="header-navbar "> 
+                <div class="header-main-nav" id="menu-2">
+                    <!-- Start Mainmanu Nav -->
+                    <nav class="mainmenu-nav" id="mobilemenu-popup">
+                        <div class="container">
+                            <div class="nav-logo">
+                                <a href="index.html">  
+                                    <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
+                                </a>
+                            </div>
+                            <div  class="mainmenu">
+                                <ul id="onepagenav">
+                                    <li class="nav-item">
+                                        <a class="scroll active" href="../feature/feature.html">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="scroll" href="header.html">Header</a> 
+                                    </li> 
+                
+                                    <li class="nav-item">
+                                        <a class="scroll" href="../about/about.html">About</a>
+                                    </li>                        
+                                </ul>
+                
+                                <a href="" id="download"><p>Download</p><img src="assets/media/Download-black.png"> </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- End Mainmanu Nav -->
+                </div>
+                <div class="header-content">
+                    <section class="left">
+                        <h1>Video Games Playing With Imagination</h1>
+                        <p class="medium middle-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer</p>
+                        <a href="" class="button" id="l_more">Learn More</a>
+                    </section>
+                    <section class="right" style="width: 705px;">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/media/Image3-2.png" alt="image of chair"></div>
+                            </div>
+                            <div id="paging">
+                                <a href="" id="prev" class="swiper-prev">Prev</a>
+                                <!-- <div id="small"></div> -->
+                                <div id="big"></div>
+                                <a href="" id="next"  class="swiper-next">Next</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!--=====================================-->
+<!--=        About Area Start       	=-->
+<!--=====================================-->
+<!--=====================================-->
+<!--=        About Area 7 Start         =-->
+<!--=====================================-->
+
+    <div class="about-area" id="about-7">
+        <div class="container c-flex">
+            <section class="left">
+                <div class="big grey">Choosing The Best Photo Printer</div>
+                <img class="mt-80" src="assets/media/About/AI-7-2.png" alt="AI-7">
+            </section>
+            <section class="right w-558">
+                <h2 class="bigger dark">Where Can You Find Unique Myspace Layouts Nowadays</h2>
+                <p class="smaller grey m-30-0-70">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price.</p>
+                <div class="flex">
+                    <div class="w-200">
+                        <div class="line"></div>
+                        <p class="smaller dark">The first is a non technical method which requires the use of adware removal.</p>
+                    </div>
+                    <div class="w-200">
+                        <div class="line"></div>
+                        <p class="smaller dark">Website Hosting Reviews Free The Best Resource For Website Hosting Comparison.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+<!--=====================================-->
+<!--=        feature Area Start       	=-->
+<!--=====================================-->
+<!--=====================================-->
+<!--=        Feature Area Start         =-->
+<!--=====================================-->
+
+    <div class="feature-area bg-light" id="feature-2">
+        <div class="container">
+            <div class="top">
+                <section class="left">
+                    <div class="big grey">Linux Or Windows Which Is It</div>
+                </section>
+                <section class="right">
+                    <h3 class="big dark">All users on MySpace will know that there are millions of people out there. </h3>
+                </section>
+            </div>
+            <div class="bottom">
+                <div>
+                    <img src="assets/media/Layer.png">
+                    <h3 class="big">Layer styles</h3>
+                    <p class="small grey">It won’t be a bigger problem to find one video game lover in your neighbor.</p>
+                </div>
+                <div>
+                    <img src="assets/media/Mobile.png">
+                    <h3 class="big">Mobile first</h3>
+                    <p class="small grey">Photographs are a way of preserving a moment in our lives for the rest of our lives.</p>
+                </div>
+                <div>
+                    <img src="assets/media/Bootstrap.png">
+                    <h3 class="big">Bootstrap 4 grid</h3>
+                    <p class="small grey">Finding the perfect learning tool for Flash is a daunting task to any novice web developer.</p>
+                </div>
+                <div>
+                    <img src="assets/media/Block.png">
+                    <h3 class="big">70+ design blocks</h3>
+                    <p class="small grey">With so many different ways today to find information online, it can sometimes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--=====================================-->
+<!--=        Gallery Area Start       	=-->
+<!--=====================================-->
+    <!--=====================================-->
+    <!--=       Gallery Area 5 Start      =-->
+    <!--=====================================-->
+
+    <div class="gallery-area gallery-area-5">
+        <div class="container">
+            <div class="top c-flex">
+                <div class="big grey">Gallery</div>
+                <h3 class="big w-558">Buying Used Electronic Test Equipment What S The Difference Between Used Refurbished</h3>
+            </div>
+            <ul class="portfolio-menu w-558">
+                <li class="small active" data-filter="*">Yearly<img src="assets/media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".monthly, .daily, .hourly">Monthly<img src="assets/media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".daily, .hourly">Daily<img src="assets/media/Select-small.png" alt="round"></li>
+                <li class="small" data-filter=".hourly">Hourly<img src="assets/media/Select-small.png" alt="round"></li>
+            </ul>
+
+            <!-- <div class="bottom c-flex">
+                <div class="p-items">
+                    <div class="monthly">
+                        <img src="assets/media/gallery/GI-5-1.png" alt="img">
+                    </div>
+                
+                    <div class="yearly">
+                        <img src="assets/media/gallery/GI-5-2.png" alt="img">
+                    </div>
+                
+                    <div class="daily">
+                        <img src="assets/media/gallery/GI-5-3.png" alt="img">
+                    </div>
+                
+                    <div class="monthly">
+                        <img src="assets/media/gallery/GI-5-4.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="p-items">
+                    <div class="yearly">
+                        <img src="assets/media/gallery/GI-5-5.png" alt="img">
+                    </div>
+                    
+                    <div class="daily">
+                        <img src="assets/media/gallery/GI-5-6.png" alt="img">
+                    </div>
+                    
+                    <div class="yearly">
+                        <img src="assets/media/gallery/GI-5-7.png" alt="img">
+                    </div>
+                    
+                    <div class="hourly">
+                        <img src="assets/media/gallery/GI-5-8.png" alt="img">
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-6 monthly">
+                    <div class="monthly">
+                        <img src="assets/media/gallery/GI-5-1.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-6 yearly">
+                    <div class="yearly">
+                        <img src="assets/media/gallery/GI-5-5.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-6 daily">
+                    <div class="daily">
+                        <img src="assets/media/gallery/GI-5-2.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-6 hourly">
+                    <div class="hourly">
+                        <img src="assets/media/gallery/GI-5-6.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-6 daily">
+                    <div class="">
+                        <img src="assets/media/gallery/GI-5-3.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-6 monthly">
+                    <div class="">
+                        <img src="assets/media/gallery/GI-5-7.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-6 hourly">
+                    <div class="">
+                        <img src="assets/media/gallery/GI-5-4.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-6 monthly">
+                    <div class="">
+                        <img src="assets/media/gallery/GI-5-8.png" alt="img">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+                <div class="grid-item monthly"><img src="assets/media/gallery/GI-5-1.png" alt="img"></div>
+                <div class="grid-item yearly"><img src="assets/media/gallery/GI-5-5.png" alt="img"></div>
+                <div class="grid-item daily"><img src="assets/media/gallery/GI-5-2.png" alt="img"></div>
+                <div class="grid-item monthly"><img src="assets/media/gallery/GI-5-6.png" alt="img"></div>
+                <div class="grid-item hourly"><img src="assets/media/gallery/GI-5-3.png" alt="img"></div>
+                <div class="grid-item hourly"><img src="assets/media/gallery/GI-5-7.png" alt="img"></div>
+                <div class="grid-item daily"><img src="assets/media/gallery/GI-5-8.png" alt="img"></div>
+                <div class="grid-item hourly"><img src="assets/media/gallery/GI-5-4.png" alt="img"></div>
+            </div>
+            <a href="" class="round-btn">More</a>
+        </div>
+    </div>
+<!--=====================================-->
+<!--=       Testimonial Area Start    	=-->
+<!--=====================================-->
+<!--=========================================-->
+    <!--=       Testimonial Area 1 Start        =-->
+    <!--=========================================-->
+
+    <div class="testimonial-area testimonial-area-1 bg-light">
+        <div class="container">
+            <div class="big grey">When The Morning Dawns</div>
+            <p class="bigger">«You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that you can have it; it is also feeling that it is possible» </p>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="smaller grey mb-50">*MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself.</p>
+                        <div class="flex">
+                            <img src="assets/media/testimonial/TI-1.png" alt="quote">
+                            <div class="user">
+                                <h5 class="small fw-bold">Josephine Roy</h5>
+                                <p class="smaller grey">Yemen</p>
+                            </div>
+                            <div class="navigation ml-auto">
+                                <a href="" class="mr-40 swiper-prev"><img src="assets/media/Left.png" alt="left arrow"></a>
+                                <a href="" class="swiper-next"><img src="assets/media/Right.png" alt="right arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--=====================================-->
+<!--=       Table Area Start    	=-->
+<!--=====================================-->
+<!--=====================================-->
+<!--=        Table Area 2 Start         =-->
+<!--=====================================-->
+
+    <section class="table-area table-area-2">
+        <div class="container">
+            <div class="top c-flex">
+                <div class="big grey">Unlocking The Bible Codes</div>
+                <h3 class="big w-558">There are number of instructions to be followed at the time of refilling an inkjet cartridge.</h3>
+            </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="smaller grey">Cities</th>
+                    <th class="smaller grey">Features</th>
+                    <th class="smaller grey">Features2</th>
+                    <th class="smaller grey">Features3</th>
+                    <th class="smaller grey">Features4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="s-12 grey">1</td>
+                    <td class="smaller">Port Faustino <img src="assets/media/Question-small.png"> </td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Lock.png" alt="lock"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">2</td>
+                    <td class="smaller">Noelchester</td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">3</td>
+                    <td class="smaller">East Shakiraton</td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Lock.png" alt="lock"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">4</td>
+                    <td class="smaller">Ricoland</td>
+                    <td><img src="assets/media/Lock.png" alt="lock"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">5</td>
+                    <td class="smaller">South Ethylburgh</td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">6</td>
+                    <td class="smaller">Botsfordland</td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Lock.png" alt="lock"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">7</td>
+                    <td class="smaller">Emardchester <img src="assets/media/Question-small.png"> </td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">8</td>
+                    <td class="smaller">West Dallasside</td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">9</td>
+                    <td class="smaller">South Adriel</td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                  <tr>
+                    <td class="s-12 grey">10</td>
+                    <td class="smaller">Bergestad</td>
+                    <td><img src="assets/media/Lock.png" alt="lock"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><img src="assets/media/Done.png" alt="done"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </section>
+<!--=====================================-->
+<!--=      Call-to-Action Area Start    =-->
+<!--=====================================-->
+<!--=====================================-->
+<!--=        Cta Area 2 Start         =-->
+<!--=====================================-->
+
+    <section class="cta-area cta-area-2 bg-light">
+        <div class="container d-flex justify-content-evenly">
+            <div class="thumbnail">
+                <img src="assets/media/cta/cta-2.png" alt="img">
+            </div>
+            <div class="text">
+                <h1 class="bigger">Adwords Keyword Research For Beginners</h1>
+                <p class="small">About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know about.</p>
+                <a href="" class="button"><span>Get started</span><img src="assets/media/Play-white.png"></a>
+            </div>
+        </div>
+    </section>
+<!--=====================================-->
+<!--=           Footer Area Start    	=-->
+<!--=====================================-->
+<!--=====================================-->
+<!--=        Footer Area 2 Start         =-->
+<!--=====================================-->
+
+<footer class="footer-area footer-area-9 bg-light">
+    <div class="c-flex">
+        <div class="nav-logo">
+            <a href="index.html">  
+                <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
+            </a>
+        </div>
+
+        <ul id="onepagenav">
+            <li class="nav-item">
+                <a class="small" href="header.html">Header</a> 
+            </li> 
+
+            <li class="nav-item">
+                <a class="small" href="feature.html">Features</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="small" href="about.html">About</a>
+            </li>   
+
+            <li class="nav-item">
+                <a class="small" href="contact.html">contact</a>
+            </li>                       
+        </ul>
+
+        <div class="w-264">
+            <div class="inputMail align-items-center">
+                <input type="email" placeholder="Your email">
+                <img src="assets/media/Send.png" alt="send">
+            </div>
+            <p class="s-12 grey">*It is hard to know what kind of pan works best for what kind of dish, so keep.</p>
+        </div>
+    </div>
+
+    <div class="text-center">© 2020 Copyright</div>
+</footer>
+	
+
+
+	</div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Isotope JS -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script>
+        window.onload=toBottom;
+        var scroll50 = document.querySelectorAll('.scroll-50');
+        var scroll100 = document.querySelector('.scroll-240');
+
+        function toBottom()
+        {
+            scroll50[0].scrollTo(50, 0);
+            scroll50[1].scrollTo(50, 0);
+            scroll100.scrollTo(240, 0);
+        }
+        
+        // init Isotope
+        // var $grid = $('.p-items').isotope({
+        // // options
+        // });
+        // // filter items on button click
+        // $('.portfolio-menu').on( 'click', 'li', function() {
+        // var filterValue = $(this).attr('data-filter');
+        // $grid.isotope({ filter: filterValue });
+        // });
+        // // filter items on button click active
+        // $('.portfolio-menu').on( 'click', 'li', function() {
+        //     $('.active').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+    </script>
+
+    <script>
+        var top2 = 0;
+        window.addEventListener("scroll", function(){ 
+            var top = this.scrollY;
+            top2 = parseInt(top, 10);
+        });
+        var round_btn = document.querySelector('.btn-5');
+        document.addEventListener("mousemove", function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            var z = y + top2;
+            round_btn.style.left = x + "px";
+            round_btn.style.top = (z-50) + "px";
+        });
+    </script>
+    
+</body>
+</html>

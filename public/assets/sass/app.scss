@@ -1,4 +1,6 @@
-@import "default";
+@import "default/default";
+@import "default/mixin";
+@import "default/variable";
 @import "navbar";
 @import "header";
 @import "feature";
@@ -7,3 +9,6 @@
 @import "gallery";
 @import "richtext";
 @import "testimonial";
+@import "cta";
+@import "table";
+@import "footer";
