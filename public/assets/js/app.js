@@ -4,11 +4,11 @@
 
   jQuery(document).ready(function(){
 
-    swiper();
-    isotope();
-    counterUp();
-    track_mouse_pointer();
-    magnific_popup();
+    muir_swiper();
+    muir_isotope();
+    muir_counterUp();
+    //track_mouse_pointer();
+    muir_magnific_popup();
 
     jQuery(window).load('body', function(){
       scroll_to();
@@ -19,7 +19,7 @@
 /*==================================*/
 /*              Swiper              */
 /*==================================*/
-function swiper(){
+function muir_swiper(){
   var swiper = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 1,
@@ -215,7 +215,7 @@ function accordion(pid, img){
 /*              Isotope             */
 /*==================================*/
 
-function isotope(){
+function muir_isotope(){
         // init Isotope
         var $grid = $('.grid').isotope({
           // options
@@ -236,7 +236,7 @@ function isotope(){
 /*            Counter up            */
 /*==================================*/
 
-function counterUp(){
+function muir_counterUp(){
   var $counter = $(".counter");
     if ($counter.length > 0){
       $('.counter').counterUp({
@@ -250,7 +250,7 @@ function counterUp(){
 /*          Magnific Popup          */
 /*==================================*/
 
-function magnific_popup(){
+function muir_magnific_popup(){
   $('.play').magnificPopup({
     type: 'iframe',
     iframe: {
