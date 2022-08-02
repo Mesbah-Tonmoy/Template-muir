@@ -16,7 +16,7 @@ gulp.task('browserSync', function() {
     gulp.watch("src/sass/**/*.scss", gulp.series('sass'));
     gulp.watch("src/html/**/*.html", gulp.series('nunjucksRender'));
     gulp.watch("src/js/**/*", gulp.series('copy-js'));
-    // gulp.watch("src/css/**/*", gulp.series('copy-css'));
+    gulp.watch("src/css/**/*", gulp.series('copy-css'));
     gulp.watch("src/sass/**/*", gulp.series('copy-scss'));
     gulp.watch("src/media/**/*", gulp.series('copy-img'));
     //gulp.watch("app/media/**/*", gulp.series('gulpimage'));
@@ -61,12 +61,12 @@ gulp.task('copy-js', function () {
         .pipe(browserSync.stream());
 });
 
-// // copy CSS
-// gulp.task('copy-css', function () {
-//     return gulp.src('src/css/**/*')
-//         .pipe(gulp.dest('public/assets/css'))
-//         .pipe(browserSync.stream());
-// });
+// copy CSS
+gulp.task('copy-css', function () {
+    return gulp.src('src/css/**/*')
+        .pipe(gulp.dest('public/assets/css'))
+        .pipe(browserSync.stream());
+});
 
 // copy Sass
 gulp.task('copy-scss', function () {

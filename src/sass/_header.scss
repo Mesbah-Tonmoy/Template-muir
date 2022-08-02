@@ -15,29 +15,19 @@
 }
 
 .header{
-    min-height: 100vh;
-    // .container{
-    //     padding: 0 120px 120px;
-    // }
+    padding: 50px 0 120px;
     ul, p{
         margin: 0;
-    }
-    .mainmenu-nav{
-        padding: 27px 0 0 0;
-        .container{
-            padding: 0;
-        }
     }
     .middle-text{
         margin: 40px 0 55px 0;
     }
 }
 
-.header-content{
+.banner-content{
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
     color: #191919;
     @include font(14px, 22px);
     h1{
@@ -56,57 +46,26 @@
         align-items: center;
         margin-top: 10px;
         #prev{
-            color: #A1A1A1;
+            color: var(--color-text-grey2);
             margin-right: 20px;
         }
         #next{
-            color: #191919;
+            color: var(--color-text-grey2);
             margin-left: 20px;
         }
-        // #small{
-        //     width: 27px;
-        //     height: 1.5px;
-        //     background: #191919;
-        // }
+        #prev:hover, #next:hover{
+            color: var(--color-bg-dark);
+        }
         #big{
             height: 1px;
             background: #E9E9E9;
         }
     }
 }
-@mixin inputMail {
-    .inputMail{
-        display: flex;
-        width: fit-content;
-        border-bottom: 1px solid #E9E9E9;
-        padding: 5px;
-
-        input{
-            border: none;
-            padding: 5px;
-            background: #F8F8F8;
-            width: 250px;
-        }
-        a{
-            @include flex-box(center, unset, unset, 15px);
-        }
-    }
-}
-@mixin numbering {
-    .numbering{
-        @include flex-box(center, unset, unset, 10px);
-
-        #line{
-            width: 50px;
-            height: 1.5px;
-            background-color: #191919;
-        }
-    }
-}
 
 /*=============header-1============*/
 .header-style-1{
-    .header-content{
+    .banner-content{
         .left{
             position: absolute;
             z-index: 9;
@@ -152,7 +111,7 @@
 
 /*=============header-2============*/
 .header-style-2{
-    .header-content{
+    .banner-content{
         .left{
             width: 50%;
             z-index: 9;
@@ -192,20 +151,21 @@
 
 /*=============header-3============*/
 .header-style-3{
-    .container{
-        padding-top: 0;
-    }
-    .header-content{
+    padding-left: calc((100% - 1320px) / 2);
+    .banner-content{
         .left{
-            margin: 100px 0;
+            margin: auto 0;
             z-index: 11;
             .button{
                 background: var(--color-primary);
+                &:hover{
+                    color: black;
+                    box-shadow: 0px 10px 40px -7px rgba(255, 92, 1, 0.7);
+                }
             }
         }
         .right{
-            position: absolute;
-            right: -120px;
+            width: 705px;
         }
     }
     #big{
@@ -216,7 +176,7 @@
 
 /*=============header-4============*/
 .header-style-4{
-    .header-content{
+    .banner-content{
         .left{
             h1{
                 @include font(140px, 142px);
@@ -240,7 +200,7 @@
 }
 /*=============header-5============*/
 .header-style-5{
-    .header-content{
+    .banner-content{
         display: block;
         overflow: hidden;
         h1{
@@ -280,7 +240,7 @@
 }
 /*=============header-6============*/
 .header-style-6{
-    .header-content{
+    .banner-content{
         .left{
             @include numbering;
             z-index: 11;
@@ -320,7 +280,7 @@
 }
 /*=============header-7============*/
 .header-style-7{
-    .header-content{
+    .banner-content{
         .left{
             margin: 150px 0 300px;
             .round-btn{
@@ -352,7 +312,7 @@
 }
 /*=============header-8============*/
 .header-style-8{
-    .header-content{
+    .banner-content{
         .left{
             text-align: end;
             margin: 70px 100px;
@@ -389,7 +349,7 @@
 }
 /*=============header-9============*/
 .header-style-9{
-    .header-content{
+    .banner-content{
         flex-direction: column;
         align-items: center;
         width: 84%;
@@ -416,7 +376,7 @@
 }
 /*=============header-10============*/
 .header-style-10{
-    .header-content{
+    .banner-content{
         display: block;
         h1{
             width: 950px;
@@ -450,7 +410,7 @@
         width: 80%;
         margin: auto;
     }
-    .header-content{
+    .banner-content{
         color: white;
         padding-bottom: 150px;
         .left{

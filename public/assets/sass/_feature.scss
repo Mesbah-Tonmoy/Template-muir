@@ -1,4 +1,6 @@
 .feature-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
     .container{
         @include flex-box(unset, space-between, unset, 100px);
 
@@ -65,6 +67,10 @@
                 margin: 35px 0 25px;
             }
         }
+    }
+    i{
+        font-size: 28px;
+        padding-left: 10px;
     }
 }
 

@@ -1,3 +1,7 @@
+.table-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 /*-----------------------------
             table-2
 -----------------------------*/
@@ -11,7 +15,13 @@
     .table > :not(caption) > * > *{
         padding: 20px;
     }
+    tr:last-of-type{
+        border-bottom-style: hidden; 
+    }
     .s-12{
         @include font(12px, 20px);
+    }
+    .fa-question-circle{
+        color: var(--color-grey3);
     }
 }

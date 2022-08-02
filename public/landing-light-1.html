@@ -7,6 +7,7 @@
     <title>Muir | Header All in One Page</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Magnific Popup core CSS file -->
@@ -20,67 +21,84 @@
     <div id="main-wrapper" class="main-wrapper">
 		
 <!--=====================================-->
+<!--=           Menu Area Start       	=-->
+<!--=====================================-->
+<section class="menu-area menu-area-2">
+    <!-- Start Mainmanu Nav -->
+    <nav class="mainmenu-nav bg-light" id="mobilemenu-popup">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html">  
+                    <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
+                </a>
+            </div>
+            <div  class="mainmenu">
+                <ul id="onepagenav">
+                    <li class="nav-item">
+                        <a class="scroll" href="header.html">Header</a> 
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="scroll" href="feature.html">Features</a>
+                    </li> 
+
+                    <li class="nav-item">
+                        <a class="scroll" href="about.html">About</a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a class="scroll" href="portfolio.html">Portfolio</a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a class="scroll" href="gallery.html">Gallery</a>
+                    </li>    
+
+                    <li class="nav-item">
+                        <a class="scroll" href="richtext.html">Richtext</a>
+                    </li>            
+
+                    <li class="nav-item">
+                        <a class="scroll" href="testimonial.html">Testimonial</a>
+                    </li>            
+                </ul>
+
+                <a href="" id="download"><p>Download</p><i class="far fa-arrow-to-bottom"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Mainmanu Nav -->
+</section>
+<!--=====================================-->
 <!--=        Header Area Start       	=-->
 <!--=====================================-->
 <!--=         Header Area Start         =-->
 <!--=====================================-->
-<div class="header header-style-3 bg-light">
-    <div class="header-mainmenu">
-        <div class="container">
-            <div class="header-navbar "> 
-                <div class="header-main-nav" id="menu-2">
-                    <!-- Start Mainmanu Nav -->
-                    <nav class="mainmenu-nav" id="mobilemenu-popup">
-                        <div class="container">
-                            <div class="nav-logo">
-                                <a href="index.html">  
-                                    <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
-                                </a>
-                            </div>
-                            <div  class="mainmenu">
-                                <ul id="onepagenav">
-                                    <li class="nav-item">
-                                        <a class="scroll active" href="../feature/feature.html">Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="scroll" href="header.html">Header</a> 
-                                    </li> 
-                
-                                    <li class="nav-item">
-                                        <a class="scroll" href="../about/about.html">About</a>
-                                    </li>                        
-                                </ul>
-                
-                                <a href="" id="download"><p>Download</p><img src="assets/media/Download-black.png"> </a>
-                            </div>
-                        </div>
-                    </nav>
-                    <!-- End Mainmanu Nav -->
-                </div>
-                <div class="header-content">
-                    <section class="left">
-                        <h1>Video Games Playing With Imagination</h1>
-                        <p class="medium middle-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer</p>
-                        <a href="" class="button" id="l_more">Learn More</a>
-                    </section>
-                    <section class="right" style="width: 705px;">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="assets/media/Image3-2.png" alt="image of chair"></div>
-                            </div>
-                            <div id="paging">
-                                <a href="" id="prev" class="swiper-prev">Prev</a>
-                                <!-- <div id="small"></div> -->
-                                <div id="big"></div>
-                                <a href="" id="next"  class="swiper-next">Next</a>
-                            </div>
-                        </div>
-                    </section>
+<section class="header header-style-3 bg-light">
+    <div class="container-fluid">
+        <div class="banner-content">
+            <div class="left">
+                <h1>Video Games Playing With Imagination</h1>
+                <p class="medium middle-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer</p>
+                <a href="" class="button" id="l_more">Learn More</a>
+            </div>
+            <div class="right">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/media/Image3-2.png" alt="image of chair"></div>
+                        <div class="swiper-slide"><img src="assets/media/Image3-2-2.png" alt="image of chair"></div>
+                    </div>
+                    <div id="paging">
+                        <a href="" id="prev" class="swiper-prev">Prev</a>
+                        <!-- <div id="small"></div> -->
+                        <div id="big"></div>
+                        <a href="" id="next"  class="swiper-next">Next</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
-</div>
+    </div>
+</section>
 <!--=====================================-->
 <!--=        About Area Start       	=-->
 <!--=====================================-->
@@ -117,7 +135,7 @@
 <!--=        Feature Area Start         =-->
 <!--=====================================-->
 
-    <div class="feature-area bg-light" id="feature-2">
+    <section class="feature-area bg-light" id="feature-2">
         <div class="container">
             <div class="top">
                 <section class="left">
@@ -129,17 +147,17 @@
             </div>
             <div class="bottom">
                 <div>
-                    <img src="assets/media/Layer.png">
+                    <i class="far fa-layer-group"></i>
                     <h3 class="big">Layer styles</h3>
                     <p class="small grey">It won’t be a bigger problem to find one video game lover in your neighbor.</p>
                 </div>
                 <div>
-                    <img src="assets/media/Mobile.png">
+                    <i class="fas fa-mobile-android-alt"></i>
                     <h3 class="big">Mobile first</h3>
                     <p class="small grey">Photographs are a way of preserving a moment in our lives for the rest of our lives.</p>
                 </div>
                 <div>
-                    <img src="assets/media/Bootstrap.png">
+                    <i class="fab fa-bootstrap"></i>
                     <h3 class="big">Bootstrap 4 grid</h3>
                     <p class="small grey">Finding the perfect learning tool for Flash is a daunting task to any novice web developer.</p>
                 </div>
@@ -150,7 +168,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 <!--=====================================-->
 <!--=        Gallery Area Start       	=-->
 <!--=====================================-->
@@ -158,7 +176,7 @@
     <!--=       Gallery Area 5 Start      =-->
     <!--=====================================-->
 
-    <div class="gallery-area gallery-area-5">
+    <section class="gallery-area gallery-area-5">
         <div class="container">
             <div class="top c-flex">
                 <div class="big grey">Gallery</div>
@@ -269,9 +287,9 @@
                 <div class="grid-item daily"><img src="assets/media/gallery/GI-5-8.png" alt="img"></div>
                 <div class="grid-item hourly"><img src="assets/media/gallery/GI-5-4.png" alt="img"></div>
             </div>
-            <a href="" class="round-btn">More</a>
+            <a href="" class="round-btn load-more">More</a>
         </div>
-    </div>
+    </section>
 <!--=====================================-->
 <!--=       Testimonial Area Start    	=-->
 <!--=====================================-->
@@ -294,9 +312,9 @@
                                 <h5 class="small fw-bold">Josephine Roy</h5>
                                 <p class="smaller grey">Yemen</p>
                             </div>
-                            <div class="navigation ml-auto">
-                                <a href="" class="mr-40 swiper-prev"><img src="assets/media/Left.png" alt="left arrow"></a>
-                                <a href="" class="swiper-next"><img src="assets/media/Right.png" alt="right arrow"></a>
+                            <div class="navigation ml-auto d-flex">
+                                <a href="" class="swiper-prev"><i class="fas fa-chevron-left"></i></a>
+                                <a href="" class="swiper-next"><i class="fas fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -331,83 +349,83 @@
                 <tbody>
                   <tr>
                     <td class="s-12 grey">1</td>
-                    <td class="smaller">Port Faustino <img src="assets/media/Question-small.png"> </td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Lock.png" alt="lock"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td class="smaller">Port Faustino <i class="fal fa-question-circle"></i> </td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-lock smaller grey"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">2</td>
                     <td class="smaller">Noelchester</td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">3</td>
                     <td class="smaller">East Shakiraton</td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Lock.png" alt="lock"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-lock smaller grey"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">4</td>
                     <td class="smaller">Ricoland</td>
-                    <td><img src="assets/media/Lock.png" alt="lock"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><i class="far fa-lock smaller grey"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">5</td>
                     <td class="smaller">South Ethylburgh</td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">6</td>
                     <td class="smaller">Botsfordland</td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Lock.png" alt="lock"></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-lock smaller grey"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">7</td>
-                    <td class="smaller">Emardchester <img src="assets/media/Question-small.png"> </td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td class="smaller">Emardchester <i class="fal fa-question-circle"></i> </td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">8</td>
                     <td class="smaller">West Dallasside</td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">9</td>
                     <td class="smaller">South Adriel</td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                   <tr>
                     <td class="s-12 grey">10</td>
                     <td class="smaller">Bergestad</td>
-                    <td><img src="assets/media/Lock.png" alt="lock"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
-                    <td><img src="assets/media/Done.png" alt="done"></td>
+                    <td><i class="far fa-lock smaller grey"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
+                    <td><i class="far fa-check medium"></i></td>
                   </tr>
                 </tbody>
               </table>
@@ -428,7 +446,7 @@
             <div class="text">
                 <h1 class="bigger">Adwords Keyword Research For Beginners</h1>
                 <p class="small">About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know about.</p>
-                <a href="" class="button"><span>Get started</span><img src="assets/media/Play-white.png"></a>
+                <a href="" class="button"><span>Get started</span><i class="fas fa-play smaller"></i></a>
             </div>
         </div>
     </section>
@@ -440,7 +458,7 @@
 <!--=====================================-->
 
 <footer class="footer-area footer-area-9 bg-light">
-    <div class="c-flex">
+    <div class="container c-flex">
         <div class="nav-logo">
             <a href="index.html">  
                 <img class="logo" src="assets/media/Logo-black.png" alt="Site Logo">
@@ -468,7 +486,7 @@
         <div class="w-264">
             <div class="inputMail align-items-center">
                 <input type="email" placeholder="Your email">
-                <img src="assets/media/Send.png" alt="send">
+                <i class="fas fa-paper-plane"></i>
             </div>
             <p class="s-12 grey">*It is hard to know what kind of pan works best for what kind of dish, so keep.</p>
         </div>
@@ -499,7 +517,7 @@
     <!-- Masonry JS -->
     <script src="assets/js/masonry.pkgd.min.js"></script>
 
-    <script>
+    <!-- <script>
         window.onload=toBottom;
         var scroll50 = document.querySelectorAll('.scroll-50');
         var scroll100 = document.querySelector('.scroll-240');
@@ -526,7 +544,7 @@
             round_btn.style.left = x + "px";
             round_btn.style.top = (z-50) + "px";
         });
-    </script>
+    </script> -->
     
 </body>
 </html>

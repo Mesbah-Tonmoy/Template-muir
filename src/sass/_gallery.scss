@@ -1,4 +1,6 @@
 .gallery-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
     .w-750{
         width: 750px;
     }
@@ -202,11 +204,18 @@
     .grid-item{
         margin-bottom: 30px;
         margin-right: 30px;
+        display: none;
     }
     .round-btn{
         @include round-btn;
         background-color: var(--color-grey4);
         position: unset;
         margin: 70px auto 0;
+        transition: .3s ease;
+    }
+    .round-btn:hover{
+        // box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        font-size: 23px;
+        box-shadow: 0px 10px 40px -7px rgba(87,202,240,0.8);
     }
 }

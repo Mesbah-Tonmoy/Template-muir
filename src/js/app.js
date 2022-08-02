@@ -7,11 +7,12 @@
     muir_swiper();
     muir_isotope();
     muir_counterUp();
+    muir_loadMore();
     //track_mouse_pointer();
     muir_magnific_popup();
 
     jQuery(window).load('body', function(){
-      scroll_to();
+      // scroll_to();
     });
   });
 
@@ -244,6 +245,21 @@ function muir_counterUp(){
         time: 1000
       });
     }
+}
+
+/*==================================*/
+/*             Load more            */
+/*==================================*/
+
+function muir_loadMore(){
+  $(".grid-item").slice(0, 4).show();
+  $(".load-more").on("click", function(e){
+    e.preventDefault();
+    $(".grid-item:hidden").slice(0, 4).slideDown();
+    if ($(".grid-item:hidden").length == 0) {
+      $(".load-more").hide();
+    }
+  });
 }
 
 /*==================================*/
