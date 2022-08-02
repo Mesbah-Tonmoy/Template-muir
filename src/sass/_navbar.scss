@@ -44,6 +44,10 @@
     @include main-btn(166px, 50px, white, #191919);
     gap: 10px;
     border: 1px solid #191919;
+    &:hover{
+        background-color: #191919;
+        color: white;
+    }
 }
 .mainmenu{
     display: flex;
@@ -70,7 +74,7 @@
 /*====================*/
 /* Menu-2*/
 /*====================*/
-#menu-2{
+.menu-area-2{
     .nav-item{
         @include a-hover;
     }

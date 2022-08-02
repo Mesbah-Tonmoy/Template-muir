@@ -35,4 +35,8 @@
     .nav-item{
         @include a-hover;
     }
+    .fas.fa-paper-plane:hover{
+        color: #0087ff;
+        cursor: pointer;
+    }
 }
