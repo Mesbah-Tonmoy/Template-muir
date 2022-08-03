@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muir | Gallery 5</title>
     <link rel="stylesheet" href="../../../css/app.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>   
     <!--=====================================-->
     <!--=       Gallery Area 5 Start      =-->
     <!--=====================================-->
 
-    <div class="gallery-area bg-dark" id="gallery-5">
+    <div class="gallery-area bg-light" id="gallery-5">
         <div class="container">
             <div class="top c-flex">
                 <h3 class="big grey">Gallery</h3>
-                <h3 class="big white w-558">Buying Used Electronic Test Equipment What S The Difference Between Used Refurbished</h3>
+                <h3 class="big w-558">Buying Used Electronic Test Equipment What S The Difference Between Used Refurbished</h3>
             </div>
             <ul class="portfolio-menu w-558">
                 <li class="small grey active" data-filter="*">Yearly<img src="../../../media/Select-small.png" alt="round"></li>
@@ -26,7 +30,7 @@
                 <li class="small grey" data-filter=".hourly">Hourly<img src="../../../media/Select-small.png" alt="round"></li>
             </ul>
 
-            <div class="bottom c-flex">
+            <!-- <div class="bottom c-flex">
                 <div class="p-items">
                     <div class="monthly">
                         <img src="../../../media/gallery/GI-5-1.png" alt="img">
@@ -62,18 +66,118 @@
                         <img src="../../../media/gallery/GI-5-8.png" alt="img">
                     </div>
                 </div>
+            </div> -->
+
+            <div class="bottom">
+                <div class="box monthly">
+                    <div class="layer" data-speed="2">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-1.png" alt="img"></div>
+                        <div class="caption" data-speed="17">
+                            <div class="overlay">
+                                <h3>Lucky Lager</h3>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box daily">
+                    <div class="layer" data-speed="4">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-2.png" alt="img"></div>
+                        <div class="caption" data-speed="6">
+                            <div class="overlay">
+                                <h3>Sa Pilsen Beer</h3>
+                                <p>Illustration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box hourly">
+                    <div class="layer" data-speed="1">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-3.png" alt="img"></div>
+                        <div class="caption" data-speed="5">
+                            <div class="overlay">
+                                <h3>The Heroshima Chair</h3>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box daily">
+                    <div class="layer" data-speed="2">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-4.png" alt="img"></div>
+                        <div class="caption" data-speed="7">
+                            <div class="overlay">
+                                <h3>Lemon Lemonade</h3>
+                                <p>Animation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box monthly">
+                    <div class="layer" data-speed="5">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-5.png" alt="img"></div>
+                        <div class="caption" data-speed="9">
+                            <div class="overlay">
+                                <h3>Plumping Rinse</h3>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box hourly">
+                    <div class="layer" data-speed="3">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-6.png" alt="img"></div>
+                        <div class="caption" data-speed="6">
+                            <div class="overlay">
+                                <h3>Joi Jimi</h3>
+                                <p>Adversiting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box yearly">
+                    <div class="layer" data-speed="2">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-7.png" alt="img"></div>
+                        <div class="caption" data-speed="5">
+                            <div class="overlay">
+                                <h3>Treaty Fruity</h3>
+                                <p>Illustration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box hourly">
+                    <div class="layer" data-speed="5">
+                        <div data-aos="fade-up"><img src="../../../media/gallery/GI-5-8.png" alt="img"></div>
+                        <div class="caption" data-speed="8">
+                            <div class="overlay">
+                                <h3>Nutty Putty</h3>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <a href="" class="round-btn">More</a>
         </div>
     </div>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
 
     <script src="../../../js/isotope.pkgd.min.js"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+        // init AOS
+        AOS.init({
+            offset: 150,
+            // delay: 100,
+            duration: 1500
+        }); 
         // init Isotope
-        var $grid = $('.p-items').isotope({
+        var $grid = $('.bottom').isotope({
         // options
         });
         // filter items on button click
@@ -86,6 +190,26 @@
             $('.active').removeClass('active');
             $(this).addClass('active');
         });
+
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+
+                const x = (window.innerWidth + e.pageX*speed)/100
+                const y = (window.innerHeight + e.pageY*speed)/100
+
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            });
+            this.querySelectorAll('.caption').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+
+                const x = (window.innerWidth + e.pageX*speed)/100
+                const y = (window.innerHeight + e.pageY*speed)/100
+
+                layer.style.transform = `translateX(${x-25}px) translateY(${y}px)`
+            });
+        }
     </script>
     
 </body>

@@ -191,20 +191,15 @@
         }
     }
     .bottom{
-        gap: 30px;
-    }
-    .p-items{
-        width: 50%;
+        columns: 2;
+        column-gap: 30px;
         height: unset !important;
+    }
+    .box{
+        margin-bottom: 30px;
         img{
             width: 100%;
-            margin-bottom: 30px;
         }
-    }
-    .grid-item{
-        margin-bottom: 30px;
-        margin-right: 30px;
-        display: none;
     }
     .round-btn{
         @include round-btn;

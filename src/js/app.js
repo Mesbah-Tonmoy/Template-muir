@@ -218,7 +218,7 @@ function accordion(pid, img){
 
 function muir_isotope(){
         // init Isotope
-        var $grid = $('.grid').isotope({
+        var $grid = $('.p-items').isotope({
           // options
           });
           // filter items on button click

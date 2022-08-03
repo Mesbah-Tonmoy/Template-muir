@@ -2128,20 +2128,17 @@ input:focus-visible {
   color: var(--color-text-dark);
 }
 .gallery-area-5 .bottom {
-  gap: 30px;
-}
-.gallery-area-5 .p-items {
-  width: 50%;
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   height: unset !important;
 }
-.gallery-area-5 .p-items img {
-  width: 100%;
+.gallery-area-5 .box {
   margin-bottom: 30px;
 }
-.gallery-area-5 .grid-item {
-  margin-bottom: 30px;
-  margin-right: 30px;
-  display: none;
+.gallery-area-5 .box img {
+  width: 100%;
 }
 .gallery-area-5 .round-btn {
   position: absolute;
