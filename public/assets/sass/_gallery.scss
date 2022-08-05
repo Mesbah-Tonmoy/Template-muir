@@ -21,6 +21,9 @@
             left: -52px;
         }
     }
+    p{
+        margin: 0;
+    }
 }
 
 /*========  gallery-1  ========*/
@@ -160,14 +163,41 @@
         }
     }
     .bottom{
-        gap: 30px;
-    }
-    .p-items{
-        width: 50%;
+        columns: 2;
+        column-gap: 30px;
         height: unset !important;
+    }
+    .layer {
+        width: 70%;
+        overflow: hidden;
+        margin-bottom: 30px;
+        position: relative;
+        &:hover img{
+            transform: scale(1.2);
+        }
+        &:hover .overlay{
+            padding: 20px;
+            // height: auto;
+            transform: unset !important;
+            z-index: 11;
+        }
         img{
             width: 100%;
-            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+    }
+    .caption{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        overflow: hidden;
+        // transform: translate(-80%, -50%);
+        .overlay{
+            background: #fff;
+            width: 350px;
+            // height: 0;
+            transform: translateY(100px);
+            transition: all .6s;
         }
     }
     .round-btn{

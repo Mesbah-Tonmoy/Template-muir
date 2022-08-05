@@ -9,14 +9,10 @@
 .mainmenu-nav{
     height: 104px;
     padding-top: 27px;
-    .container{
-        display: flex;
-        justify-content: space-between;
-        font-size: 14px;
-        line-height: 22px;
-    }
+    @include font(14px, 22px);
     ul, p{
         margin: 0;
+        padding: 0;
     }
 }
 @mixin a-hover {
@@ -35,12 +31,11 @@
 #onepagenav{
     display: flex;
     gap: 70px;
-    list-style: none;
     a{
         color: var(--color-text-dark);
     }
 }
-#download{
+.download{
     @include main-btn(166px, 50px, white, #191919);
     gap: 10px;
     border: 1px solid #191919;
@@ -54,6 +49,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 70px;
+    li{
+        list-style: none;
+    }
 }
 
 /*====================*/
@@ -75,8 +73,26 @@
 /* Menu-2*/
 /*====================*/
 .menu-area-2{
+    .dropdown{
+        cursor: pointer;
+        div{
+            padding: 0 10px;
+        }
+    }
     .nav-item{
         @include a-hover;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block !important;
+        position: absolute;
+    }
+    .dropdown-content{
+        min-width: 120px;
+        background: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        li{
+            padding: 10px 10px;
+        }
     }
 }
 

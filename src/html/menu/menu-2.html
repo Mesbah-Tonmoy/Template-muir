@@ -1,7 +1,7 @@
 {% extends 'app.html' %}
 
 {# Page Title #}
-{% block title %}Muir | Header All in One Page{% endblock %}
+{% block title %} Muir | Menu-2 {% endblock %}
 
 {# Custom Code In Head #}
 {% block header %}{% endblock %}
@@ -13,14 +13,11 @@
 {% block attribute %}class="sticky-header"{% endblock %}
 
 {% block content %}
+
 <!--=====================================-->
-<!--=        Menu Area Start       	=-->
+<!--=           Menu Area Start       	=-->
 <!--=====================================-->
-{% include 'menu/menu-2.html' %}
-<!--=====================================-->
-<!--=        Header Area Start       	=-->
-<!--=====================================-->
-{% include 'header/header-layout3 copy.html' %}
+{% include 'template-parts/meu/menu-2.html' %}
 	
 
 {% endblock %}

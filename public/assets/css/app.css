@@ -96,27 +96,23 @@ input:focus-visible {
 .mainmenu-nav {
   height: 104px;
   padding-top: 27px;
-}
-.mainmenu-nav .container {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
+  font-size: 14px !important;
   line-height: 22px;
 }
 .mainmenu-nav ul, .mainmenu-nav p {
   margin: 0;
+  padding: 0;
 }
 
 #onepagenav {
   display: flex;
   gap: 70px;
-  list-style: none;
 }
 #onepagenav a {
   color: var(--color-text-dark);
 }
 
-#download {
+.download {
   width: 166px;
   height: 50px;
   background-color: white;
@@ -128,7 +124,7 @@ input:focus-visible {
   gap: 10px;
   border: 1px solid #191919;
 }
-#download:hover {
+.download:hover {
   background-color: #191919;
   color: white;
 }
@@ -138,6 +134,9 @@ input:focus-visible {
   justify-content: space-between;
   align-items: center;
   gap: 70px;
+}
+.mainmenu li {
+  list-style: none;
 }
 
 /*====================*/
@@ -163,6 +162,12 @@ input:focus-visible {
 /*====================*/
 /* Menu-2*/
 /*====================*/
+.menu-area-2 .dropdown {
+  cursor: pointer;
+}
+.menu-area-2 .dropdown div {
+  padding: 0 10px;
+}
 .menu-area-2 .nav-item a:after {
   content: "";
   display: block;
@@ -173,6 +178,18 @@ input:focus-visible {
 }
 .menu-area-2 .nav-item a:hover:after {
   width: 100%;
+}
+.menu-area-2 .dropdown:hover .dropdown-content {
+  display: block !important;
+  position: absolute;
+}
+.menu-area-2 .dropdown-content {
+  min-width: 120px;
+  background: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.menu-area-2 .dropdown-content li {
+  padding: 10px 10px;
 }
 
 /*====================*/
@@ -1955,6 +1972,9 @@ input:focus-visible {
   top: -26px;
   left: -52px;
 }
+.gallery-area p {
+  margin: 0;
+}
 
 /*========  gallery-1  ========*/
 #gallery-1 ul {
@@ -2090,15 +2110,41 @@ input:focus-visible {
   color: var(--color-text-dark);
 }
 #gallery-5 .bottom {
-  gap: 30px;
-}
-#gallery-5 .p-items {
-  width: 50%;
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   height: unset !important;
 }
-#gallery-5 .p-items img {
-  width: 100%;
+#gallery-5 .layer {
+  width: 70%;
+  overflow: hidden;
   margin-bottom: 30px;
+  position: relative;
+}
+#gallery-5 .layer:hover img {
+  transform: scale(1.2);
+}
+#gallery-5 .layer:hover .overlay {
+  padding: 20px;
+  transform: unset !important;
+  z-index: 11;
+}
+#gallery-5 .layer img {
+  width: 100%;
+  transition: 0.3s;
+}
+#gallery-5 .caption {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+}
+#gallery-5 .caption .overlay {
+  background: #fff;
+  width: 350px;
+  transform: translateY(100px);
+  transition: all 0.6s;
 }
 #gallery-5 .round-btn {
   position: absolute;
