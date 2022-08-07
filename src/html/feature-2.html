@@ -1,0 +1,26 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Muir | Feature 1{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header"{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Menu Area Start       	=-->
+<!--=====================================-->
+{% include 'menu/menu-2.html' %}
+<!--=====================================-->
+<!--=        Feature Area Start       	=-->
+<!--=====================================-->
+{% include 'feature/feature-2.html' %}
+	
+
+{% endblock %}

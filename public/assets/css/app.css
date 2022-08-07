@@ -108,6 +108,9 @@ input:focus-visible {
   display: flex;
   gap: 70px;
 }
+#onepagenav li {
+  list-style: none;
+}
 #onepagenav a {
   color: var(--color-text-dark);
 }
@@ -134,9 +137,6 @@ input:focus-visible {
   justify-content: space-between;
   align-items: center;
   gap: 70px;
-}
-.mainmenu li {
-  list-style: none;
 }
 
 /*====================*/
@@ -179,7 +179,7 @@ input:focus-visible {
 .menu-area-2 .nav-item a:hover:after {
   width: 100%;
 }
-.menu-area-2 .dropdown:hover .dropdown-content {
+.menu-area-2 .nav-item:hover > .dropdown-content {
   display: block !important;
   position: absolute;
 }
@@ -190,6 +190,11 @@ input:focus-visible {
 }
 .menu-area-2 .dropdown-content li {
   padding: 10px 10px;
+  position: relative;
+}
+.menu-area-2 .drop-right {
+  top: 0;
+  left: 100%;
 }
 
 /*====================*/
@@ -371,7 +376,7 @@ input:focus-visible {
   width: 250px;
 }
 .header-style-1 .banner-content .left .inputMail a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -387,7 +392,7 @@ input:focus-visible {
   justify-content: space-between;
 }
 .header-style-1 .banner-content .right #paging .numbering {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -494,7 +499,7 @@ input:focus-visible {
   width: 250px;
 }
 .header-style-4 .banner-content .left .inputMail a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -505,7 +510,7 @@ input:focus-visible {
   gap: 25px;
 }
 .header-style-4 .banner-content .right div {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: center;
   flex-direction: column;
@@ -550,7 +555,7 @@ input:focus-visible {
   margin-top: 40px;
 }
 .header-style-5 .banner-content .third-section .left .numbering {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -580,7 +585,7 @@ input:focus-visible {
   width: 250px;
 }
 .header-style-5 .banner-content .third-section .right .inputMail a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -592,7 +597,7 @@ input:focus-visible {
   z-index: 11;
 }
 .header-style-6 .banner-content .left .numbering {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -612,7 +617,7 @@ input:focus-visible {
 .header-style-6 .banner-content .right {
   position: absolute;
   right: 0;
-  display: flex;
+  display: flex !important;
   align-items: flex-end;
   justify-content: unset;
   flex-direction: column;
@@ -651,7 +656,7 @@ input:focus-visible {
   width: 250px;
 }
 .header-style-6 .banner-content .right .m-l-a .inputMail a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -683,7 +688,7 @@ input:focus-visible {
   position: unset;
 }
 .header-style-7 .banner-content .right .numbering {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -915,7 +920,7 @@ input:focus-visible {
   padding-bottom: 120px;
 }
 .feature-area .container {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: space-between;
   flex-direction: unset;
@@ -925,7 +930,7 @@ input:focus-visible {
   width: 558px;
 }
 .feature-area .container .right .mt-30 {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -939,7 +944,7 @@ input:focus-visible {
   margin-top: 150px;
 }
 .feature-area .container .left ul li {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -947,52 +952,49 @@ input:focus-visible {
   padding: 20px 0;
   border-bottom: 1px solid #E9E9E9;
 }
-.feature-area .container .left ul li .ml-auto {
-  margin-left: auto;
+.feature-area ul, .feature-area p {
+  margin: 0;
+  padding: 0;
+}
+.feature-area a {
+  color: var(--color-text-dark);
 }
 
 /*============  Feature-1  ===========*/
-#feature-1 li a, #feature-1 li img {
+.feature-area-1 li a, .feature-area-1 li i {
   cursor: pointer;
 }
-#feature-1 li:not([class=active]) {
+.feature-area-1 li:not([class=active]) {
   color: #A1A1A1;
 }
-#feature-1 li:not([class=active]) img {
-  display: none;
+.feature-area-1 li:hover > i {
+  display: block !important;
 }
-#feature-1 li:not([class=active]) a {
-  color: #A1A1A1;
-}
-#feature-1 .right .big {
+.feature-area-1 .right .big {
   margin-bottom: 100px;
 }
 
 /*============  Feature-2  ===========*/
-#feature-2 .container {
-  display: block;
+.feature-area-2 .container {
+  display: block !important;
 }
-#feature-2 .container .top {
-  display: flex;
+.feature-area-2 .top {
+  display: flex !important;
   align-items: unset;
   justify-content: space-between;
   flex-direction: unset;
   gap: unset;
 }
-#feature-2 .container .top .right {
+.feature-area-2 .top .right {
   margin-bottom: 150px;
 }
-#feature-2 .container .bottom {
-  display: flex;
-  align-items: unset;
-  justify-content: unset;
-  flex-direction: unset;
-  gap: 80px;
-}
-#feature-2 .container .bottom .big {
+.feature-area-2 .row .big {
   margin: 35px 0 25px;
 }
-#feature-2 i {
+.feature-area-2 .row .small {
+  width: 220px;
+}
+.feature-area-2 i {
   font-size: 28px;
   padding-left: 10px;
 }
@@ -1010,7 +1012,7 @@ input:focus-visible {
   width: 650px;
 }
 #feature-3 .container .list {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: unset;
   flex-direction: flex-start;
@@ -1105,14 +1107,14 @@ input:focus-visible {
   margin-left: 10%;
 }
 #feature-6 .container .bottom .flex-column {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: unset;
   flex-direction: column;
   gap: 20px;
 }
 #feature-6 .container .bottom .flex-column .g-30 {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -1176,7 +1178,7 @@ input:focus-visible {
 }
 #feature-9 .bottom div {
   height: 300px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
@@ -1191,7 +1193,7 @@ input:focus-visible {
   margin: 20px 0 100px;
 }
 #feature-10 .bottom {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: space-between;
   flex-direction: unset;
@@ -1201,7 +1203,7 @@ input:focus-visible {
   background-color: #ffffff;
   padding: 30px;
   width: 270px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: column;
@@ -1222,7 +1224,7 @@ input:focus-visible {
   margin-bottom: 20px;
 }
 #feature-11 .container .bottom {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   flex-direction: unset;
@@ -1231,7 +1233,7 @@ input:focus-visible {
 }
 #feature-11 .container .bottom div {
   height: 300px;
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: space-between;
   flex-direction: column;
@@ -1246,7 +1248,7 @@ input:focus-visible {
   margin: 20px 0 70px;
 }
 #feature-12 .container .left div {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -1259,7 +1261,7 @@ input:focus-visible {
   border-radius: 50%;
 }
 #feature-12 .container .right {
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
   justify-content: unset;
   flex-direction: unset;
@@ -1278,7 +1280,7 @@ input:focus-visible {
   margin-bottom: 100px;
 }
 #feature-13 .container .bottom {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: space-around;
   flex-direction: unset;
@@ -1327,13 +1329,13 @@ input:focus-visible {
 }
 
 /*======== About 1 ========*/
-#about-1 .top {
+.about-area-1 .top {
   margin-bottom: 70px;
 }
-#about-1 .bottom {
+.about-area-1 .bottom {
   position: relative;
 }
-#about-1 .bottom .round-btn {
+.about-area-1 .bottom .round-btn {
   position: absolute;
   width: 125px;
   height: 125px;
@@ -1347,24 +1349,23 @@ input:focus-visible {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  gap: 8px;
 }
 
 /*======== About 2 ========*/
-#about-2 .right h3 {
+.about-area-2 .right h3 {
   margin-bottom: 70px;
 }
 
 /*======== About 3 ========*/
-#about-3 .container {
-  padding-right: 0;
-}
-#about-3 section {
+.about-area-3 .container-fluid > div {
+  margin-left: calc((100% - 1320px) / 2);
   position: relative;
   background: #2F2F2F;
   padding: 150px 100px;
   margin-top: 60px;
 }
-#about-3 section .round-btn {
+.about-area-3 .container-fluid > div .round-btn {
   position: absolute;
   width: 125px;
   height: 125px;
@@ -1379,13 +1380,13 @@ input:focus-visible {
   background: #2F2F2F;
   border: 1px solid white;
 }
-#about-3 section p {
+.about-area-3 .container-fluid > div p {
   width: 362px;
 }
-#about-3 section .m-30-0-60 {
+.about-area-3 .container-fluid > div .m-30-0-60 {
   margin: 30px 0 60px;
 }
-#about-3 section .absolute {
+.about-area-3 .container-fluid > div .absolute {
   position: absolute;
   top: -60px;
   right: 120px;
@@ -1402,7 +1403,7 @@ input:focus-visible {
   margin-top: 30px;
 }
 #about-4 .mt-30 a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -1425,7 +1426,7 @@ input:focus-visible {
   position: absolute;
   top: 120px;
   right: 0;
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
   justify-content: unset;
   flex-direction: column;
@@ -1468,29 +1469,29 @@ input:focus-visible {
 }
 
 /*======== About 7 ========*/
-#about-7 .container {
+.about-area-7 .container {
   gap: 100px;
 }
-#about-7 .mt-80 {
+.about-area-7 .mt-80 {
   margin-top: 80px;
 }
-#about-7 .m-30-0-70 {
+.about-area-7 .m-30-0-70 {
   margin: 30px 0 70px;
 }
-#about-7 .flex {
+.about-area-7 .flex {
   display: flex;
   gap: 100px;
 }
-#about-7 .flex .w-200 {
+.about-area-7 .flex .w-200 {
   width: 200px;
 }
-#about-7 .line {
+.about-area-7 .line {
   width: 35px;
   height: 2px;
   background: #FF5C00;
   margin-bottom: 20px;
 }
-#about-7 .right {
+.about-area-7 .right {
   margin-top: 200px;
 }
 
@@ -1522,7 +1523,7 @@ input:focus-visible {
   margin: 25px 0 40px;
 }
 #about-9 a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -1568,7 +1569,7 @@ input:focus-visible {
   margin-bottom: 100px;
 }
 #portfolio-1 li {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -1697,7 +1698,7 @@ input:focus-visible {
   margin-bottom: 20px;
 }
 #portfolio-6 .bottom a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -1737,7 +1738,7 @@ input:focus-visible {
   background: url("../media/portfolio/PI-7.png");
   background-size: cover;
   background-position: center;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   flex-direction: unset;
@@ -1875,7 +1876,7 @@ input:focus-visible {
   margin: 15px 0 65px;
 }
 #portfolio-10 .text a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -1986,7 +1987,7 @@ input:focus-visible {
   border-bottom: 1px solid #E9E9E9;
 }
 #gallery-1 .p-items {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: unset;
   flex-direction: column;
@@ -2071,7 +2072,7 @@ input:focus-visible {
   padding: 0 120px;
 }
 #gallery-4 .bottom {
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: unset;
   flex-direction: column;
@@ -2504,14 +2505,14 @@ input:focus-visible {
   width: 264px !important;
   height: 340px;
   padding: 50px 30px 30px;
-  display: flex;
+  display: flex !important;
   align-items: unset;
   justify-content: space-between;
   flex-direction: column;
   gap: unset;
 }
 #testimonial-3 .swiper-slide .flex {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -2546,14 +2547,14 @@ input:focus-visible {
   margin-top: 20px;
 }
 #testimonial-4 .arrow {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
   gap: 30px;
 }
 #testimonial-4 .numbering {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;
@@ -2688,7 +2689,7 @@ input:focus-visible {
   width: 250px;
 }
 .footer-area-9 .inputMail a {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: unset;
   flex-direction: unset;

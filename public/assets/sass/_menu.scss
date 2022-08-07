@@ -31,6 +31,9 @@
 #onepagenav{
     display: flex;
     gap: 70px;
+    li{
+        list-style: none;
+    }
     a{
         color: var(--color-text-dark);
     }
@@ -49,9 +52,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 70px;
-    li{
-        list-style: none;
-    }
 }
 
 /*====================*/
@@ -82,7 +82,7 @@
     .nav-item{
         @include a-hover;
     }
-    .dropdown:hover .dropdown-content{
+    .nav-item:hover > .dropdown-content{
         display: block !important;
         position: absolute;
     }
@@ -92,7 +92,12 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         li{
             padding: 10px 10px;
+            position: relative;
         }
+    }
+    .drop-right{
+        top: 0;
+        left: 100%;
     }
 }
 

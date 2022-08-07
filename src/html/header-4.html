@@ -1,0 +1,26 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Muir | Header 4{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header"{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Menu Area Start       	=-->
+<!--=====================================-->
+{% include 'menu/menu-2.html' %}
+<!--=====================================-->
+<!--=        Header Area Start       	=-->
+<!--=====================================-->
+{% include 'header/header-layout4.html' %}
+	
+
+{% endblock %}

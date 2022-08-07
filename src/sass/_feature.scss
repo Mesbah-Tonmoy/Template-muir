@@ -19,30 +19,31 @@
                     @include flex-box(center, unset, unset, 40px);
                     padding: 20px 0;
                     border-bottom: 1px solid #E9E9E9;
-                    .ml-auto{
-                        margin-left: auto;
-                    }
                 }
             }
         }
     }
+    ul, p{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        color: var(--color-text-dark);
+    }
 }
 
 /*============  Feature-1  ===========*/
-#feature-1{
+.feature-area-1{
     li{
-        a, img{
+        a, i{
             cursor: pointer;
         }
     }
     li:not([class="active"]){
-        img{
-            display: none;
-        }
-        a{
-            color: #A1A1A1;
-        }
         color: #A1A1A1;
+    }
+    li:hover > i{
+        display: block !important;
     }
     .right{
         .big{
@@ -52,20 +53,22 @@
 }
 
 /*============  Feature-2  ===========*/
-#feature-2{
+.feature-area-2{
     .container{
-        display: block;
-        .top{
-            @include flex-box(unset, space-between);
-            .right{
-                margin-bottom: 150px;
-            }
+        display: block !important;
+    }
+    .top{
+        @include flex-box(unset, space-between);
+        .right{
+            margin-bottom: 150px;
         }
-        .bottom{
-            @include flex-box(unset, unset, unset, 80px);
-            .big{
-                margin: 35px 0 25px;
-            }
+    }
+    .row{
+        .big{
+            margin: 35px 0 25px;
+        }
+        .small{
+            width: 220px;
         }
     }
     i{

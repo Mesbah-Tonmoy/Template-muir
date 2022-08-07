@@ -3,7 +3,7 @@
     line-height: $l-h;
 }
 @mixin flex-box ($a-i:unset, $j-c:unset, $f-d:unset, $gap:unset) {
-    display: flex;
+    display: flex !important;
     align-items: $a-i;
     justify-content: $j-c;
     flex-direction: $f-d;
