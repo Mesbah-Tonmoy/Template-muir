@@ -1,0 +1,26 @@
+{% extends 'app.html' %}
+
+{# Page Title #}
+{% block title %}Muir | Pricing 2{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# Custom Code In Footer #}
+{% block footer %}{% endblock %}
+
+{# Body Class Add #}
+{% block attribute %}class="sticky-header"{% endblock %}
+
+{% block content %}
+<!--=====================================-->
+<!--=        Menu Area Start       	=-->
+<!--=====================================-->
+{% include 'menu/menu-2.html' %}
+<!--=====================================-->
+<!--=        Pricing Area Start       	=-->
+<!--=====================================-->
+{% include 'pricing/pricing-2.html' %}
+	
+
+{% endblock %}

@@ -4,23 +4,6 @@
     .w-750{
         width: 750px;
     }
-    .active{
-        font-weight: 700;
-        color: #191919;
-        img{
-            display: block;
-        }
-    }
-    li{
-        cursor: pointer;
-        position: relative;
-        img{
-            display: none;
-            position: absolute;
-            top: -26px;
-            left: -52px;
-        }
-    }
     p{
         margin: 0;
     }
